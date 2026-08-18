@@ -1,0 +1,41 @@
+# Dépendances
+node_modules/
+.pnp
+.pnp.js
+
+# Secrets — ne jamais committer de clés API Shopify, tokens ou identifiants fournisseurs
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+
+# Shopify CLI
+.shopify/
+dist/
+*.log
+
+# Exports de données (peuvent contenir des données clients)
+exports/
+*.csv
+!docs/**/*.csv
+
+# Fichiers OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Médias lourds bruts — garder les versions optimisées seulement
+assets/raw/
+*.psd
+*.ai
+*.mp4
+*.mov
