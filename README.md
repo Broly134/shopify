@@ -1,50 +1,35 @@
-# FREEHOLD — boutique de montres mécaniques
+# LIYAN — boutique de puériculture
 
-Marque de montres automatiques positionnée sur l'audience « anti-9-5 » / indépendants.
-Boutique Shopify recyclée depuis l'ancien projet PawDeck.
+Marque de puériculture haut de gamme : tétines en silicone médical, biberons en verre
+borosilicate, anneaux de dentition. Boutique Shopify en euros, contenu en français.
 
-> **Positionnement** — « Own your hours outright. »
-> La montre mécanique de ceux qui ont arrêté de rendre des comptes : un objet qui
-> fonctionne sans permission, sans pile et sans patron.
+> **لحظات صغيرة، معنى كبير** — *Little moments, big meaning*
 
 ---
 
-## Ce qui est en place dans la boutique
+## État de la boutique
 
-| Élément | Détail |
+| Élément | État |
 |---|---|
-| Anciens produits | 4 VELYRA + 1 PawDeck → **archivés** (réversible) |
-| Collections | `Watches` et `Straps & Accessories` — intelligentes, auto-remplies par type de produit |
-| Produits | 5 créés en **brouillon**, 8 SKU au total |
-| Pages | Shipping, Returns & Refunds, Warranty, Terms of Service, Contact, About, FAQ |
-| Langue | Anglais activé et publié (le français reste principal — à changer dans l'admin) |
+| Produits | **5 actifs**, visuels de marque importés sur le CDN Shopify |
+| Collections | Coffrets Cadeaux · Tétines · Biberons · Éveil & Dentition |
+| Pages | 7 pages en français, conformes au droit de la consommation UE |
+| Navigation | Menu principal et pied de page refaits |
+| Devise | EUR |
+| Stock | 0 sur toutes les références → affichage « épuisé », aucun achat possible |
 
 ### La gamme
 
-| SKU | Produit | Prix | Rôle |
-|---|---|---:|---|
-| `FH-200-CHM` / `FH-200-GRP` | FREEHOLD 200 — plongeuse automatique, 2 coloris | $249 | **Héros — 80 % du budget pub** |
-| `FH-F38-BLK` | FREEHOLD Field 38 | $179 | Ancrage bas. Jamais de pub. |
-| `FH-STR-FKM` / `-LTH` / `-NTO` | Bracelet quick-release 20 mm | $45 | Upsell |
-| `FH-WTY-24` | Garantie étendue 24 mois | $29 | Upsell — **le plus rentable** |
-| `FH-GIFT-01` | Coffret cadeau | $32 | Saisonnier Q4 |
+| SKU | Produit | Prix |
+|---|---|---:|
+| `LIY-COF-NAIS` | Coffret Naissance — le coffret complet | 49,90 € |
+| `LIY-BIB-2-240` | Coffret 2 Biberons — verre borosilicate | 29,90 € |
+| `LIY-TET-6-06` | Kit 6 Tétines — 0-6 mois | 24,90 € |
+| `LIY-TET-3-06` | Kit 3 Tétines — 0-6 mois | 14,90 € |
+| `LIY-EVL-3` | Coffret Éveil — anneaux de dentition | 12,90 € |
 
-Specs du héros : NH35A (Seiko Instruments), saphir bombé AR, lunette céramique 120 clics,
-200 m, acier 316L, 39,5 mm × 47 mm entrecorne. La tolérance réelle de **−20/+40 s/jour**
-est publiée sur la fiche produit — c'est un choix de positionnement, pas un oubli.
-
-### Pourquoi les produits sont en brouillon
-
-Ils le restent tant que trois conditions ne sont pas remplies :
-
-1. **Aucune photo** — les fiches attendent le shoot des échantillons. Vendre avec les
-   visuels du fournisseur détruit la prime de prix et t'expose sur la conformité.
-2. **Aucun fournisseur validé** — les specs écrites sont un cahier des charges à faire
-   confirmer, pas une fiche technique vérifiée. La mention 200 m en particulier ne doit
-   rester en ligne que si le fournisseur produit un rapport de test de pression.
-3. **Placeholders `[TO COMPLETE]`** — les pages légales contiennent des champs à remplir
-   (entité, adresse, e-mail, délais réels). Publier avec des crochets visibles est pire
-   que ne rien publier.
+Les prix des trois références de base proviennent des maquettes de la charte. Le kit de 6
+et le coffret naissance sont extrapolés et **restent à valider** contre le coût d'achat réel.
 
 ---
 
@@ -52,29 +37,24 @@ Ils le restent tant que trois conditions ne sont pas remplies :
 
 | Fichier | Contenu |
 |---|---|
-| [`docs/strategie/synthese-strategique.md`](docs/strategie/synthese-strategique.md) | **À lire en premier.** Verdict, positionnement, naming, gamme, économie, plan 30 jours |
-| [`docs/strategie/economie-unitaire.md`](docs/strategie/economie-unitaire.md) | Modèle financier, 3 paliers de budget, CAC, ROAS de break-even |
-| [`docs/strategie/analyse-concurrentielle.md`](docs/strategie/analyse-concurrentielle.md) | Teardown de 12 marques, espace blanc identifié |
-| [`docs/strategie/recherche-marche-audience.md`](docs/strategie/recherche-marche-audience.md) | Marché, audience, évolution du discours anti-9-5 |
-| [`docs/sourcing/dossier-fournisseurs.md`](docs/sourcing/dossier-fournisseurs.md) | Sourcing, qualité par palier de COGS, protocole de test |
-| [`docs/compliance/risques-juridiques-et-paiement.md`](docs/compliance/risques-juridiques-et-paiement.md) | PI, processeurs de paiement, FTC, droit conso UE |
-| [`docs/produits/architecture-gamme.md`](docs/produits/architecture-gamme.md) | Architecture de gamme et cadence de sortie |
 | [`ACTIONS.md`](ACTIONS.md) | **Ce que tu dois faire toi-même** |
+| [`docs/produits/charte-de-marque.md`](docs/produits/charte-de-marque.md) | Couleurs, typographies, applications, index des visuels |
+| [`docs/compliance/normes-puericulture.md`](docs/compliance/normes-puericulture.md) | **À lire avant toute vente** — normes EN, marquage CE, exception hygiène |
+| [`assets/marque/`](assets/marque/) | Les 14 planches et visuels fournis |
+| [`archive/freehold/`](archive/freehold/) | Recherche du projet montres, abandonné. Conservée : le modèle d'économie unitaire et le dossier sourcing restent transposables. |
 
 ---
 
-## Les trois choses à savoir tout de suite
+## Le point qui commande tout le reste
 
-**1. Le dropshipping colis-par-colis est déficitaire.** Le seuil de minimis à $800 a été
-supprimé (Chine mai 2025, tous pays août 2025). Chaque colis paie ~22-26 % de droits
-*plus* $15-25 de courtage. Il faut importer 50-100 unités groupées et stocker chez un 3PL.
+**Cette catégorie n'est pas un produit ordinaire.** En vendant sous ta propre marque, tu
+deviens juridiquement le fabricant, même si tu ne fabriques rien. Tu portes la
+responsabilité de la conformité EN 1400, EN 14350, EN 71 et du marquage CE.
 
-**2. Le budget change la nature du projet.** La recherche chiffre le palier viable à
-~$15 500. En dessous de $8 000, le seul chemin est **organique** : contenu quotidien,
-zéro publicité payante. Ce n'est pas une version dégradée — c'est le modèle qui a
-fonctionné pour Islander/Long Island Watch, et l'angle anti-9-5 y est bien plus efficace
-qu'en paid.
+Les fiches produits affichent déjà les consignes de sécurité et les pages citent les
+normes applicables — mais **ces mentions sont des engagements que tu dois pouvoir
+prouver.** Tant que ton fournisseur n'a pas fourni les rapports d'essai et la déclaration
+CE, elles ne doivent pas rester en ligne.
 
-**3. Le compte de paiement est le risque le plus rapide.** Un taux de litige au-dessus
-de 1 % gèle les fonds jusqu'à 120 jours. Les pages légales et un délai annoncé réaliste
-ne sont pas de l'administratif : c'est ce qui garde l'entreprise en vie.
+C'est la raison pour laquelle le stock est à 0 : la boutique est complète et présentable,
+et rien ne peut être vendu tant que ce dossier n'est pas constitué.

@@ -4,15 +4,28 @@
 
 ## En une phrase
 
-Boutique Shopify recyclée depuis l'ancien projet PawDeck en **FREEHOLD**, marque de
-montres mécaniques automatiques visant l'audience indépendante / anti-salariat.
-Positionnement : *« Own your hours outright. »*
+Boutique Shopify **LIYAN** — puériculture haut de gamme : tétines en silicone médical,
+biberons en verre borosilicate, anneaux de dentition. Contenu en français, devise EUR.
+Signature : لحظات صغيرة، معنى كبير — *Little moments, big meaning*.
+
+## Historique — important pour ne pas se tromper
+
+La boutique a servi successivement à trois projets. Les deux premiers sont abandonnés :
+
+1. **PawDeck / VELYRA** — accessoire auto pour chien et compléments alimentaires. Archivés.
+2. **FREEHOLD** — marque de montres mécaniques. Abandonné en cours de route ; toute la
+   recherche est conservée dans `archive/freehold/`, elle n'est plus d'actualité.
+3. **LIYAN** — le projet en cours. C'est le seul qui compte.
+
+La boutique s'appelle encore **PawDeck** dans les réglages Shopify : c'est un renommage
+en attente, pas une erreur de compréhension.
 
 ## Ordre de lecture
 
-1. `README.md` — état de la boutique et gamme produits
-2. `ACTIONS.md` — **ce qui reste à faire**, classé par urgence
-3. `docs/strategie/synthese-strategique.md` — le raisonnement complet derrière chaque décision
+1. `README.md` — état de la boutique et gamme
+2. `ACTIONS.md` — **ce qui reste à faire**
+3. `docs/compliance/normes-puericulture.md` — **à lire avant toute vente**
+4. `docs/produits/charte-de-marque.md` — couleurs, typographies, index des visuels
 
 ## Boutique connectée
 
@@ -20,39 +33,38 @@ Positionnement : *« Own your hours outright. »*
 |---|---|
 | Domaine admin | `07beme-9h.myshopify.com` |
 | Vitrine | `pawdeck-store.myshopify.com` |
-| Forfait | Advanced — **à redescendre en Basic**, voir `ACTIONS.md` |
+| Devise | EUR |
+| Forfait | Advanced — **à redescendre en Basic** |
 | Commandes | 0 |
 
-Nom encore affiché : **PawDeck**. Le renommage en FREEHOLD est la première action en attente.
+## Déjà fait
 
-## Déjà fait (par API)
-
-- 5 anciens produits VELYRA / PawDeck archivés
-- Collections `Watches` et `Straps & Accessories`
-- 5 produits actifs, 8 SKU, stock suivi à 0 donc affichés en « épuisé »
-- 7 pages : Shipping, Returns & Refunds, Warranty, Terms of Service, About, FAQ, Contact
-- Menus principal et pied de page recâblés
-- Langue anglaise activée et publiée
+- 5 produits LIYAN actifs, visuels importés sur le CDN Shopify, stock à 0
+- 4 collections intelligentes par type de produit
+- 7 pages en français : Notre histoire, Sécurité & Conformité, Livraison,
+  Retours & Remboursements, Questions fréquentes, CGV, Nous contacter
+- Menus principal et pied de page refaits
+- Anciens produits des deux projets précédents archivés
 
 ## Ce qui reste — et pourquoi l'API n'a pas suffi
 
-Ces trois points **nécessitent l'interface d'administration Shopify**, pas l'API. Une
-session capable de piloter un navigateur est mieux placée pour les traiter.
-
-| Tâche | Blocage rencontré |
+| Tâche | Blocage |
 |---|---|
-| Renommer la boutique en FREEHOLD | L'API Admin expose la ressource Shop en lecture seule |
-| Refaire la bannière d'accueil du thème Horizon | Les écritures de fichiers de thème sont interdites sur un thème publié |
-| Redescendre le forfait Advanced → Basic | Action de facturation, réservée à l'admin |
-| Passer l'anglais en langue principale | `ShopLocaleInput` n'expose pas le champ `primary` |
-| Visuels produits | Génération d'images bloquée par le classificateur de permissions de la session |
+| Renommer la boutique en LIYAN | La ressource Shop est en lecture seule dans l'API Admin |
+| Refaire la bannière du thème Horizon | Écriture interdite sur un thème publié |
+| Redescendre le forfait | Action de facturation, réservée à l'admin |
+| Passer le français en langue principale | Déjà le cas — le français est la langue principale |
 
 ## Points à ne pas casser
 
-- Les fiches produits publient volontairement la tolérance de marche **−20/+40 s/jour**.
-  C'est un choix de positionnement, pas un oubli à corriger.
-- Les pages légales contiennent des `[TO COMPLETE]` : ce sont des champs que seul le
-  propriétaire peut renseigner (entité, adresse, e-mail, délais réels).
-- Le stock à 0 est délibéré : aucun fournisseur n'est encore validé.
-- Ne jamais écrire « Seiko » dans un titre produit, une balise SEO ou une annonce.
-  Le mouvement NH35A peut être nommé factuellement ; suggérer la marque est de la contrefaçon.
+- **Le stock à 0 est délibéré.** Il empêche toute vente tant que le dossier de conformité
+  (EN 1400, EN 14350, EN 71, marquage CE) n'est pas constitué. Ne le remplis pas « pour
+  que ça marche ».
+- **Les mentions de normes sur les pages sont des engagements non encore prouvés.** Elles
+  portent un `[À COMPLÉTER]` explicite. Soit on obtient les rapports d'essai, soit on
+  retire les mentions.
+- **L'exception d'hygiène** sur le droit de rétractation suppose des articles buccaux
+  livrés scellés individuellement. C'est écrit dans les CGV et les retours.
+- Les consignes de sécurité sur chaque fiche produit ne sont pas du remplissage : elles
+  couvrent des risques réels (strangulation, brûlure, étouffement).
+- Le dépôt a été passé en public pour importer les images. **Il doit repasser en privé.**
