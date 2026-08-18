@@ -27,7 +27,21 @@ d'abonnement avant ce seuil.
 Change aussi l'e-mail de contact : une adresse Gmail personnelle sur une boutique à $249
 est un signal négatif pour les processeurs de paiement.
 
-### 3. Passer l'anglais en langue principale
+### 3. Refaire la page d'accueil du thème
+
+`Boutique en ligne → Thèmes → Personnaliser`
+
+Le thème **Horizon** affiche encore la bannière et les sections de PawDeck. L'API Shopify
+interdit l'écriture sur le thème publié, c'est donc à faire à la main :
+
+- Bannière principale → titre `Own your hours outright.`
+- Retirer les sections héritées de PawDeck (`Our Story`, `FAQ` en ancres)
+- Mettre la collection `Watches` en avant sur l'accueil
+
+Les menus, eux, sont déjà refaits : l'en-tête pointe vers Watches, Straps & Accessories,
+Own Your Hours et FAQ ; le pied de page liste les sept pages légales.
+
+### 4. Passer l'anglais en langue principale
 
 `Réglages → Langues`
 
@@ -35,7 +49,7 @@ L'anglais est **activé et publié**, mais le français reste principal. Or tes 
 produits, tes pages légales et ton marché sont en anglais. Bascule la langue par défaut,
 puis republie le thème.
 
-### 4. Vérifier la marque FREEHOLD — **avant d'imprimer quoi que ce soit**
+### 5. Vérifier la marque FREEHOLD — **avant d'imprimer quoi que ce soit**
 
 Recherche USPTO/TESS en **classe 14** (horlogerie) : https://tmsearch.uspto.gov — gratuit,
 30 minutes.
@@ -53,7 +67,7 @@ Si c'est propre, réserve : `freeholdwatches.com`, `freeholdwatch.com`, `wearfre
 
 ## Cette semaine
 
-### 5. Remplir tous les `[TO COMPLETE]`
+### 6. Remplir tous les `[TO COMPLETE]`
 
 Les 7 pages contiennent des placeholders entre crochets. Cherche `[TO COMPLETE` dans
 `Contenu → Pages`. Il te faut au minimum :
@@ -66,7 +80,7 @@ Les 7 pages contiennent des placeholders entre crochets. Cherche `[TO COMPLETE` 
 
 Une page publiée avec des crochets visibles est pire qu'une page absente.
 
-### 6. Commander les échantillons
+### 7. Commander les échantillons
 
 Contacte 10 fournisseurs Alibaba (Verified Supplier, >3 ans, Trade Assurance) avec le
 cahier des charges de `docs/produits/architecture-gamme.md`.
@@ -78,7 +92,7 @@ unités, et presque personne ne le fait.
 Protocole de réception complet (aimant, goutte d'eau, alignement lunette, mesure de marche
 sur 5 positions) : `docs/strategie/synthese-strategique.md`, semaine 3.
 
-### 7. Ouvrir les comptes de contenu et publier immédiatement
+### 8. Ouvrir les comptes de contenu et publier immédiatement
 
 Avant d'avoir le produit. Le compte doit avoir un historique avant la première vente.
 Objectif : 1 publication par jour, dès maintenant.
@@ -90,9 +104,13 @@ goulot d'étranglement qui reste.
 
 ## Avant la première vente
 
+Les produits sont **actifs et visibles** sur la vitrine, avec un stock suivi à 0 : ils
+s'affichent donc en « épuisé » et personne ne peut acheter par accident. C'est l'état
+correct tant que tu n'as pas validé un fournisseur.
+
 - [ ] Photos réelles sur les 5 fiches produits (issues des échantillons)
 - [ ] Retirer la mention **200 m** si le fournisseur ne fournit pas de rapport de test de pression
-- [ ] Passer les produits de `Brouillon` à `Actif`
+- [ ] Mettre le stock à jour une fois la série reçue (`Produits → Inventaire`)
 - [ ] Créer le marché Europe avec l'EUR si tu vends en UE (`Réglages → Marchés`)
 - [ ] Tester une commande de bout en bout, y compris un remboursement
 - [ ] Vérifier le descripteur bancaire sur un vrai relevé
