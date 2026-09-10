@@ -184,16 +184,17 @@ Dans `build/brand/logo/`, favicons dans `build/brand/` :
 
 ### 6.2 Construction
 
-Les lettres sont reconstruites en géométrie exacte à partir de la proposition
-validée, mesurée pixel par pixel : fûts et angles en rectangles arrondis
-(rayon 21 pour une hauteur d'x de 212), arches du « m » et du « n » en
-demi-cercles, épaules en quarts de cercle (rayon 80), « a » en cercle plein
-(rayon 110) plus fût, contre-poinçon du « a » en cercle (rayon 49), point du
-i en cercle (rayon 36), épaules du « m » et du « n » en courbes ajustées
-sur l'image. Le « s » est le tracé de l'image, lissé jusqu'à 28 segments. La lune est construite : le cercle du « o » moins un disque
-à 68 % de son rayon, décalé de 38 % du rayon vers le haut à droite (49°) ;
-les cornes se rejoignent presque en haut à droite. Le symbole seul reprend
-exactement cette lune. Aucune ombre, aucun dégradé, aucun contour.
+Le s, le m et le n sont repris du tracé de la proposition validée, mesurée
+pixel par pixel, puis lissés jusqu'à 28, 68 et 40 segments : les arches du m
+et du n sont des bosses rondes qui rejoignent les fûts par un léger creux,
+comme sur l'original. Le i, le l et le point du i sont des rectangles arrondis
+et un cercle exacts (rayon d'angle 21, point de rayon 36 pour une hauteur d'x
+de 212). Le « a » est un cercle plein (rayon 110) plus un fût, avec un
+contre-poinçon en cercle (rayon 49). La lune est construite : le cercle du
+« o » moins un disque à 68 % de son rayon, décalé de 38 % du rayon vers le
+haut à droite (49°) ; les cornes se rejoignent presque en haut à droite. Le
+symbole seul reprend exactement cette lune. Aucune ombre, aucun dégradé,
+aucun contour.
 
 Couleurs du logo : lettres `#1F2837`, valeur mesurée sur la proposition
 validée (le Night du site, `#1E2A3A`, est à un point près la même couleur ;
