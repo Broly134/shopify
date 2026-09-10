@@ -189,9 +189,8 @@ validée, mesurée pixel par pixel : fûts et angles en rectangles arrondis
 (rayon 21 pour une hauteur d'x de 212), arches du « m » et du « n » en
 demi-cercles, épaules en quarts de cercle (rayon 80), « a » en cercle plein
 (rayon 110) plus fût, contre-poinçon du « a » en cercle (rayon 49), point du
-i en cercle (rayon 36). Le « s » est une ligne médiane extraite de l'image,
-lissée, puis épaissie à largeur constante (67) avec des bouts droits et des
-angles adoucis. La lune est construite : le cercle du « o » moins un disque
+i en cercle (rayon 36), épaules du « m » et du « n » en courbes ajustées
+sur l'image. Le « s » est le tracé de l'image, lissé jusqu'à 28 segments. La lune est construite : le cercle du « o » moins un disque
 à 68 % de son rayon, décalé de 38 % du rayon vers le haut à droite (49°) ;
 les cornes se rejoignent presque en haut à droite. Le symbole seul reprend
 exactement cette lune. Aucune ombre, aucun dégradé, aucun contour.
