@@ -1,3 +1,10 @@
+# Le nom de la marque — SOMNILA, validé le 10 septembre 2026
+
+Décision prise. Le dossier vivant est `build/BRAND_BOOK.md` ; ce fichier
+garde le raisonnement d'origine.
+
+---
+
 # Le nom de la marque — décision en attente
 
 La boutique tourne aujourd'hui sous **PORTANCE**, qui était un nom de travail.

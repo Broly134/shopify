@@ -2,6 +2,11 @@
 
 Date : 10 septembre 2026. Aucune écriture dans Shopify.
 
+> **Fermée le 10 septembre : SOMNILA validé par le fondateur.** Réponses aux
+> trois questions : réveils douloureux le matin ; prix trop élevé, look
+> d'hôpital, mauvaise qualité ; « la plupart des gens dorment mal ». Reprises
+> dans `BRAND_BOOK.md` § 3, sans rien y ajouter.
+
 ## 1. Ce qui a été vérifié
 
 **Domaines** — 36 candidats de deux syllabes passés au RDAP (registres
