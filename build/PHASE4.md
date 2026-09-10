@@ -71,6 +71,14 @@ font foi dans le dépôt : `build/theme/`.
   (remboursement, livraison, CGV, confidentialité) avec les champs légaux
   entre crochets — **non écrites dans Shopify** (elles remplaceraient les
   politiques du live).
+- **Vérification** : aperçu rendu en navigateur (relais réseau, captures
+  dans `build/preview/`) sur l'accueil desktop et mobile, la collection, les
+  pages About / FAQ / Contact, le panier et trois fiches (Neck 01, Sleep Set,
+  Mask 01, via le lien d'aperçu produit de l'admin). Polices Somnila Serif /
+  Sans chargées, palette et logo en place, aucune erreur Liquid sur les
+  fiches, tableau des dimensions cm + in + kg/lb lu dans les metafields.
+  Pour voir l'aperçu : Boutique en ligne → Thèmes → « Somnila — build v1 »
+  → Aperçu, ou `https://liyan.shop/?preview_theme_id=157447585949`.
 
 ## 2. Décisions prises
 
@@ -80,6 +88,10 @@ font foi dans le dépôt : `build/theme/`.
   Les fiches se prévisualisent une à une depuis l'admin (bouton *Aperçu*
   du produit). Pour un aperçu complet avant mise en ligne, le chemin propre
   est : mot de passe boutique activé (toi), puis produits en actif (moi).
+- **Photos des packs** : les galeries des packs reprennent les packshots
+  des produits qui les composent ; celle du Sleep Set contient la photo
+  fournisseur des bouchons avec du texte chinois sur l'emballage (accepté
+  en Phase 0, mais hors charte). À remplacer en Phase 5.
 - **Hero provisoire** : le packshot fournisseur de Neck 01 détouré et posé
   sur le ciel Cloud → Mist avec halo Dawn, faute de crédits de génération.
   Phase 5 le remplace par l'image mère validée.
@@ -91,6 +103,17 @@ font foi dans le dépôt : `build/theme/`.
   oreillers y sont maintenant, et la collection provisoire `somnila-pillows`
   (créée par moi, vide après transfert) a été supprimée. L'URL finale
   `/collections/pillows` est donc déjà la bonne.
+- **Traductions héritées retirées.** Le duplicata avait copié les
+  traductions PORTANCE du thème (en, de, es, it, nl : 270 clés × 5 langues)
+  qui **écrasaient mes textes** dans l'aperçu (barre d'annonce, puces,
+  FAQ, pied de page). Je les ai supprimées sur le thème Somnila uniquement ;
+  le thème PORTANCE garde les siennes.
+- **Collision d'URL `/collections/pillows`.** En langue anglaise, cette
+  adresse renvoie encore vers la collection PORTANCE « Oreillers » (son
+  handle traduit en anglais est `pillows`) : la section « Five pillows » de
+  l'accueil et le lien du menu affichent Appui / Aplomb au lieu de la gamme
+  Somnila. Ça se règle en une opération que la règle 4 me fait te demander
+  (voir § 3).
 - **Sélecteur de langue masqué** dans le pied (boutique 100 % anglais) ;
   les 5 locales PORTANCE existent toujours au niveau boutique (voir § 3).
 - **Fichiers de contexte de marché** (`*.context.international.json`) : le
@@ -108,8 +131,11 @@ font foi dans le dépôt : `build/theme/`.
 2. **Un seul « ok » pour trois écritures côté boutique** que la règle 4
    m'interdit sans toi, parce qu'elles touchent le live :
    politiques (Paramètres → Politiques, textes dans `build/pages/policies/`),
-   branding du checkout (logo, Night / Cloud, Manrope) et retrait des 5
-   langues PORTANCE (de, es, fr, it, nl) pour une boutique 100 % anglais.
+   branding du checkout (logo, Night / Cloud, Manrope), retrait des 5
+   langues PORTANCE (de, es, fr, it, nl) pour une boutique 100 % anglais, et
+   suppression du handle anglais `pillows` de la collection PORTANCE
+   « Oreillers » (une traduction, réversible) pour libérer
+   `/collections/pillows`.
 3. **Aperçu complet** : si tu veux voir l'accueil avec les produits,
    active le mot de passe de la boutique (Boutique en ligne → Préférences)
    et dis-le-moi : je passe les 20 produits en actif, ils restent invisibles
