@@ -1,6 +1,6 @@
 # SOMNILA — Brand book
 
-Version 1, 10 septembre 2026. Ce document prime sur tout autre texte de marque.
+Version 2, 10 septembre 2026. Ce document prime sur tout autre texte de marque.
 
 ## 1. Le nom
 
@@ -80,54 +80,76 @@ emojis, « −50 % », « limited time ».
 **Vocabulaire autorisé pour parler d'ergonomie** — *support, hold, comfort,
 posture, pressure distribution, shape, height, density, contour*.
 
-## 5. Système visuel
+## 5. Système visuel — « nuit et aube »
 
-**Direction** — minimalisme chaud et architectural. Aesop × Muji × Herman
-Miller. L'oreiller est un objet de design dans une chambre réelle, jamais un
-accessoire de santé.
+Version 2, 10 septembre. La DA du brief d'origine (Bone / Clay / travertin,
+registre Herman Miller) avait été écrite pour un coussin d'assise ; le
+fondateur l'a écartée pour la gamme sommeil. Ce qui suit la remplace.
+
+**Direction** — doux, nuageux, aéré. La marque montre ce qu'elle vend : le
+calme d'une chambre à l'aube, un oreiller qui semble flotter, une lumière
+basse et diffuse. Premium par la retenue et la lumière, jamais par le
+clinquant. Références : Casper première époque pour le duo nuit / accent
+chaud, Aesop pour la typographie, la catégorie (Derila, Pilloway) pour le
+ciel poudré — en mieux fini, sans faux badge ni faux barré.
 
 **Palette**
 
 | Nom | Hex | Rôle | Part |
 |---|---|---|---|
-| Bone | `#F4F0E9` | fond principal | 60 % |
-| Stone | `#D6CFC4` | surfaces secondaires, bandeaux | 20 % |
-| Graphite | `#23211F` | texte, wordmark — jamais de noir pur | 10 % |
-| Clay | `#B5654A` | accent signature : CTA et **un** détail par visuel | ≤ 8 % |
-| Olive | `#4E5A48` | profondeur, un coloris produit | ≤ 2 % |
+| Cloud | `#F7F9FC` | fond principal, presque blanc, teinté de bleu | 55 % |
+| Mist | `#DCE8F2` | bandeaux, tuiles, fonds de cartes, favicon | 25 % |
+| Night | `#1E2A3A` | texte, wordmark, boutons pleins — jamais de noir pur | 12 % |
+| Dawn | `#F0B79B` | accent chaud : le halo de l'aube, un détail par écran, survol | ≤ 6 % |
+| Slate | `#6B7D90` | texte secondaire, légendes, lignes | ≤ 2 % |
 
-Un accent par visuel. Jamais Clay et Olive en aplat côte à côte. Jamais de
-dégradé, jamais de bleu.
+Un accent Dawn par écran, jamais en aplat de bouton (il ne contraste pas
+assez sur Cloud) ; il vit dans les dégradés de ciel, un halo, un liseré. Le
+bleu de Somnila est **désaturé et clair** : Mist est un ciel de brume, pas un
+bleu d'hôpital. Le bleu saturé (`#0072CE` et parents) reste interdit.
+
+**Dégradé de ciel** — le seul dégradé autorisé, vertical, Cloud en haut vers
+Mist en bas, avec un halo Dawn flou en bas à droite. C'est le fond des hero,
+des tuiles produit et des visuels de pub.
 
 **Typographie**
 
-- Titres : **Fraunces**, graisse 300–400, casse de phrase, interlettrage
-  −2 %, axe optique laissé à la taille de rendu, SOFT 0, WONK 0.
-- Texte et interface : **Inter**, 400 et 500.
-- Capitales interdites, sauf micro-labels (Inter 500, tracking +8 %,
-  11–12 px) : *free delivery · 30-night trial · new*.
-- Les deux polices sont libres (SIL OFL), servies depuis Google Fonts ou
-  auto-hébergées : `build/brand/fonts/`.
+- Titres : **Fraunces Soft** — axe SOFT à 100, graisse 300–400, opsz laissé à
+  la taille de rendu, casse de phrase, interlettrage −1,5 %. Les empattements
+  arrondis portent le moelleux ; la même famille en SOFT 0 était trop sèche.
+- Texte, interface, prix, boutons : **Manrope**, 400 et 500. Plus rond
+  qu'Inter, encore très lisible.
+- Capitales interdites, sauf micro-labels (Manrope 500, tracking +8 %,
+  11–12 px) : *free delivery · 30-night trial*.
+- Les deux polices sont libres (SIL OFL), auto-hébergées :
+  `build/brand/fonts/`.
 
-**Lumière** — fenêtre naturelle, fin d'après-midi, une seule direction,
-ombres longues et douces, léger voile. Jamais de flash, jamais de fond studio
-froid, jamais de bleu poudré.
+**Formes** — angles arrondis généreux : 28–32 px sur les cartes et tuiles,
+boutons en pastille, champs à 22 px. Ombres diffuses et teintées Night à
+faible opacité (jamais grises, jamais dures) : `0 20px 46px −20px
+rgba(30,42,58,.30)`.
 
-**Matières** — bouclé, lin, laine ; travertin, chêne clair, céramique mate,
-acier brossé. La trame du tissu toujours visible.
+**Lumière** — aube : basse, diffuse, une seule direction, léger voile ;
+draps blancs qui prennent la lumière ; jamais de flash, jamais de midi.
 
-**Composition** — au moins 40 % de vide, produit décentré sur les tiers, un
-seul produit par image, hero en légère contre-plongée, packshot à 45 °, macro
-texture en B-roll, rendu 50–85 mm, jamais de grand-angle.
+**Matières** — percale et jersey de coton, lin lavé, laine ; chêne clair,
+céramique mate. Le tissu de l'oreiller toujours visible en trame.
+
+**Composition** — l'oreiller **en lévitation** sur le ciel dégradé, ombre de
+contact douce dessous, décentré sur les tiers, au moins 40 % de vide, un seul
+produit par image, hero en légère contre-plongée, packshot à 45 °, macro
+texture en B-roll, 50–85 mm.
 
 **Signatures faceless** — la main qui presse la mousse et son rebond lent ;
-le trait vertical fin (fil à plomb) dans les mises en page ; le dos de
-trois-quarts, jamais le visage ; l'ombre d'un châssis de fenêtre sur le
-produit.
+l'oreiller qui flotte ; le lit fait à l'aube, vu de dos ; la bande de lumière
+de la fenêtre sur le drap ; **la ligne d'horizon**, un trait horizontal fin
+(`horizon-line.svg`) sous un titre — le fil à plomb de l'ancienne DA est
+abandonné.
 
-**Jamais** — bleu médical, schémas de colonne vertébrale, avant/après
-douleur, visages, néons, dégradés, rendus 3D brillants, chambres stock
-souriantes, stickers promo rouges, badges « best pillow ».
+**Jamais** — bleu saturé, schémas de colonne vertébrale, avant/après
+douleur, visages, néons, rendus 3D brillants, chambres stock souriantes,
+stickers promo rouges, badges « best pillow », terracotta et bois brut de
+l'ancienne DA.
 
 ## 6. Le wordmark
 
@@ -135,18 +157,16 @@ Fichiers dans `build/brand/` :
 
 | Fichier | Usage |
 |---|---|
-| `somnila-wordmark-graphite.svg` / `.png` | sur Bone, Stone, photo claire |
-| `somnila-wordmark-bone.svg` / `.png` | sur Graphite, Olive, photo sombre |
-| `favicon-32.png`, `favicon-180.png`, `favicon-512.png` | onglet, iOS, PWA — « s » Fraunces graphite sur Bone |
-| `plumb-line.svg` | motif secondaire, trait vertical 1 px |
-| `fonts/Fraunces-Wordmark-350.ttf` | instance figée du wordmark ; ne pas la remplacer par une autre graisse |
+| `somnila-wordmark-night.svg` / `.png` | sur Cloud, Mist, ciel dégradé, photo claire |
+| `somnila-wordmark-cloud.svg` / `.png` | sur Night, photo sombre |
+| `favicon-32.png`, `favicon-180.png`, `favicon-512.png` | « s » Fraunces Soft, Night sur Mist |
+| `horizon-line.svg` | motif secondaire, trait horizontal 1 px |
+| `fonts/Fraunces-Wordmark-Soft350.ttf` | instance figée du wordmark — ne pas la remplacer |
 
-Règles : logo typographique seul, aucun pictogramme, aucune baseline
-accrochée sous le nom. Espace de protection = la hauteur du « o » sur les
-quatre côtés. Taille minimale 120 px de large à l'écran, 25 mm imprimé ; en
-dessous, on utilise le favicon. Jamais étiré, jamais en Clay, jamais sur
-photo chargée sans aplat. Le fil à plomb se pose **à côté** du wordmark ou
-d'un titre, jamais à travers.
+Règles : logo typographique seul, bas de casse, aucun pictogramme, aucune
+baseline accrochée. Espace de protection = la hauteur du « o » sur les quatre
+côtés. Taille minimale 120 px à l'écran, 25 mm imprimé ; en dessous, le
+favicon. Jamais étiré, jamais en Dawn, jamais sur photo chargée sans aplat.
 
 ## 7. Nomenclature produit
 
@@ -166,10 +186,10 @@ Objets de design, nommés par fonction, numérotés. Les noms fournisseur
 | Housses de rechange | **Cover — Neck / Contour / Side / Body** |
 | Packs | **Neck 01 + Cover** · **Sleep Set** · **For Two** · **Side-Sleeper Set** · **Family Set** · **Evening Set** · **Quiet Night** |
 
-**Coloris** : uniquement ceux de l'annexe photos du devis, nommés par la
-matière quand la correspondance est honnête — blanc → *Bone*, gris → *Stone*,
-bleu marine → *Ink*, bleu clair → *Sky*, rose → *Blush*. Aucun *Clay* ni
-*Olive* sur un produit qui n'existe pas dans cette teinte.
+**Coloris** : uniquement ceux de l'annexe photos du devis, nommés simplement —
+blanc → *Cloud*, gris → *Stone*, bleu clair → *Sky*, bleu marine → *Night*,
+rose → *Blush*. Le nom d'un coloris ne promet jamais une teinte que le
+fournisseur n'a pas.
 
 ## 8. Checklist visuel — un non, on regénère
 
