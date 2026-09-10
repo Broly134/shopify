@@ -153,10 +153,10 @@ l'ancienne DA.
 
 ## 6. Le logo
 
-Le logo est un symbole et un wordmark. Le symbole : un disque qui se pose dans
-un oreiller aux extrémités pleinement arrondies. Lu de loin, c'est l'aube sur
-l'horizon. Les deux lectures sont la marque, le repos et la nuit qui finit bien.
-Il ne représente ni un visage, ni une lune, ni une étoile.
+Le logo est un symbole et un wordmark. Le symbole : une lune qui se couche
+dans un oreiller aux extrémités pleinement arrondies. Il dit deux choses, et
+seulement deux : la nuit, et un endroit où la passer bien. Il ne représente ni
+un visage, ni des étoiles, ni un « z ».
 
 ### 6.1 Fichiers
 
@@ -167,8 +167,8 @@ Symbole et lockups dans `build/brand/logo/`, favicons et wordmark seul dans
 |---|---|
 | `logo/somnila-mark-night.svg` / `.png` | symbole monochrome Night, usage par défaut sur Cloud, Mist, photo claire |
 | `logo/somnila-mark-cloud.svg` / `.png` | symbole monochrome Cloud, sur Night ou photo sombre |
-| `logo/somnila-mark-color.svg` / `.png` | symbole couleur : disque Dawn, oreiller Night |
-| `logo/somnila-mark-color-on-night.svg` / `.png` | symbole couleur sur fond Night : disque Dawn, oreiller Cloud |
+| `logo/somnila-mark-color.svg` / `.png` | symbole couleur : lune Dawn, oreiller Night |
+| `logo/somnila-mark-color-on-night.svg` / `.png` | symbole couleur sur fond Night : lune Dawn, oreiller Cloud |
 | `logo/somnila-logo-horizontal-{night,cloud,color,color-on-night}.svg` / `.png` | lockup horizontal : en-tête du site, factures, emails, signature |
 | `logo/somnila-logo-stacked-{night,cloud,color,color-on-night}.svg` / `.png` | lockup empilé : étiquettes, packaging, formats carrés |
 | `logo/favicon.svg`, `favicon-32.png`, `favicon-180.png`, `favicon-512.png` | favicon et icône Apple : symbole couleur sur tuile Mist |
@@ -181,9 +181,11 @@ Symbole et lockups dans `build/brand/logo/`, favicons et wordmark seul dans
 
 ### 6.2 Construction
 
-Grille de 100. Oreiller 92 × 26, extrémités en demi-cercles. Disque de rayon
-15, enfoncé à 40 % de son diamètre dans l'oreiller. Le liseré qui sépare les
-deux formes est concentrique au disque, largeur 5, raccordé au bord de
+Grille de 100. Oreiller 92 × 26, extrémités en demi-cercles. Lune : un disque
+de rayon 18 dont on retire un disque à 82 % du rayon, décalé de 42 % du rayon
+dans une direction inclinée à 30° par rapport à la verticale. La lune est
+enfoncée à 40 % de son diamètre dans l'oreiller. Le liseré qui sépare les deux
+formes est concentrique au disque de la lune, largeur 5, raccordé au bord de
 l'oreiller par des congés de rayon 4. Un seul tracé par élément, aucune ombre,
 aucun dégradé, aucun contour.
 
@@ -194,17 +196,19 @@ wordmark, espace de 45 % de la hauteur d'x au-dessus des ascendantes.
 
 ### 6.3 Règles
 
-- Par défaut, monochrome Night. La version couleur (disque Dawn) est réservée
-  à l'accueil, aux avatars, aux icônes et au packaging.
-- Espace de protection : le diamètre du disque, sur les quatre côtés.
+- Par défaut, monochrome Night. En couleur, la lune est Dawn : c'est la lune
+  juste avant l'aube. Réservé à l'accueil, aux avatars, aux icônes et au
+  packaging.
+- Espace de protection : le diamètre de la lune, sur les quatre côtés.
 - Tailles minimales : lockup horizontal 150 px à l'écran, 30 mm imprimé ;
   en dessous, symbole seul. Symbole seul jamais en dessous de 16 px. Sur un
   packaging, le symbole ne dépasse pas 4 cm.
 - Sur photo : Cloud sur une zone sombre, ou Night sur une zone claire et
   calme. Jamais sur une zone chargée sans aplat.
-- Jamais étiré, jamais tourné, jamais le disque seul, jamais l'oreiller seul,
-  jamais en Dawn intégral, jamais avec un contour, jamais dans un cercle ou
-  un carré ajouté (l'avatar utilise le fichier prévu à cet effet).
+- Jamais étiré, jamais tourné, jamais la lune seule, jamais l'oreiller seul,
+  jamais d'étoiles ni de visage ajoutés, jamais en Dawn intégral, jamais avec
+  un contour, jamais dans un cercle ou un carré ajouté (l'avatar utilise le
+  fichier prévu à cet effet).
 - Wordmark : bas de casse, jamais en capitales, jamais réécrit dans une autre
   police, jamais de baseline accrochée sous le logo.
 
