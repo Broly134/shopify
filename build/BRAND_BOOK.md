@@ -98,7 +98,7 @@ ciel poudré — en mieux fini, sans faux badge ni faux barré.
 | Nom | Hex | Rôle | Part |
 |---|---|---|---|
 | Cloud | `#F7F9FC` | fond principal, presque blanc, teinté de bleu | 55 % |
-| Mist | `#DCE8F2` | bandeaux, tuiles, fonds de cartes, favicon | 25 % |
+| Mist | `#DCE8F2` | bandeaux, tuiles, fonds de cartes, avatar clair | 25 % |
 | Night | `#1E2A3A` | texte, wordmark, boutons pleins — jamais de noir pur | 12 % |
 | Dawn | `#F0B79B` | accent chaud : le halo de l'aube, un détail par écran, survol | ≤ 6 % |
 | Slate | `#6B7D90` | texte secondaire, légendes, lignes | ≤ 2 % |
@@ -153,64 +153,61 @@ l'ancienne DA.
 
 ## 6. Le logo
 
-Le logo est un symbole et un wordmark. Le symbole est la lune, couchée : sur
-le dos, les cornes arrondies, le ventre plein. Une lune douce, qui dort. Elle
-dit la nuit au premier regard et le sommeil au second. Rien d'autre à côté :
-ni étoile, ni nuage, ni visage, ni objet.
+Le logo est un mot : « somnila », en bas de casse, gras et rond, où le « o »
+est une lune. La lune est la seule couleur, Dawn, la lueur juste avant le
+matin. Tout le reste est Night. Rien d'autre à côté : ni étoile, ni nuage, ni
+visage, ni objet. Il n'y a pas de wordmark séparé : le logo est le wordmark.
 
 ### 6.1 Fichiers
 
-Symbole et lockups dans `build/brand/logo/`, favicons et wordmark seul dans
-`build/brand/` :
+Dans `build/brand/logo/`, favicons dans `build/brand/` :
 
 | Fichier | Usage |
 |---|---|
-| `logo/somnila-mark-night.svg` / `.png` | symbole Night, usage par défaut sur Cloud, Mist, photo claire |
-| `logo/somnila-mark-cloud.svg` / `.png` | symbole Cloud, sur Night ou photo sombre |
-| `logo/somnila-mark-dawn-on-night.svg` / `.png` | symbole Dawn sur fond Night : la lune allumée |
-| `logo/somnila-mark-dawn.svg` / `.png` | symbole Dawn sur fond transparent, réservé aux fonds Night et aux photos sombres |
-| `logo/somnila-logo-horizontal-{night,cloud,dawn-on-night}.svg` / `.png` | lockup horizontal : en-tête du site, factures, emails, signature |
-| `logo/somnila-logo-stacked-{night,cloud,dawn-on-night}.svg` / `.png` | lockup empilé : étiquettes, packaging, formats carrés |
-| `logo/favicon.svg`, `favicon-32.png`, `favicon-180.png`, `favicon-512.png` | favicon et icône Apple : lune Dawn sur tuile Night |
-| `logo/app-icon-night-1024.png` | icône d'application, lune Dawn sur Night |
-| `logo/avatar-night-1024.png`, `logo/avatar-mist-1024.png` | avatars réseaux sociaux, à recadrer en rond côté plateforme |
-| `somnila-wordmark-night.svg` / `.png`, `somnila-wordmark-cloud.svg` / `.png` | wordmark seul, quand le symbole est déjà présent ailleurs sur le support |
-| `horizon-line.svg` | motif secondaire, trait horizontal 1 px |
-| `logo-board.png` | planche de présentation du logo |
-| `fonts/Fraunces-Wordmark-Soft350.ttf` | instance figée du wordmark, ne pas la remplacer |
+| `somnila-logo-light.svg` / `.png` | principal : lettres Night, lune Dawn, fond transparent. Sur Cloud, Mist, photo claire |
+| `somnila-logo-dark.svg` / `.png` | lettres Cloud, lune Dawn, fond transparent. Sur Night ou photo sombre |
+| `somnila-logo-on-night.svg` / `.png` | même chose avec le fond Night intégré (réseaux, emails) |
+| `somnila-logo-night.svg` / `.png` | une couleur Night : broderie, tampon, impression une couleur |
+| `somnila-logo-cloud.svg` / `.png` | une couleur Cloud : sur photo sombre |
+| `somnila-mark-{night,cloud,dawn,dawn-on-night}.svg` / `.png` | le symbole seul, la lune du « o » |
+| `favicon.svg`, `favicon-32.png`, `favicon-180.png`, `favicon-512.png` | lune Dawn sur tuile Night |
+| `app-icon-night-1024.png` | icône d'application |
+| `avatar-night-1024.png`, `avatar-mist-1024.png` | avatars réseaux sociaux, à recadrer en rond côté plateforme |
+| `../horizon-line.svg` | motif secondaire, trait horizontal 1 px |
+| `../logo-board.png` | planche de présentation du logo |
+| `../fonts/Outfit-var.ttf` | police du logo (libre, licence OFL), ne pas la remplacer |
 
 ### 6.2 Construction
 
-Grille de 100. Un disque de rayon 40 dont on retire un disque à 84 % du
-rayon, décalé de 45 % du rayon vers le haut dans une direction inclinée de 18°
-par rapport à la verticale. Les deux cornes sont arrondies par un cercle de
-rayon 4,5 tangent à l'arc extérieur et à l'arc intérieur. Le tracé est fait de
-quatre arcs exacts : extérieur, corne, intérieur, corne. Aucune ombre, aucun
-dégradé, aucun contour.
+Outfit 800, bas de casse, interlettrage resserré de 1,2 %, coins adoucis par
+un arrondi de 4 % du corps (trait de même couleur, jointures rondes). Le « o »
+est remplacé par une lune : le cercle du o moins un disque à 84 % du rayon,
+décalé de 50 % du rayon vers le haut à droite ; les cornes pointent vers le
+haut à droite, le ventre est en bas à gauche. Le symbole seul reprend la même
+lune, arrondie de la même façon. Aucune ombre, aucun dégradé, aucun contour.
 
-Lockup horizontal : la lune fait 92 % de la hauteur du « l », posée sur la
-ligne de base ; l'espace entre symbole et wordmark vaut la moitié de la hauteur
-d'x. Lockup empilé : lune centrée, largeur 34 % du wordmark, espace d'une
-demi-hauteur d'x au-dessus des ascendantes.
+Le logo est reconstruit en vecteur à partir d'une proposition générée avec
+ChatGPT (voir PROMPTS.md). Aucune image générée n'est utilisée telle quelle.
 
 ### 6.3 Règles
 
-- Trois couleurs et pas une de plus : Night sur fond clair, Cloud sur fond
-  sombre, Dawn sur Night quand on veut la lune allumée (icônes, avatars,
-  packaging, bande nuit de l'accueil). Jamais Dawn sur fond clair.
-- Toujours couchée, cornes vers le haut, inclinée de 18° : jamais redressée,
-  jamais retournée, jamais en miroir.
-- Espace de protection : la hauteur de la lune, sur les quatre côtés.
-- Tailles minimales : lockup horizontal 140 px à l'écran, 30 mm imprimé ;
-  en dessous, symbole seul. Symbole seul jamais en dessous de 16 px de large.
-  Sur un packaging, la lune ne dépasse pas 5 cm de large.
-- Sur photo : Cloud ou Dawn sur une zone sombre, Night sur une zone claire et
+- La lune est la seule couleur : Dawn sur fond clair comme sur fond Night.
+  Jamais une autre lettre colorée, jamais le point du i coloré.
+- Une couleur quand le support l'impose : Night sur clair, Cloud sur sombre.
+  La lune prend alors la couleur des lettres.
+- Espace de protection : la hauteur du « o », sur les quatre côtés.
+- Tailles minimales : logo 72 px de large à l'écran, 20 mm imprimé. En
+  dessous, le symbole seul (la lune), jamais en dessous de 16 px.
+- Le symbole seul sert aux favicons, icônes, avatars, broderies petites et
+  aux étiquettes de moins de 20 mm.
+- Sur photo : Dawn et Cloud sur une zone sombre, Night sur une zone claire et
   calme. Jamais sur une zone chargée sans aplat.
-- Jamais d'étoile, de nuage, de visage ni de « z » ajoutés. Jamais étirée,
+- Jamais d'étoile, de « z », de nuage ni de visage ajoutés. Jamais étiré,
+  jamais tourné, jamais en capitales, jamais réécrit dans une autre police,
   jamais avec un contour, jamais dans un cercle ou un carré ajouté (l'avatar
   utilise le fichier prévu à cet effet).
-- Wordmark : bas de casse, jamais en capitales, jamais réécrit dans une autre
-  police, jamais de baseline accrochée sous le logo.
+- Typographie du site : Fraunces Soft pour les titres et Manrope pour le
+  texte restent la règle. Outfit n'est utilisée que dans le logo.
 
 ## 7. Nomenclature produit
 
