@@ -237,8 +237,7 @@
               "mask-01",
               "quiet-01"
             ],
-            "enable_dynamic_recommendations": false,
-            "heading": "Complete the night"
+            "enable_dynamic_recommendations": false
           }
         }
       },
