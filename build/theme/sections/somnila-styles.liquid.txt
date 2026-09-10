@@ -41,7 +41,8 @@ a{text-underline-offset:.2em}
 .product__title h1{font-size:3.6rem}
 .product-form__submit,.button.button--full-width{height:5.4rem}
 .product__info-wrapper .product__text.inline-richtext{font-size:1.5rem}
-.footer-block__heading{font-size:1.3rem;letter-spacing:.08em!important;text-transform:uppercase;color:rgba(247,249,252,.72)}
+.footer-block__heading:has(+ ul),.footer-block__heading:has(+ .footer-block__details-content),.footer-block--menu .footer-block__heading,.footer-block__newsletter .footer-block__heading{font-size:1.3rem;letter-spacing:.08em!important;text-transform:uppercase;color:rgba(247,249,252,.72)}
+.footer-block__brand-info .footer-block__heading,.footer-block__brand-info h2{font-family:var(--font-heading-family)!important;font-weight:400!important;font-size:2.2rem;text-transform:none;letter-spacing:-.01em!important}
 .footer__content-bottom{border-top:1px solid rgba(247,249,252,.14)}
 @media screen and (min-width:990px){.section-padding-tight{padding-top:2rem}}
 </style>
