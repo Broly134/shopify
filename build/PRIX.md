@@ -102,3 +102,32 @@ Sur 100 commandes réparties comme le fait la catégorie (55 % oreiller seul,
 famille), le reste après CAC moyen est d'environ **21 € par commande**, contre
 14 € si tout le monde achetait le héros seul. Les packs ne sont pas une
 option marketing : ils sont la moitié de la marge.
+
+---
+
+## 7. Décisions finales — 10 septembre 2026, validées par le fondateur
+
+Cette section prime sur tout ce qui précède en cas d'écart.
+
+**Prix par marché, fixes, terminaison ,99** (liste de prix Shopify, fonction
+native ; taux indicatifs USD 1,159 · GBP 0,86 · CAD 1,57 · AUD 1,74, arrondis
+sous la conversion) — le détail par ligne est dans `PRODUCTS.csv`, colonnes
+`usd_fixe`, `gbp_fixe`, `cad_fixe`, `aud_fixe`. Héros : 69,90 € · 79,99 $ ·
+59,99 £ · 108,99 $ CA · 120,99 $ AU. L'Europe hors euro (CHF, DKK, SEK, PLN…)
+reste en conversion automatique.
+
+**Livraison offerte dès le prix d'un oreiller** : 54,90 € · 62,99 $ · 47,99 £ ·
+84,99 $ CA · 94,99 $ AU. Reste du monde : 14,90 € sans seuil.
+
+**Visibilité des packs** — quatre en vitrine (accueil, collection, publicité) :
+Oreiller + housse 76,90 · Sleep set 99,90 · Pour deux 119,90 · Famille 169,90.
+Trois sur leur fiche : Dormeur latéral (fiche corporel), Contour pour deux
+(fiche contour), Soirée (fiche lecture). Un dans le panier : Nuit calme 29,90.
+
+**Règle de publicité** : les campagnes ne poussent que le cervical, le
+corporel et les quatre packs de vitrine. Jamais un accessoire, un latéral ou un
+lecture seul.
+
+**Suivi de gestion** : provision retours 7 % sur les oreillers (remboursement
+sans retour), CAC cible 25 €, alerte si le CAC dépasse 35 € — à ce niveau seul
+le pack tient.
