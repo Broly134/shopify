@@ -122,6 +122,58 @@ générée n'est utilisée telle quelle.
 
 ---
 
+## 1 bis. Logo final — fusion des images 2 et 4 (prompt avec images)
+
+Mode d'emploi : dans une nouvelle conversation ChatGPT, joindre les deux images
+qu'il a produites (image 2 : le mot avec le o en croissant ; image 4 : le mot
+avec le point du i en lune Dawn), puis coller le bloc ci-dessous. Il connaît
+ainsi la marque même si la conversation est nouvelle.
+
+```
+I'm attaching two logo images you generated for my brand SOMNILA.
+- Image 1: the wordmark "somnila" where the letter "o" is a crescent moon.
+- Image 2: the wordmark "somnila" where the dot of the "i" is a small peach crescent moon.
+
+BRAND CONTEXT (keep it exactly)
+Somnila is an international sleep brand (memory-foam pillows, sleep mask,
+earplugs, lounge pillow, throw blanket), US market first. Positioning: night
+support as a design object, accessible luxury through restraint and light.
+Promise: "Feel it tonight. Keep it for years." Values: precision, restraint,
+durability. Faceless founder persona, "the quiet craftsman". Never medical,
+never hype. Palette: Night #1E2A3A, Cloud #F7F9FC, Mist #DCE8F2, Dawn #F0B79B
+(small warm accent), Slate #6B7D90. No pure black, no saturated blue, no gold.
+
+TASK: merge the two images into ONE final logo.
+- Keep the letterforms, weight and geometric style of Image 1: bold lowercase,
+  single-storey "a", tight spacing. Make every letter slightly ROUNDER and
+  softer than Image 1 (softly rounded corners on every stroke), never sharper.
+- The "o" stays the crescent moon of Image 1: horns pointing to the upper
+  right, plump belly at the lower left, fully readable as an "o" in the word.
+  Colour it Dawn #F0B79B.
+- The dot of the "i" becomes the small crescent moon of Image 2, lying on its
+  back (horns up), also in Dawn #F0B79B, about 1.3 times the width of the "i"
+  stem, floating just above the stem with a small gap.
+- All other letters in Night #1E2A3A, background Cloud #F7F9FC.
+- Exact spelling "somnila", lowercase. Nothing else: no tagline, no stars, no
+  extra shapes, no outline, no shadow, no gradient, no glow, no 3D, no texture,
+  no mockup, no frame.
+- Flat vector look, centered, generous white space, aspect ratio 3:2, highest
+  resolution available.
+
+Then give me the same logo, one image each:
+1. Dark version: Night #1E2A3A background, letters in Cloud #F7F9FC, both moons
+   still Dawn #F0B79B.
+2. One-colour version: everything Night on Cloud, moons included.
+3. App icon: the crescent "o" alone, Dawn on a Night square, no text, 1:1.
+4. The colour version on a transparent background, PNG, at least 3000 px wide.
+```
+
+Ce que j'en fais : je reconstruis la version retenue en vecteur (voir
+`build/brand/logo/candidates/somnila-V1r-*.svg`, déjà prêts dans le même
+esprit), puis lockups, favicons, avatars et BRAND_BOOK.
+
+---
+
 ## 2. Visuels produit (Phase 5) — à compléter après validation du logo
 
 Base de chaque prompt : « Place this exact product in: … » avec la photo
