@@ -1,71 +1,97 @@
-# Prix — raisonnement d'entreprise, pas de multiple
+# Grille de prix — complète, raisonnée
 
-Un multiple ne dit rien. Ce qui compte : ce qui reste **par commande, après la
-publicité**, parce que sur ce marché la première commande s'achète sur Meta.
+Base de tout le raisonnement : ce qui reste **par commande après la publicité**.
+Sur ce marché la première vente s'achète sur Meta ; un multiple ne dit rien.
 
-## Économie unitaire du héros (oreiller cervical, coût 25 €, fournisseur expédie)
+Hypothèses, prudentes et écrites : frais de paiement 2,9 % + 0,30 € ; provision
+retours 5 % (essai 30 nuits) ; coût d'acquisition client (CAC) **25 €** par
+commande, moyenne réaliste d'un produit à 50–70 € en trafic froid pour une
+marque sans notoriété. Le fournisseur expédie lui-même, la housse est **incluse
+avec chaque oreiller** (devis, réf. 09 à 12). Prix en EUR, devise de base ;
+Shopify convertit et arrondit par marché.
 
-Hypothèses, toutes prudentes et écrites : frais de paiement 2,9 % + 0,30 € ;
-provision retours 5 % (essai 30 nuits) ; coût d'acquisition client (CAC) 25 €,
-ce qu'un produit à 50–70 € coûte en moyenne à acquérir en trafic froid Meta
-pour une marque sans notoriété.
+## 1. Pourquoi le héros est à 69,90 et pas à × 2
 
-| Prix | Multiple | Reste avant pub | Reste après CAC 25 € | Marge nette |
-|---|---|---|---|---|
-| 49,90 | × 2,0 | 20,66 | **−4,34** | −9 % |
-| 54,90 | × 2,2 | 25,26 | 0,26 | 0 % |
-| 59,90 | × 2,4 | 29,87 | 4,87 | 8 % |
-| 64,90 | × 2,6 | 34,47 | 9,47 | 15 % |
-| **69,90** | **× 2,8** | **39,08** | **14,08** | **20 %** |
-| 74,90 | × 3,0 | 43,68 | 18,68 | 25 % |
-| 79,90 | × 3,2 | 48,29 | 23,29 | 29 % |
+| Prix | Multiple | Reste après CAC | Marge nette |
+|---|---|---|---|
+| 49,90 | × 2,0 | **−4,34 €** | −9 % |
+| 54,90 | × 2,2 | 0,26 € | 0 % |
+| 59,90 | × 2,4 | 4,87 € | 8 % |
+| **69,90** | **× 2,8** | **14,08 €** | **20 %** |
+| 79,90 | × 3,2 | 23,29 € | 29 % |
 
-Lecture : à × 2 on **perd** de l'argent à chaque commande payée en pub, à × 2,2
-on fait 26 centimes. Le premier prix où l'entreprise vit est 69,90.
+À × 2, chaque commande payée en pub fait perdre 4 €. Et 69,90 n'est pas cher
+pour la catégorie : c'est le prix affiché de Derila (vendu en faux « −50 % »
+permanent), sous Pilloway (55–80 €), sous Cloudii (59–79 $).
 
-## Le marché, pour ne pas être « trop cher »
+## 2. Produits seuls
 
-- Derila (leader Europe, même forme) : 69,90 € prix affiché, vendu en
-  permanence « −50 % » à 34,95 — un faux barré, exactement l'ennemi du brief.
-- Pilloway (Australie) : 89–129 AUD, soit 55–80 €.
-- Cloudii (États-Unis) : 59–79 $.
+| Réf. | Produit | Coût | Prix | Reste après CAC | Rôle |
+|---|---|---|---|---|---|
+| 09 | **Oreiller cervical** — héros, housse incluse | 25,00 | **69,90** | 14,08 | l'entrée de toute la pub |
+| 12 | Oreiller contour, housse incluse | 19,00 | 59,90 | 10,87 | second oreiller |
+| 11 | Oreiller corporel en S, housse incluse | 24,00 | 69,90 | 15,08 | panier élevé, dormeurs latéraux |
+| 10 | Oreiller latéral, housse incluse | 20,00 | 54,90 | 5,26 | entrée de gamme, jamais en pub seul |
+| 01 | Oreiller de lecture au lit | 19,50 | 54,90 | 5,72 | achat d'impulsion, soirée |
+| 02 | Couverture 200 × 230 | 19,00 | 59,90 | 10,87 | cadeau, saison froide |
+| 03 | Masque de sommeil 3D | 6,00 | 19,90 | −12,97 | **jamais seul en pub** : ajout au panier |
+| 05–08 | Housse de rechange (une par forme) | 3,00 | 16,90 | −12,74 | **jamais seul** : « une sur l'oreiller, une au lavage » |
+| 04 | Bouchons d'oreilles | 6,00 | hors gamme | — | emballage de marque tierce |
 
-À 69,90 € on est **au prix affiché du leader**, sans le mensonge du barré. Ce
-n'est pas cher pour la catégorie ; c'est le prix normal d'un oreiller
-ergonomique de marque. Descendre sous 55 € signale du bas de gamme et tue la
-marge en même temps.
+Lecture : masque et housse **perdent de l'argent s'ils sont la première
+commande**. Ils n'existent que comme ajout — en fiche produit, en panier, et
+dans les packs. La publicité ne pousse que le cervical, le corporel et les packs.
 
-## Grille retenue (EUR, devise de base ; Shopify convertit par marché)
+## 3. Packs — règle de construction
 
-| Réf. | Produit | Coût | Prix | Rôle |
-|---|---|---|---|---|
-| 09 | Oreiller cervical — **héros** | 25,00 | **69,90** | fait la marge |
-| 12 | Oreiller contour | 19,00 | 59,90 | second oreiller |
-| 11 | Oreiller corporel en S | 24,00 | 69,90 | panier élevé |
-| 10 | Oreiller latéral | 20,00 | 54,90 | entrée de gamme oreiller |
-| 01 | Oreiller lecture au lit | 19,50 | 49,90 | achat d'impulsion |
-| 02 | Couverture 200 × 230 | 19,00 | 59,90 | cadeau, hiver |
-| 03 | Masque de sommeil 3D | 6,00 | 19,90 | fait monter le panier |
-| 05–08 | Housses | 3,00 | 19,90 | **marge pure**, vendue avec l'oreiller |
-| 04 | Bouchons d'oreilles | 6,00 | hors gamme (emballage tiers) | — |
+Un pack n'est retenu que s'il passe trois tests : il a un **sens d'usage**
+(pas deux objets collés), la remise est **réelle et visible** (11 à 19 %), et
+il rapporte **plus par commande que le meilleur produit seul** qu'il contient,
+parce que le CAC se paie une fois par commande, pas par article.
 
-Pas de prix barré permanent : le brief l'interdit et c'est ce qui décrédibilise
-Derila. La remise vit dans les **bundles**, qui sont le vrai levier de marge :
+| Pack | Contenu | Total seuls | **Prix pack** | Remise | Coût | Reste après CAC | Gain vs seul |
+|---|---|---|---|---|---|---|---|
+| **Oreiller + housse de rechange** | cervical + housse | 86,80 | **76,90** | −11 % | 28,0 | 17,52 | +3,45 |
+| **Sleep set** | cervical + housse + masque | 106,70 | **89,90** | −16 % | 34,0 | 23,50 | +9,42 |
+| **Pour deux** | 2 × cervical | 139,80 | **119,90** | −14 % | 50,0 | 35,13 | +21,05 |
+| **Dormeur latéral** | cervical + corporel S | 139,80 | **119,90** | −14 % | 49,0 | 36,13 | +21,05 |
+| Contour pour deux | 2 × contour | 119,80 | **99,90** | −17 % | 38,0 | 28,71 | +17,84 |
+| Soirée | lecture + couverture | 114,80 | **94,90** | −17 % | 38,5 | 23,60 | +12,74 |
+| **Famille** | 3 × cervical | 209,70 | **169,90** | −19 % | 75,0 | 56,18 | +42,10 |
 
-- **Oreiller + housse** : 69,90 + 19,90 = 89,80 → bundle **79,90**. Coût 28 €,
-  reste après CAC ≈ 23 €. Mieux qu'un oreiller seul, et le client repart
-  avec une housse qu'il aurait achetée 3 € de coût.
-- **Sleep set** oreiller + housse + masque : 109,70 → **89,90**. Coût 34 €.
-- **Livraison offerte dès 70 €** : l'oreiller seul y est presque, la housse
-  fait basculer.
+Les quatre en gras sont ceux que la publicité et l'accueil mettent en avant.
+« Pour deux » et « Famille » sont les packs qui font vivre Derila : même produit,
+CAC payé une fois, marge par commande × 2,5 à × 4.
 
-## Pourquoi c'est ça, être pro, et pas « × 2 »
+Pas de prix barré permanent sur les produits seuls (le brief l'interdit, et
+c'est ce qui décrédibilise la concurrence). L'économie s'affiche sur le pack :
+« 76,90 au lieu de 86,80 », honnête et vérifiable.
 
-La règle « minimum × 2 » vient du commerce physique, sans coût d'acquisition.
-En DTC payé, la règle est : **prix ≥ coût + CAC + frais, avec 20 % de marge
-nette au moins**, sinon chaque vente appauvrit. La grille ci-dessus respecte
-« pas trop cher » — on est sous Pilloway, au niveau de Derila, sous Cloudii —
-et elle laisse à l'entreprise de quoi payer sa pub et durer.
+## 4. Livraison offerte : seuil à 75 €
 
-Si tu veux malgré tout descendre le héros à 59,90, c'est possible : marge
-nette 10 %, et il faut que le bundle devienne l'offre par défaut.
+Le héros seul est à 69,90. Un seuil à 70 € l'offrirait pour rien ; un seuil à
+**75 €** fait que l'oreiller seul paie le port (4,90 à 9,90 selon la zone) et
+que **l'ajout d'une housse à 16,90** — 3 € de coût — déclenche la livraison
+offerte. La housse finance le port qu'on offre. C'est la mécanique de tous les
+sites de la catégorie, ici sans le piège du « plus que 0,10 € ».
+
+Le seuil se règle **par zone dans le profil d'expédition**, en équivalent
+75 € : ≈ 87 $ US · 115 $ CA · 65 £ · 130 $ AU. Phase 4.
+
+## 5. Mise en œuvre — sans app payante
+
+- Packs en **produits Shopify à part entière** (un produit « Sleep set » avec
+  ses variantes de coloris), pas une app de bundle payante. Le stock n'est pas
+  géré (le fournisseur expédie), donc aucune contrainte de composants.
+- Housse et masque proposés en **ajout dans la fiche produit** de chaque
+  oreiller (bloc « Complete the set » de Shrine) et dans le tiroir panier.
+- Les prix par marché sont la conversion Shopify arrondie ; rien à saisir à la
+  main.
+
+## 6. Ce que ça donne pour l'entreprise
+
+Sur 100 commandes réparties comme le fait la catégorie (55 % oreiller seul,
+25 % oreiller + housse ou sleep set, 15 % pour deux ou dormeur latéral, 5 %
+famille), le reste après CAC moyen est d'environ **21 € par commande**, contre
+14 € si tout le monde achetait le héros seul. Les packs ne sont pas une
+option marketing : ils sont la moitié de la marge.
