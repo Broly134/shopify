@@ -1,0 +1,59 @@
+handle,position,file,source,alt,colour,usage,ratio,pixels
+neck-01,1,somnila_neck-01_packshot-cloud_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_blanc_34_51.jpg,"Somnila Neck 01 in Cloud, three-quarter view",Cloud,packshot,1x1,800x800
+neck-01,2,somnila_neck-01_packshot-sky-2_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_bleu-clair_34_31.jpg,"Somnila Neck 01 in Sky, three-quarter view",Sky,packshot,1x1,800x800
+neck-01,3,somnila_neck-01_packshot-night-3_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_bleu-marine_34_06.jpg,"Somnila Neck 01 in Night, three-quarter view",Night,packshot,1x1,800x800
+neck-01,4,somnila_neck-01_packshot-stone-4_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_gris_34_21.jpg,"Somnila Neck 01 in Stone, three-quarter view",Stone,packshot,1x1,800x800
+contour-01,1,somnila_contour-01_packshot-night_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_bleu-marine_34_13.jpg,"Somnila Contour 01 in Night, three-quarter view",Night,packshot,1x1,800x800
+contour-01,2,somnila_contour-01_packshot-night-2_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_bleu-marine_34_37.jpg,"Somnila Contour 01 in Night, side view",Night,packshot,1x1,800x800
+contour-01,3,somnila_contour-01_lifestyle-cloud-3_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_blanc_lifestyle_30.jpg,"Somnila Contour 01 in Cloud, on a bed",Cloud,lifestyle,1x1,1440x1440
+contour-01,4,somnila_contour-01_lifestyle-blue-4_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_bleu_lifestyle_02.jpg,"Somnila Contour 01 in Blue, on a bed",Blue,lifestyle,1x1,790x790
+contour-01,5,somnila_contour-01_lifestyle-blush-5_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_rose_lifestyle_15.jpg,"Somnila Contour 01 in Blush, on a bed",Blush,lifestyle,1x1,1440x1440
+contour-01,6,somnila_contour-01_packshot-cloud-6_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_blanc_34_08.jpg,"Somnila Contour 01 in Cloud, three-quarter view",Cloud,packshot,1x1,800x800
+contour-01,7,somnila_contour-01_packshot-blush-7_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_rose-blanc_34_10.jpg,"Somnila Contour 01 in Blush, three-quarter view",Blush,packshot,1x1,800x800
+contour-01,8,somnila_contour-01_packshot-stone-8_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_gris-blanc_34_11.jpg,"Somnila Contour 01 in Stone, three-quarter view",Stone,packshot,1x1,800x800
+contour-01,9,somnila_contour-01_packshot-stone-9_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_gris_34_12.jpg,"Somnila Contour 01 in Stone, side view",Stone,packshot,1x1,800x800
+contour-01,10,somnila_contour-01_packshot-blue-10_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_bleu_34_22.jpg,"Somnila Contour 01 in Blue, three-quarter view",Blue,packshot,1x1,800x800
+side-01,1,somnila_side-01_packshot-blue_1x1_v1.jpg,10-oreiller-lateral/oreiller-lateral_bleu_34_01.jpg,"Somnila Side 01 in Blue, three-quarter view",Blue,packshot,1x1,800x800
+side-01,2,somnila_side-01_packshot-dark-grey-2_1x1_v1.jpg,10-oreiller-lateral/oreiller-lateral_gris-fonce_34_26.jpg,"Somnila Side 01 in Dark grey, three-quarter view",Dark grey,packshot,1x1,800x800
+side-01,3,somnila_side-01_packshot-dark-grey-3_1x1_v1.jpg,10-oreiller-lateral/oreiller-lateral_gris-fonce_34_54.jpg,"Somnila Side 01 in Dark grey, side view",Dark grey,packshot,1x1,800x800
+side-01,4,somnila_side-01_packshot-red-4_1x1_v1.jpg,10-oreiller-lateral/oreiller-lateral_rouge_34_27.jpg,"Somnila Side 01 in Red, three-quarter view",Red,packshot,1x1,800x800
+body-01,1,somnila_body-01_packshot-night_1x1_v1.jpg,11-oreiller-corporel/oreiller-corporel_bleu-marine_dessus_49.jpg,"Somnila Body 01 in Night, top view",Night,packshot,1x1,1141x1141
+body-01,2,somnila_body-01_packshot-stone-2_1x1_v1.jpg,11-oreiller-corporel/oreiller-corporel_gris_dessus_18.jpg,"Somnila Body 01 in Stone, top view",Stone,packshot,1x1,800x800
+body-01,3,somnila_body-01_packshot-sky-3_1x1_v1.jpg,11-oreiller-corporel/oreiller-corporel_bleu-clair_dessus_07.jpg,"Somnila Body 01 in Sky, top view",Sky,packshot,1x1,800x800
+body-01,4,somnila_body-01_packshot-blush-4_1x1_v1.jpg,11-oreiller-corporel/oreiller-corporel_rose_dessus_24.jpg,"Somnila Body 01 in Blush, top view",Blush,packshot,1x1,800x800
+body-01,5,somnila_body-01_packshot-ice-5_1x1_v1.jpg,11-oreiller-corporel/oreiller-corporel_bleu-tres-clair_dessus_53.jpg,"Somnila Body 01 in Ice, top view",Ice,packshot,1x1,800x800
+body-01,6,somnila_body-01_packshot-blush-and-sky-6_1x1_v1.jpg,11-oreiller-corporel/oreiller-corporel_rose-bleu_dessus_00.jpg,"Somnila Body 01 in Blush and Sky, top view",Blush and Sky,packshot,1x1,1440x1440
+body-01,7,somnila_body-01_packshot-sky-and-blush-7_1x1_v1.jpg,11-oreiller-corporel/oreiller-corporel_bleu-rose_dessus_29.jpg,"Somnila Body 01 in Sky and Blush, top view",Sky and Blush,packshot,1x1,1440x1440
+body-01,8,somnila_body-01_packshot-sky-8_1x1_v1.jpg,11-oreiller-corporel/oreiller-corporel_bleu-clair_dessus_50.jpg,"Somnila Body 01 in Sky, top view, second angle",Sky,packshot,1x1,800x800
+lounge-01,1,somnila_lounge-01_packshot-stone-and-sand_4x5_v1.jpg,01-oreiller-telephone/oreiller-telephone_gris + beige_34-duo_36.jpg,"Somnila Lounge 01 in Stone and Sand, two pillows, three-quarter view",Stone and Sand,packshot,4x5,800x1055
+lounge-01,2,somnila_lounge-01_packshot-blue-2_4x5_v1.jpg,01-oreiller-telephone/oreiller-telephone_bleu_34_25.jpg,"Somnila Lounge 01 in Blue, three-quarter view",Blue,packshot,4x5,800x979
+mask-01,1,somnila_mask-01_packshot-black_1x1_v1.jpg,03-masque/masque_noir_face_05.jpg,"Somnila Mask 01 in Black, front view",Black,packshot,1x1,800x800
+mask-01,2,somnila_mask-01_packshot-cloud-2_1x1_v1.jpg,03-masque/masque_blanc_face_04.jpg,"Somnila Mask 01 in Cloud, front view",Cloud,packshot,1x1,800x800
+mask-01,3,somnila_mask-01_packshot-blush-3_1x1_v1.jpg,03-masque/masque_rose_face_03.jpg,"Somnila Mask 01 in Blush, front view",Blush,packshot,1x1,800x800
+mask-01,4,somnila_mask-01_packshot-violet-4_1x1_v1.jpg,03-masque/masque_violet-blanc_face_20.jpg,"Somnila Mask 01 in Violet, front view",Violet,packshot,1x1,800x800
+mask-01,5,somnila_mask-01_packshot-heather-grey-5_1x1_v1.jpg,03-masque/masque_gris-chine_face_38.jpg,"Somnila Mask 01 in Heather grey, front view",Heather grey,packshot,1x1,800x800
+mask-01,6,somnila_mask-01_packshot-black-6_1x1_v1.jpg,03-masque/masque_noir_face_16.jpg,"Somnila Mask 01 in Black, front view, second angle",Black,packshot,1x1,800x800
+quiet-01,1,somnila_quiet-01_packshot-blue_1x1_v1.jpg,04-bouchons/bouchons_bleu_boite_17.jpg,"Somnila Quiet 01 in Blue, with case",Blue,packshot,1x1,800x800
+quiet-01,2,somnila_quiet-01_packshot-green-2_1x1_v1.jpg,04-bouchons/bouchons_vert_boite_14.jpg,"Somnila Quiet 01 in Green, with case",Green,packshot,1x1,800x800
+quiet-01,3,somnila_quiet-01_packshot-butter-3_1x1_v1.jpg,04-bouchons/bouchons_jaune-lait_boite_19.jpg,"Somnila Quiet 01 in Butter, with case",Butter,packshot,1x1,800x800
+quiet-01,4,somnila_quiet-01_packshot-blush-4_1x1_v1.jpg,04-bouchons/bouchons_rose_boite_28.jpg,"Somnila Quiet 01 in Blush, with case",Blush,packshot,1x1,800x800
+cover-neck,1,somnila_cover-neck_packshot-cloud_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_blanc_34_51.jpg,Somnila Cover for Neck 01: replacement cover shown on the pillow in Cloud,Cloud,packshot,1x1,800x800
+cover-contour,1,somnila_cover-contour_packshot-night_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_bleu-marine_34_13.jpg,Somnila Cover for Contour 01: replacement cover shown on the pillow in Night,Night,packshot,1x1,800x800
+cover-side,1,somnila_cover-side_packshot-blue_1x1_v1.jpg,10-oreiller-lateral/oreiller-lateral_bleu_34_01.jpg,Somnila Cover for Side 01: replacement cover shown on the pillow in Blue,Blue,packshot,1x1,800x800
+cover-body,1,somnila_cover-body_packshot-night_1x1_v1.jpg,11-oreiller-corporel/oreiller-corporel_bleu-marine_dessus_49.jpg,Somnila Cover for Body 01: replacement cover shown on the pillow in Night,Night,packshot,1x1,1141x1141
+neck-01-cover-set,1,somnila_neck-01-cover-set_packshot-cloud_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_blanc_34_51.jpg,"Somnila Neck 01 + Cover: Neck 01 pillow, cover included plus one spare in Cloud",Cloud,packshot,1x1,800x800
+sleep-set,1,somnila_sleep-set_packshot-cloud_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_blanc_34_51.jpg,Somnila Sleep Set: Neck 01 pillow in Cloud,Cloud,packshot,1x1,800x800
+sleep-set,2,somnila_sleep-set_packshot-black-2_1x1_v1.jpg,03-masque/masque_noir_face_05.jpg,Somnila Sleep Set: Mask 01 in Black,Black,packshot,1x1,800x800
+sleep-set,3,somnila_sleep-set_packshot-blue-3_1x1_v1.jpg,04-bouchons/bouchons_bleu_boite_17.jpg,Somnila Sleep Set: Quiet 01 earplugs with case in Blue,Blue,packshot,1x1,800x800
+for-two,1,somnila_for-two_packshot-cloud_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_blanc_34_51.jpg,Somnila For Two: Neck 01 pillow in Cloud,Cloud,packshot,1x1,800x800
+for-two,2,somnila_for-two_packshot-sky-2_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_bleu-clair_34_31.jpg,Somnila For Two: Neck 01 pillow in Sky,Sky,packshot,1x1,800x800
+side-sleeper-set,1,somnila_side-sleeper-set_packshot-night_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_bleu-marine_34_06.jpg,Somnila Side-Sleeper Set: Neck 01 pillow in Night,Night,packshot,1x1,800x800
+side-sleeper-set,2,somnila_side-sleeper-set_packshot-night-2_1x1_v1.jpg,11-oreiller-corporel/oreiller-corporel_bleu-marine_dessus_49.jpg,Somnila Side-Sleeper Set: Body 01 pillow in Night,Night,packshot,1x1,1141x1141
+contour-for-two,1,somnila_contour-for-two_packshot-night_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_bleu-marine_34_13.jpg,"Somnila Contour for Two in Night, Contour 01 pillow",Night,packshot,1x1,800x800
+contour-for-two,2,somnila_contour-for-two_packshot-night-2_1x1_v1.jpg,12-oreiller-vague/oreiller-vague_bleu-marine_34_37.jpg,"Somnila Contour for Two in Night, Contour 01 pillow, side view",Night,packshot,1x1,800x800
+evening-set,1,somnila_evening-set_packshot-stone-and-sand_4x5_v1.jpg,01-oreiller-telephone/oreiller-telephone_gris + beige_34-duo_36.jpg,Somnila Evening Set: Lounge 01 pillows in Stone and Sand,Stone and Sand,packshot,4x5,800x1055
+family-set,1,somnila_family-set_packshot-cloud_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_blanc_34_51.jpg,Somnila Family Set: Neck 01 pillow in Cloud,Cloud,packshot,1x1,800x800
+family-set,2,somnila_family-set_packshot-sky-2_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_bleu-clair_34_31.jpg,Somnila Family Set: Neck 01 pillow in Sky,Sky,packshot,1x1,800x800
+family-set,3,somnila_family-set_packshot-stone-3_1x1_v1.jpg,09-oreiller-cervical/oreiller-cervical_gris_34_21.jpg,Somnila Family Set: Neck 01 pillow in Stone,Stone,packshot,1x1,800x800
+quiet-night,1,somnila_quiet-night_packshot-black_1x1_v1.jpg,03-masque/masque_noir_face_05.jpg,Somnila Quiet Night: Mask 01 in Black,Black,packshot,1x1,800x800
+quiet-night,2,somnila_quiet-night_packshot-blue-2_1x1_v1.jpg,04-bouchons/bouchons_bleu_boite_17.jpg,Somnila Quiet Night: Quiet 01 earplugs with case in Blue,Blue,packshot,1x1,800x800
