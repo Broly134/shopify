@@ -153,10 +153,10 @@ l'ancienne DA.
 
 ## 6. Le logo
 
-Le logo est un symbole et un wordmark. Le symbole : une lune qui se couche
-dans un oreiller aux extrémités pleinement arrondies. Il dit deux choses, et
-seulement deux : la nuit, et un endroit où la passer bien. Il ne représente ni
-un visage, ni des étoiles, ni un « z ».
+Le logo est un symbole et un wordmark. Le symbole est le S de Somnila, fait de
+deux lunes : celle qui se lève quand on s'endort, celle qui s'efface quand on
+se réveille. La nuit au-dessus, l'aube en dessous. Une lettre, deux lunes, une
+nuit entière. Il ne représente ni un visage, ni des étoiles, ni un objet.
 
 ### 6.1 Fichiers
 
@@ -167,8 +167,8 @@ Symbole et lockups dans `build/brand/logo/`, favicons et wordmark seul dans
 |---|---|
 | `logo/somnila-mark-night.svg` / `.png` | symbole monochrome Night, usage par défaut sur Cloud, Mist, photo claire |
 | `logo/somnila-mark-cloud.svg` / `.png` | symbole monochrome Cloud, sur Night ou photo sombre |
-| `logo/somnila-mark-color.svg` / `.png` | symbole couleur : lune Dawn, oreiller Night |
-| `logo/somnila-mark-color-on-night.svg` / `.png` | symbole couleur sur fond Night : lune Dawn, oreiller Cloud |
+| `logo/somnila-mark-color.svg` / `.png` | symbole couleur : lune du haut Night, lune du bas Dawn |
+| `logo/somnila-mark-color-on-night.svg` / `.png` | symbole couleur sur fond Night : lune du haut Cloud, lune du bas Dawn |
 | `logo/somnila-logo-horizontal-{night,cloud,color,color-on-night}.svg` / `.png` | lockup horizontal : en-tête du site, factures, emails, signature |
 | `logo/somnila-logo-stacked-{night,cloud,color,color-on-night}.svg` / `.png` | lockup empilé : étiquettes, packaging, formats carrés |
 | `logo/favicon.svg`, `favicon-32.png`, `favicon-180.png`, `favicon-512.png` | favicon et icône Apple : symbole couleur sur tuile Mist |
@@ -181,34 +181,33 @@ Symbole et lockups dans `build/brand/logo/`, favicons et wordmark seul dans
 
 ### 6.2 Construction
 
-Grille de 100. Oreiller 92 × 26, extrémités en demi-cercles. Lune : un disque
-de rayon 18 dont on retire un disque à 82 % du rayon, décalé de 42 % du rayon
-dans une direction inclinée à 30° par rapport à la verticale. La lune est
-enfoncée à 40 % de son diamètre dans l'oreiller. Le liseré qui sépare les deux
-formes est concentrique au disque de la lune, largeur 5, raccordé au bord de
-l'oreiller par des congés de rayon 4. Un seul tracé par élément, aucune ombre,
-aucun dégradé, aucun contour.
+Grille de 100. Deux cercles de rayon 22 dont les centres sont écartés
+verticalement de 70 % du rayon. Chaque lune est le disque moins un disque à
+86 % du rayon, décalé de 52 % du rayon vers l'ouverture et de 20 % vers le
+centre. La lune du haut s'ouvre à droite, celle du bas à gauche ; leurs cornes
+se croisent au centre et forment le S. En couleur, la lune du haut est dessinée
+devant celle du bas. Aucune ombre, aucun dégradé, aucun contour.
 
-Lockup horizontal : le symbole est posé sur la ligne de base du wordmark, sa
-hauteur vaut 80 % de la hauteur du « l », l'espace entre les deux vaut la
-moitié de la hauteur d'x. Lockup empilé : symbole centré, largeur 40 % du
-wordmark, espace de 45 % de la hauteur d'x au-dessus des ascendantes.
+Lockup horizontal : le symbole fait 106 % de la hauteur du « l », posé 3 %
+sous la ligne de base ; l'espace entre symbole et wordmark vaut 48 % de la
+hauteur d'x. Lockup empilé : symbole centré, hauteur 170 % du « l », espace de
+55 % de la hauteur d'x au-dessus des ascendantes.
 
 ### 6.3 Règles
 
-- Par défaut, monochrome Night. En couleur, la lune est Dawn : c'est la lune
-  juste avant l'aube. Réservé à l'accueil, aux avatars, aux icônes et au
-  packaging.
-- Espace de protection : le diamètre de la lune, sur les quatre côtés.
-- Tailles minimales : lockup horizontal 150 px à l'écran, 30 mm imprimé ;
-  en dessous, symbole seul. Symbole seul jamais en dessous de 16 px. Sur un
-  packaging, le symbole ne dépasse pas 4 cm.
-- Sur photo : Cloud sur une zone sombre, ou Night sur une zone claire et
-  calme. Jamais sur une zone chargée sans aplat.
-- Jamais étiré, jamais tourné, jamais la lune seule, jamais l'oreiller seul,
-  jamais d'étoiles ni de visage ajoutés, jamais en Dawn intégral, jamais avec
-  un contour, jamais dans un cercle ou un carré ajouté (l'avatar utilise le
-  fichier prévu à cet effet).
+- Par défaut, monochrome Night. En couleur, la nuit (Night ou Cloud) est
+  toujours au-dessus et l'aube (Dawn) toujours en dessous, jamais l'inverse.
+  La couleur est réservée à l'accueil, aux avatars, aux icônes et au packaging.
+- Espace de protection : la largeur du symbole, sur les quatre côtés.
+- Tailles minimales : lockup horizontal 140 px à l'écran, 30 mm imprimé ;
+  en dessous, symbole seul. Symbole seul jamais en dessous de 16 px de haut.
+  Sur un packaging, le symbole ne dépasse pas 5 cm de haut.
+- Sur photo : Cloud sur une zone sombre, Night sur une zone claire et calme.
+  Le Dawn ne se pose jamais sur une photo.
+- Jamais tourné (le S doit se lire), jamais étiré, jamais une seule lune,
+  jamais les deux lunes séparées, jamais d'étoiles ni de visage ajoutés,
+  jamais avec un contour, jamais dans un cercle ou un carré ajouté (l'avatar
+  utilise le fichier prévu à cet effet).
 - Wordmark : bas de casse, jamais en capitales, jamais réécrit dans une autre
   police, jamais de baseline accrochée sous le logo.
 
