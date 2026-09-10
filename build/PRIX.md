@@ -36,9 +36,9 @@ permanent), sous Pilloway (55–80 €), sous Cloudii (59–79 $).
 | 02 | Couverture 200 × 230 | 19,00 | 59,90 | 10,87 | cadeau, saison froide |
 | 03 | Masque de sommeil 3D | 6,00 | 19,90 | −12,97 | **jamais seul en pub** : ajout au panier |
 | 05–08 | Housse de rechange (une par forme) | 3,00 | 16,90 | −12,74 | **jamais seul** : « une sur l'oreiller, une au lavage » |
-| 04 | Bouchons d'oreilles | 6,00 | hors gamme | — | emballage de marque tierce |
+| 04 | Bouchons d'oreilles, 2 paires + étui | 6,00 | 14,90 | −17,55 | **jamais seul en pub** : ajout et packs. Boîte de marque tierce (iMeBoBo), accepté par le fondateur |
 
-Lecture : masque et housse **perdent de l'argent s'ils sont la première
+Lecture : masque, housse et bouchons **perdent de l'argent s'ils sont la première
 commande**. Ils n'existent que comme ajout — en fiche produit, en panier, et
 dans les packs. La publicité ne pousse que le cervical, le corporel et les packs.
 
@@ -52,7 +52,8 @@ parce que le CAC se paie une fois par commande, pas par article.
 | Pack | Contenu | Total seuls | **Prix pack** | Remise | Coût | Reste après CAC | Gain vs seul |
 |---|---|---|---|---|---|---|---|
 | **Oreiller + housse de rechange** | cervical + housse | 86,80 | **76,90** | −11 % | 28,0 | 17,52 | +3,45 |
-| **Sleep set** | cervical + housse + masque | 106,70 | **89,90** | −16 % | 34,0 | 23,50 | +9,42 |
+| **Sleep set** | cervical + housse + masque + bouchons | 121,60 | **99,90** | −18 % | 40,0 | 26,70 | +12,62 |
+| Nuit calme *(ajout au panier)* | masque + bouchons | 34,80 | **29,90** | −14 % | 12,0 | −9,77 | n/a — jamais première commande |
 | **Pour deux** | 2 × cervical | 139,80 | **119,90** | −14 % | 50,0 | 35,13 | +21,05 |
 | **Dormeur latéral** | cervical + corporel S | 139,80 | **119,90** | −14 % | 49,0 | 36,13 | +21,05 |
 | Contour pour deux | 2 × contour | 119,80 | **99,90** | −17 % | 38,0 | 28,71 | +17,84 |
