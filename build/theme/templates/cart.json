@@ -1,0 +1,84 @@
+{
+  "sections": {
+    "items": {
+      "type": "main-cart-items",
+      "settings": {}
+    },
+    "footer": {
+      "type": "main-cart-footer",
+      "settings": {}
+    },
+    "trust": {
+      "type": "icon-bar",
+      "blocks": {
+        "t1": {
+          "type": "column",
+          "settings": {
+            "icon": "local_shipping",
+            "filled_icon": false,
+            "title": "Free shipping",
+            "text": "<p>On every pillow and every set, to the US, Canada, the UK, Europe and Australia.</p>"
+          }
+        },
+        "t2": {
+          "type": "column",
+          "settings": {
+            "icon": "schedule",
+            "filled_icon": false,
+            "title": "6–10 days, tracked",
+            "text": "<p>Tracking number by email the day it ships.</p>"
+          }
+        },
+        "t3": {
+          "type": "column",
+          "settings": {
+            "icon": "bedtime",
+            "filled_icon": false,
+            "title": "30-night trial",
+            "text": "<p>Sleep on it. If it isn't right, one email and we refund it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h2",
+        "text": "",
+        "color_scheme": "background-1",
+        "icon_layout": "horizontal",
+        "icon_size": "small",
+        "icon_color": "accent-1",
+        "cards_color_scheme": "background-2",
+        "type": "slide",
+        "autoplay": false,
+        "desktop_full_page": false,
+        "columns_desktop": 3,
+        "slider_desktop": false,
+        "desktop_spacing": 16,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "hidden",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "hidden",
+        "padding_top": 24,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "items",
+    "footer",
+    "trust"
+  ]
+}

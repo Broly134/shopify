@@ -131,3 +131,13 @@ lecture seul.
 **Suivi de gestion** : provision retours 7 % sur les oreillers (remboursement
 sans retour), CAC cible 25 €, alerte si le CAC dépasse 35 € — à ce niveau seul
 le pack tient.
+
+## 8. Décision du 10 septembre au soir — prix convertis, pas de prix fixes
+
+Le fondateur a tranché en Phase 4 : **un seul catalogue, les mêmes prix
+partout, convertis par Shopify Markets dans la devise du pays** (arrondi
+automatique par marché). Les colonnes `usd_fixe`, `gbp_fixe`, `cad_fixe`,
+`aud_fixe` de `PRODUCTS.csv` deviennent indicatives et aucune liste de prix
+n'est créée. Le seuil de livraison offerte reste **54,90 €**, comparé par
+Shopify au total de la commande converti en euros. Cette section remplace
+le paragraphe « Prix par marché, fixes » de la section 7.

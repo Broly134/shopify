@@ -1,0 +1,26 @@
+<style>
+#shopify-section-{{ section.id }}{display:none!important}
+@font-face{font-family:'Somnila Serif';src:url('https://cdn.shopify.com/s/files/1/0778/2629/3917/files/somnila-serif-fraunces-soft-var.woff2?v=1789072486') format('woff2');font-weight:300 700;font-style:normal;font-display:swap}
+@font-face{font-family:'Somnila Sans';src:url('https://cdn.shopify.com/s/files/1/0778/2629/3917/files/somnila-sans-manrope-var.woff2?v=1789072486') format('woff2');font-weight:200 800;font-style:normal;font-display:swap}
+:root{--font-heading-family:'Somnila Serif',Georgia,'Times New Roman',serif;--font-heading-style:normal;--font-heading-weight:400;--font-body-family:'Somnila Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--font-body-style:normal;--font-body-weight:400;--font-body-weight-bold:600;--color-shadow:30,42,58;--somnila-dawn:#F0B79B;--somnila-mist:#DCE8F2;--somnila-slate:#6B7D90}
+h1,h2,h3,h4,.h0,.h1,.h2,.h3,.h4,.hxl{letter-spacing:-.015em;font-variation-settings:'opsz' 72;font-weight:400}
+.h0,.hxl,h1.h0{font-variation-settings:'opsz' 120}
+body{-webkit-font-smoothing:antialiased}
+strong,b{font-weight:600}
+.button,.shopify-challenge__button,.customer button,button.button{letter-spacing:0;text-transform:none;font-weight:500}
+.button--secondary{background:transparent}
+.caption-with-letter-spacing,.announcement-bar__message,.announcement-bar__message strong{letter-spacing:.08em;text-transform:uppercase;font-size:1.1rem;font-weight:500}
+.announcement-bar__message strong{font-weight:600}
+.somnila-sky{background:linear-gradient(180deg,#F7F9FC 0%,#DCE8F2 100%)}
+.card,.card__inner,.card__media,.media{box-shadow:none}
+.card--card:hover .card__media{transform:none}
+a{text-underline-offset:.2em}
+.price{font-variant-numeric:tabular-nums}
+.product__title h1,.product__title .h1{font-variation-settings:'opsz' 96}
+.somnila-specs h3{font-family:var(--font-body-family);font-size:1.2rem;letter-spacing:.08em;text-transform:uppercase;color:var(--somnila-slate);margin:1.6rem 0 .4rem;font-weight:500}
+.somnila-specs table{border-collapse:collapse;font-variant-numeric:tabular-nums}
+.somnila-specs th{text-align:left;font-weight:500;padding:.2rem 1.6rem .2rem 0;color:var(--somnila-slate)}
+.somnila-specs td{padding:.2rem 0}
+.somnila-horizon{display:block;width:5.6rem;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--somnila-dawn),rgba(240,183,155,0));margin:1.2rem 0 0}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>

@@ -1,0 +1,57 @@
+{
+ "artboards": [
+  {
+   "file": "Main.dc.html",
+   "title": "Home \u00b7 desktop",
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 4300,
+   "expand": "fit"
+  },
+  {
+   "file": "HomeMobile.dc.html",
+   "title": "Home \u00b7 mobile",
+   "x": 1560,
+   "y": 0,
+   "w": 390,
+   "h": 3900,
+   "expand": "fit"
+  },
+  {
+   "file": "Product.dc.html",
+   "title": "Neck 01 \u00b7 product page",
+   "x": 2080,
+   "y": 0,
+   "w": 1440,
+   "h": 3700,
+   "expand": "fit"
+  }
+ ],
+ "annotations": [
+  {
+   "id": "note-brief",
+   "x": 0,
+   "y": -190,
+   "w": 520,
+   "text": "Maquettes du th\u00e8me Shrine \u00ab Somnila \u2014 build v1 \u00bb (Phase 4).\nM\u00eames textes, prix et images que dans Shopify. Palette Cloud / Mist / Night / Dawn, Fraunces Soft + Manrope.\nVisuel hero provisoire (packshot fournisseur d\u00e9tour\u00e9 sur ciel) : remplac\u00e9 en Phase 5."
+  },
+  {
+   "id": "note-reviews",
+   "x": 560,
+   "y": -190,
+   "w": 420,
+   "text": "Pas de section avis sur la maquette : elle existe dans le th\u00e8me mais reste d\u00e9sactiv\u00e9e tant qu'il n'y a pas de vrais avis."
+  },
+  {
+   "id": "note-mobile",
+   "x": 1560,
+   "y": -120,
+   "w": 390,
+   "text": "Mobile : hero 4:5, texte en bas, boutons pleine largeur, tuiles confiance en 2 \u00d7 2."
+  }
+ ],
+ "launch": {
+  "view": "canvas"
+ }
+}

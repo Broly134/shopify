@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "settings": {}
+    },
+    "cta": {
+      "type": "rich-text",
+      "blocks": {
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nothing here. The pillows are this way.</p>"
+          }
+        },
+        "b": {
+          "type": "button",
+          "settings": {
+            "button_label": "All pillows",
+            "button_link": "shopify://collections/pillows",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "t",
+        "b"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 64
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cta"
+  ]
+}
