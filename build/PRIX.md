@@ -67,16 +67,22 @@ Pas de prix barré permanent sur les produits seuls (le brief l'interdit, et
 c'est ce qui décrédibilise la concurrence). L'économie s'affiche sur le pack :
 « 76,90 au lieu de 86,80 », honnête et vérifiable.
 
-## 4. Livraison offerte : seuil à 75 €
+## 4. Livraison offerte dès le prix d'un oreiller — décision du fondateur
 
-Le héros seul est à 69,90. Un seuil à 70 € l'offrirait pour rien ; un seuil à
-**75 €** fait que l'oreiller seul paie le port (4,90 à 9,90 selon la zone) et
-que **l'ajout d'une housse à 16,90** — 3 € de coût — déclenche la livraison
-offerte. La housse finance le port qu'on offre. C'est la mécanique de tous les
-sites de la catégorie, ici sans le piège du « plus que 0,10 € ».
+Seuil à **54,90 €**, le prix de l'oreiller le moins cher : **tout oreiller
+part en livraison offerte**, seul ou en pack. Seuls les accessoires achetés
+seuls (masque 19,90, housse 16,90) paient le port — et ce cas est rare puisque
+la pub ne les pousse jamais seuls. Le message est simple et se tient :
+« Free delivery on every pillow. »
 
-Le seuil se règle **par zone dans le profil d'expédition**, en équivalent
-75 € : ≈ 87 $ US · 115 $ CA · 65 £ · 130 $ AU. Phase 4.
+Ce que ça coûte : rien sur le produit — le fournisseur expédie, son prix
+comprend le transport — mais on renonce aux 4,90 à 9,90 € de port que le
+client aurait payés. Les « reste après CAC » des tableaux ci-dessus n'incluaient
+pas ce port comme revenu ; ils restent donc valables tels quels.
+
+Réglage par zone dans le profil d'expédition, en équivalent 54,90 € :
+≈ 64 $ US · 85 $ CA · 48 £ · 95 $ AU · 54,90 € EU. Reste du monde : 14,90 €
+maintenu, ce n'est pas un marché cible et le délai n'y est pas confirmé.
 
 ## 5. Mise en œuvre — sans app payante
 
