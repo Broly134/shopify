@@ -155,8 +155,13 @@ l'ancienne DA.
 
 Le logo est un mot : « somnila », en bas de casse, gras et rond, où le « o »
 est une lune. La lune est la seule couleur, Dawn, la lueur juste avant le
-matin. Tout le reste est Night. Rien d'autre à côté : ni étoile, ni nuage, ni
-visage, ni objet. Il n'y a pas de wordmark séparé : le logo est le wordmark.
+matin. Tout le reste est dans le bleu du logo. Rien d'autre à côté : ni
+étoile, ni nuage, ni visage, ni objet. Il n'y a pas de wordmark séparé : le
+logo est le wordmark.
+
+Le dessin retenu est une proposition générée avec ChatGPT (voir PROMPTS.md),
+validée par le fondateur, puis reconstruite en vecteur à l'identique. Aucune
+image générée n'est utilisée telle quelle.
 
 ### 6.1 Fichiers
 
@@ -164,10 +169,11 @@ Dans `build/brand/logo/`, favicons dans `build/brand/` :
 
 | Fichier | Usage |
 |---|---|
-| `somnila-logo-light.svg` / `.png` | principal : lettres Night, lune Dawn, fond transparent. Sur Cloud, Mist, photo claire |
+| `somnila-logo-light.svg` / `.png` | principal : lettres bleu logo, lune Dawn, fond transparent. Sur Cloud, Mist, photo claire |
 | `somnila-logo-dark.svg` / `.png` | lettres Cloud, lune Dawn, fond transparent. Sur Night ou photo sombre |
-| `somnila-logo-on-night.svg` / `.png` | même chose avec le fond Night intégré (réseaux, emails) |
-| `somnila-logo-night.svg` / `.png` | une couleur Night : broderie, tampon, impression une couleur |
+| `somnila-logo-on-black.svg` / `.png` | la proposition validée telle quelle, lune colorée, fond `#141414` intégré |
+| `somnila-logo-on-night.svg` / `.png` | lettres Cloud, lune Dawn, fond Night intégré (réseaux, emails) |
+| `somnila-logo-night.svg` / `.png` | une couleur bleu logo : broderie, tampon, impression une couleur |
 | `somnila-logo-cloud.svg` / `.png` | une couleur Cloud : sur photo sombre |
 | `somnila-mark-{night,cloud,dawn,dawn-on-night}.svg` / `.png` | le symbole seul, la lune du « o » |
 | `favicon.svg`, `favicon-32.png`, `favicon-180.png`, `favicon-512.png` | lune Dawn sur tuile Night |
@@ -175,39 +181,41 @@ Dans `build/brand/logo/`, favicons dans `build/brand/` :
 | `avatar-night-1024.png`, `avatar-mist-1024.png` | avatars réseaux sociaux, à recadrer en rond côté plateforme |
 | `../horizon-line.svg` | motif secondaire, trait horizontal 1 px |
 | `../logo-board.png` | planche de présentation du logo |
-| `../fonts/Outfit-var.ttf` | police du logo (libre, licence OFL), ne pas la remplacer |
 
 ### 6.2 Construction
 
-Outfit 800, bas de casse, interlettrage resserré de 1,2 %, coins adoucis par
-un arrondi de 4 % du corps (trait de même couleur, jointures rondes). Le « o »
-est remplacé par une lune : le cercle du o moins un disque à 84 % du rayon,
-décalé de 50 % du rayon vers le haut à droite ; les cornes pointent vers le
-haut à droite, le ventre est en bas à gauche. Le symbole seul reprend la même
-lune, arrondie de la même façon. Aucune ombre, aucun dégradé, aucun contour.
+Les lettres sont tracées en vecteur à partir de la proposition validée :
+courbes lissées, point du i remplacé par un cercle exact, fûts du i et du l
+remplacés par des rectangles arrondis exacts (rayon 21/300 de la hauteur
+d'x). La lune est construite : le cercle du « o » moins un disque à 68 % de
+son rayon, décalé de 38 % du rayon vers le haut à droite (49°) ; les cornes
+se rejoignent presque en haut à droite. Le symbole seul reprend exactement
+cette lune. Aucune ombre, aucun dégradé, aucun contour.
 
-Le logo est reconstruit en vecteur à partir d'une proposition générée avec
-ChatGPT (voir PROMPTS.md). Aucune image générée n'est utilisée telle quelle.
+Couleurs du logo : lettres `#1F2837`, valeur mesurée sur la proposition
+validée (le Night du site, `#1E2A3A`, est à un point près la même couleur ;
+les deux cohabitent sans écart visible). Lune `#F0B79B` (Dawn). Fond de la
+version « telle quelle » : `#141414`.
 
 ### 6.3 Règles
 
-- La lune est la seule couleur : Dawn sur fond clair comme sur fond Night.
+- La lune est la seule couleur : Dawn sur fond clair comme sur fond sombre.
   Jamais une autre lettre colorée, jamais le point du i coloré.
-- Une couleur quand le support l'impose : Night sur clair, Cloud sur sombre.
-  La lune prend alors la couleur des lettres.
+- Une couleur quand le support l'impose : bleu logo sur clair, Cloud sur
+  sombre. La lune prend alors la couleur des lettres.
 - Espace de protection : la hauteur du « o », sur les quatre côtés.
 - Tailles minimales : logo 72 px de large à l'écran, 20 mm imprimé. En
   dessous, le symbole seul (la lune), jamais en dessous de 16 px.
-- Le symbole seul sert aux favicons, icônes, avatars, broderies petites et
+- Le symbole seul sert aux favicons, icônes, avatars, petites broderies et
   aux étiquettes de moins de 20 mm.
-- Sur photo : Dawn et Cloud sur une zone sombre, Night sur une zone claire et
-  calme. Jamais sur une zone chargée sans aplat.
+- Sur photo : Dawn et Cloud sur une zone sombre, bleu logo sur une zone
+  claire et calme. Jamais sur une zone chargée sans aplat.
 - Jamais d'étoile, de « z », de nuage ni de visage ajoutés. Jamais étiré,
-  jamais tourné, jamais en capitales, jamais réécrit dans une autre police,
-  jamais avec un contour, jamais dans un cercle ou un carré ajouté (l'avatar
-  utilise le fichier prévu à cet effet).
+  jamais tourné, jamais en capitales, jamais retapé dans une police (le logo
+  n'est pas une police, ce sont des tracés), jamais avec un contour, jamais
+  dans un cercle ou un carré ajouté (l'avatar utilise le fichier prévu).
 - Typographie du site : Fraunces Soft pour les titres et Manrope pour le
-  texte restent la règle. Outfit n'est utilisée que dans le logo.
+  texte restent la règle.
 
 ## 7. Nomenclature produit
 
