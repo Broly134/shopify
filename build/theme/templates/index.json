@@ -6,10 +6,10 @@
         "s1": {
           "type": "slide",
           "settings": {
-            "desktop_bg_image": "shopify://shop_images/somnila_neck-01_hero_16x9_v1.jpg",
+            "desktop_bg_image": "shopify://shop_images/somnila_neck-01_hero_16x9_v2.jpg",
             "desktop_overlay_color": "#000000",
             "desktop_overlay_opacity": 0,
-            "mobile_bg_image": "shopify://shop_images/somnila_neck-01_hero_4x5_v1.jpg",
+            "mobile_bg_image": "shopify://shop_images/somnila_neck-01_hero_4x5_v2.jpg",
             "mobile_overlay_color": "#000000",
             "mobile_overlay_opacity": 0,
             "display_sound_btn": false,
@@ -24,7 +24,7 @@
             "button_link_1": "shopify://products/neck-01",
             "button_style_secondary_1": false,
             "button_label_2": "All pillows",
-            "button_link_2": "shopify://collections/pillows",
+            "button_link_2": "shopify://collections/memory-foam-pillows",
             "button_style_secondary_2": true,
             "color_scheme": "custom",
             "full_page_width": false,
@@ -378,7 +378,7 @@
           "type": "button",
           "settings": {
             "button_label": "See all pillows",
-            "button_link": "shopify://collections/pillows"
+            "button_link": "shopify://collections/memory-foam-pillows"
           }
         }
       },
@@ -391,7 +391,7 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "image": "shopify://shop_images/somnila_neck-01_sky_1x1_v1.jpg",
+        "image": "shopify://shop_images/somnila_contour-01_packshot-night_1x1_v1.jpg",
         "video_autoplay": true,
         "video_loop": true,
         "height": "adapt",
@@ -425,7 +425,7 @@
         "show_description": true,
         "description_style": "body",
         "color_scheme": "background-1",
-        "collection": "pillows",
+        "collection": "memory-foam-pillows",
         "products_to_show": 5,
         "stretch_cards": false,
         "show_view_all": true,
@@ -573,7 +573,7 @@
         "title": "Before you <b>order</b>.",
         "title_highlight_color": "#1E2A3A",
         "heading_size": "h1",
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",

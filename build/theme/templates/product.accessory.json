@@ -201,7 +201,7 @@
           "settings": {
             "function": "add_to_cart",
             "display_when": "after_scroll",
-            "button_label": "Add to bag",
+            "button_label": "Add to cart",
             "enable_custom_btn_color": false,
             "color_scheme": "background-1",
             "picker_type": "combined",
@@ -416,7 +416,7 @@
         "title": "Before you <b>order</b>.",
         "title_highlight_color": "#1E2A3A",
         "heading_size": "h1",
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
