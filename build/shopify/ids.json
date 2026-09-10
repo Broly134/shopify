@@ -1,0 +1,38 @@
+{
+ "products": {
+  "neck-01": "9042360369309",
+  "contour-01": "9042360500381",
+  "side-01": "9042360598685",
+  "body-01": "9042360696989",
+  "lounge-01": "9042360828061",
+  "throw-01": "9042360959133",
+  "mask-01": "9042361090205",
+  "quiet-01": "9042361155741",
+  "cover-neck": "9042361188509",
+  "cover-contour": "9042361319581",
+  "cover-side": "9042361417885",
+  "cover-body": "9042361483421",
+  "neck-01-cover-set": "9042361712797",
+  "sleep-set": "9042361974941",
+  "for-two": "9042362171549",
+  "side-sleeper-set": "9042362237085",
+  "contour-for-two": "9042362335389",
+  "family-set": "9042362400925",
+  "quiet-night": "9042362564765",
+  "evening-set": "9042362761373"
+ },
+ "collections": {
+  "somnila-pillows": "348677374109",
+  "sets": "348677275805",
+  "accessories": "348677308573",
+  "covers": "348677341341"
+ },
+ "metafield_definitions": {
+  "dimensions_cm": "237729775773",
+  "dimensions_in": "237729808541",
+  "materials": "237729841309",
+  "delivery": "237729874077",
+  "includes": "237729906845",
+  "contents": "237729939613"
+ }
+}
