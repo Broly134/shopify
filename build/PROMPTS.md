@@ -180,3 +180,7 @@ Base de chaque prompt : « Place this exact product in: … » avec la photo
 fournisseur en référence, aucun visage, lumière d'aube, palette ci-dessus,
 40 % d'espace vide, une image mère validée par scène, 4 variantes max.
 Les prompts détaillés arrivent en Phase 5.
+
+## 3. Images produit avec Flux.1 Kontext Pro (11 septembre)
+
+Bloc de style, sept plans, lignes de nettoyage par famille de photos, table de lot et checklist : `build/PROMPTS_FLUX_KONTEXT.md` (+ `build/images/kontext-batch.csv`).
