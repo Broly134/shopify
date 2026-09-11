@@ -606,7 +606,7 @@
         "p4": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/somnila_home_pos-body_1x1_6ca73ddd-3557-4039-9967-8dc5b5c4508a.jpg",
+            "image": "shopify://shop_images/somnila_home_pos-body_sky_1x1_55c6fb0a-1072-4108-9424-aec1f04dff3a.jpg",
             "title": "The whole body held",
             "text": "<p>Body 01. A 120 cm S-shape for the knees, the arm and the back at once.</p>",
             "link_label": "Shop Body 01",
@@ -1069,14 +1069,82 @@
         "padding_top": 56,
         "padding_bottom": 56
       }
+    },
+    "ticker": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "k1": {
+          "type": "text",
+          "settings": {
+            "title": "Free shipping on every pillow"
+          }
+        },
+        "k2": {
+          "type": "text",
+          "settings": {
+            "title": "30-night trial, refund by email"
+          }
+        },
+        "k3": {
+          "type": "text",
+          "settings": {
+            "title": "Ships in 6–10 days, tracked"
+          }
+        },
+        "k4": {
+          "type": "text",
+          "settings": {
+            "title": "Cover included, machine washable"
+          }
+        },
+        "k5": {
+          "type": "text",
+          "settings": {
+            "title": "Memory foam that holds its shape"
+          }
+        }
+      },
+      "block_order": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5"
+      ],
+      "settings": {
+        "visibility": "always-display",
+        "speed": 2,
+        "direction": "normal",
+        "stop_on_hover": true,
+        "mobile_spacing": 36,
+        "desktop_spacing": 48,
+        "color_scheme": "inverse",
+        "mobile_text_size": 12,
+        "desktop_text_size": 13,
+        "italic_text": false,
+        "uppercase_text": true,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 40,
+        "mobile_reviews_width": 300,
+        "desktop_reviews_width": 400,
+        "hidden_products": "",
+        "enable_specific_display": false,
+        "displayed_products": "",
+        "mobile_padding_top": 12,
+        "mobile_padding_bottom": 12,
+        "desktop_padding_top": 16,
+        "desktop_padding_bottom": 16
+      }
     }
   },
   "order": [
     "hero",
-    "trust",
+    "ticker",
     "anchor",
     "positions",
     "neck",
+    "trust",
     "why",
     "problem",
     "compare",

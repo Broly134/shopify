@@ -64,5 +64,43 @@ a{text-underline-offset:.2em}
 .rich-text__blocks{max-width:80rem;margin-inline:auto}
 .image-with-text .text-with-icon strong{font-weight:600}
 .image-with-text__heading{margin-top:.4rem}
+/* passe animations : lentes, calmes, sur les variables de marque */
+@keyframes somnila-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes somnila-drift{from{transform:scale(1)}to{transform:scale(1.05) translateY(-1%)}}
+@keyframes somnila-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes somnila-pop{0%{transform:scale(.5);opacity:0}70%{transform:scale(1.1);opacity:1}100%{transform:scale(1)}}
+@keyframes somnila-dawn{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.7}50%{transform:translate(-50%,-50%) scale(1.2);opacity:1}}
+.hero-slide__content>*{animation:somnila-rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero-slide__content .hero__heading{animation-delay:.15s}.hero-slide__content .hero__text{animation-delay:.35s}.hero-slide__content .hero__buttons{animation-delay:.55s}
+.hero-slide__background{overflow:hidden}.hero-slide__background img{animation:somnila-drift 24s ease-in-out infinite alternate;transform-origin:58% 50%}
+.horizontal-ticker__item{letter-spacing:.12em;font-weight:500;display:inline-flex;align-items:center}
+.horizontal-ticker__item::after{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--somnila-dawn);margin-left:48px}
+@media screen and (max-width:749px){.horizontal-ticker__item::after{margin-left:36px}}
+.icon-bar-card__icon .material-icon{display:inline-block;animation:somnila-float 5s ease-in-out infinite}
+.icon-bar li:nth-child(2) .icon-bar-card__icon .material-icon{animation-delay:-1.2s}.icon-bar li:nth-child(3) .icon-bar-card__icon .material-icon{animation-delay:-2.4s}.icon-bar li:nth-child(4) .icon-bar-card__icon .material-icon{animation-delay:-3.6s}
+[id$="__neck"] .product__media img,[id$="__trial"] .image-with-text__media img{animation:somnila-float 8s ease-in-out infinite}
+[id$="__trial"] .image-with-text__media img{animation-delay:-3s}
+.multicolumn-card{transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+.multicolumn-card:hover{transform:translateY(-6px);box-shadow:0 26px 48px -22px rgba(30,42,58,.28)}
+.multicolumn-card__image-wrapper .media{overflow:hidden}.multicolumn-card__image{transition:transform .9s cubic-bezier(.2,.7,.2,1)}.multicolumn-card:hover .multicolumn-card__image{transform:scale(1.05)}
+.card--card{transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}.card--card:hover{transform:translateY(-6px);box-shadow:0 26px 48px -22px rgba(30,42,58,.28)}
+.card__media .media{overflow:hidden}.card__media .media img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}.card--card:hover .card__media .media img{transform:scale(1.05)}
+.button{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,background-color .35s,color .35s}
+.button--primary:hover,.product-form__submit:hover{transform:translateY(-2px);box-shadow:0 14px 26px -14px rgba(30,42,58,.5)}
+.button--secondary:hover{transform:translateY(-2px);background:rgba(30,42,58,.06)}
+.somnila-js .animate-section:not(.somnila-in) .comparison-table__icon{transform:scale(.5);opacity:0}
+.animate-section.somnila-in .comparison-table__icon{animation:somnila-pop .6s cubic-bezier(.2,.7,.2,1) both}
+.comparison-table tbody tr:nth-child(1) .comparison-table__icon{animation-delay:.35s}.comparison-table tbody tr:nth-child(2) .comparison-table__icon{animation-delay:.45s}.comparison-table tbody tr:nth-child(3) .comparison-table__icon{animation-delay:.55s}.comparison-table tbody tr:nth-child(4) .comparison-table__icon{animation-delay:.65s}.comparison-table tbody tr:nth-child(5) .comparison-table__icon{animation-delay:.75s}.comparison-table tbody tr:nth-child(6) .comparison-table__icon{animation-delay:.85s}
+.animate-section .title-with-highlight::after{content:'';display:block;width:5.6rem;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--somnila-dawn),rgba(240,183,155,0));margin:1.2rem auto 0;transform-origin:left;transition:transform .9s cubic-bezier(.2,.7,.2,1) .45s}
+.somnila-js .animate-section:not(.somnila-in) .title-with-highlight::after{transform:scaleX(0)}
+.hero-slide__content.animate-item{opacity:1!important;filter:none!important;transform:none!important;transition:none!important}
+.image-with-text__heading.title-with-highlight::after,.desktop-left .title-with-highlight::after,.hero-slide__content .title-with-highlight::after{margin-inline:0}
+.rich-text.color-inverse{position:relative;overflow:hidden;isolation:isolate}
+.rich-text.color-inverse::before{content:'';position:absolute;left:50%;top:50%;width:70vw;max-width:90rem;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(240,183,155,.24),rgba(240,183,155,0));transform:translate(-50%,-50%);animation:somnila-dawn 10s ease-in-out infinite;pointer-events:none;z-index:-1}
+.header__menu-item span{background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .35s cubic-bezier(.2,.7,.2,1);padding-bottom:.1em}
+.header__menu-item:hover span{background-size:100% 1px}
+.field__input:focus,.field__input:focus-visible{box-shadow:0 0 0 4px rgba(240,183,155,.35)}
+details[open] .accordion__content{animation:somnila-rise .45s cubic-bezier(.2,.7,.2,1) both}
 </style>
+<script>(function(){var d=document.documentElement;d.classList.add('somnila-js');function init(){var els=document.querySelectorAll('.animate-section');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('somnila-in')});return}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('somnila-in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -10% 0px',threshold:0.05});els.forEach(function(e){if(!e.classList.contains('somnila-in'))io.observe(e)})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init)}else{init()}document.addEventListener('shopify:section:load',init)})();</script>
 {%- if template.name == 'index' -%}<h1 class="visually-hidden">Somnila memory-foam pillows shaped around the way you actually lie</h1>{%- endif -%}

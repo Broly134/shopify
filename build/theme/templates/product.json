@@ -686,10 +686,78 @@
         "desktop_padding_top": 56,
         "desktop_padding_bottom": 56
       }
+    },
+    "ticker": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "k1": {
+          "type": "text",
+          "settings": {
+            "title": "Free shipping on every pillow"
+          }
+        },
+        "k2": {
+          "type": "text",
+          "settings": {
+            "title": "30-night trial, refund by email"
+          }
+        },
+        "k3": {
+          "type": "text",
+          "settings": {
+            "title": "Ships in 6–10 days, tracked"
+          }
+        },
+        "k4": {
+          "type": "text",
+          "settings": {
+            "title": "Cover included, machine washable"
+          }
+        },
+        "k5": {
+          "type": "text",
+          "settings": {
+            "title": "Memory foam that holds its shape"
+          }
+        }
+      },
+      "block_order": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5"
+      ],
+      "settings": {
+        "visibility": "always-display",
+        "speed": 2,
+        "direction": "normal",
+        "stop_on_hover": true,
+        "mobile_spacing": 36,
+        "desktop_spacing": 48,
+        "color_scheme": "inverse",
+        "mobile_text_size": 12,
+        "desktop_text_size": 13,
+        "italic_text": false,
+        "uppercase_text": true,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 40,
+        "mobile_reviews_width": 300,
+        "desktop_reviews_width": 400,
+        "hidden_products": "",
+        "enable_specific_display": false,
+        "displayed_products": "",
+        "mobile_padding_top": 12,
+        "mobile_padding_bottom": 12,
+        "desktop_padding_top": 16,
+        "desktop_padding_bottom": 16
+      }
     }
   },
   "order": [
     "main",
+    "ticker",
     "why",
     "compare",
     "trial",

@@ -52,6 +52,9 @@ const JOBS=JSON.parse(process.env.JOBS||'[]'); // [{slug,url,mobile?}]
       await p.goto(url,{waitUntil:'load',timeout:90000}); await p.waitForTimeout(3500);
       await p.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,60));}window.scrollTo(0,0);});
       await p.waitForTimeout(1500);
+      await p.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=700){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,120));}window.scrollTo(0,0);});
+      await p.evaluate(()=>{document.querySelectorAll('.animate-section').forEach(e=>e.classList.add('animate--shown','somnila-in'));}); // révélation forcée : ce qu'un visiteur voit après avoir défilé
+      await p.waitForTimeout(2200);
       await p.screenshot({path:`preview/${j.slug}.png`,fullPage:true});
       out[j.slug]=await p.evaluate(()=>{
         const cs=n=>getComputedStyle(n);

@@ -344,3 +344,7 @@ couleurs Somnila (Paramètres → Confidentialité des clients).
 - Toute modification du thème se fait dans `build/theme/` puis est envoyée
   au thème `157447585949` par `themeFilesUpsert` ; le jeton de licence
   Shrine dans `settings_data.json` ne se régénère jamais.
+
+## 7. Passe conversion (11 septembre)
+
+Après la QA, l'accueil et la fiche produit ont été refaits pour convertir, en s'inspirant de la structure de Derila et Pilloway mais sans leurs leviers trompeurs : hero avec ligne de preuves, cinq cartes « quelle façon de dormir », Neck 01 achetable depuis l'accueil, problème 01/02/03, comparatif six lignes, essai 30 nuits en trois étapes, bande fondateur, dernier appel. Fiche produit : tagline sous le titre, upsell déplacé sous le bouton d'achat. Rapport : `build/CONVERSION.md`.

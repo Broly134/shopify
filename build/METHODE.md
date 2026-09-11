@@ -165,3 +165,13 @@ Devis et photos → nom et prix → brand book et logo → produits en brouillon
 → thème dupliqué et réglé → pages, menus, livraison → mot de passe puis
 activation → nettoyage et packshots → kit → QA → réglages manuels de
 l'admin → publication du thème → retrait du mot de passe.
+
+## 11. Passe conversion
+
+1. Lire la structure des deux sites de référence (Derila, Pilloway) section par section, noter l'ordre et ce que chaque section prouve.
+2. Lire les schémas des sections Shrine disponibles (`multicolumn`, `comparison-table`, `image-with-text`, `rich-text`, `featured-product`) : les clés inconnues sont ignorées en silence, une image d'`icons-with-content` est un bloc et pas un réglage.
+3. Réécrire `templates/index.json` et `templates/product.json` en local, puis les envoyer avec `themeFilesUpsert` sur le thème non publié.
+4. Uploader les images dans Files par URL brute GitHub (`fileCreate`), puis relire les noms réels avec `files(query:"filename:…")` : Shopify ajoute un suffixe UUID et refuse `fileUpdate(filename:)`.
+5. Rendre l'aperçu avec `build/tools/render.cjs` (mot de passe, desktop et mobile), découper les captures en tranches, corriger, renvoyer, re-rendre. Trois passes ont suffi.
+6. Documenter dans `build/CONVERSION.md`, committer, pousser.
+7. Animations : activer `enable_load_animations` dans `settings_data.json` (lire le fichier du thème, modifier, renvoyer entier sans toucher aux blobs `animations_type`/`fav_collection`), ajouter la section `horizontal-ticker`, écrire la couche CSS dans `somnila-styles`, puis sonder le DOM (Playwright) pour vérifier que les classes de révélation sont bien ajoutées et que les animations calculées sont actives.

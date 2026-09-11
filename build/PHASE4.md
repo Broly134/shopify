@@ -248,3 +248,7 @@ donc aucune génération d'image possible sans recharge ; je pars sur le
 compositing à partir des photos fournisseur nettoyées (gratuit) : packshots
 sur ciel Somnila, hero définitif, bannières, visuels pubs, en-tête email.
 Les vidéos UGC sans visage attendront une décision sur les crédits.
+
+## 5. Passe conversion (11 septembre, après-midi)
+
+Accueil et fiche produit restructurés sur le modèle Derila / Pilloway, sans levier trompeur. Détail, décisions et ce qu'il te reste à faire : `build/CONVERSION.md`.

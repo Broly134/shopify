@@ -106,3 +106,7 @@ Publier un thème, supprimer un fichier de thème, écrire les politiques
 (`write_legal_policies`), le branding du checkout hors plan Plus, changer
 le nom, l'email ou la langue par défaut de la boutique, le titre SEO de
 l'accueil, activer paiements, domaine, pixels.
+
+## 7. Passe conversion
+
+L'accueil et la fiche produit ont été restructurés après la QA (cartes par position, problème 01/02/03, comparatif, essai 30 nuits, bande fondateur, upsell sous le bouton d'achat). Une action manuelle de plus : limiter le bandeau cookies aux régions qui l'exigent (Réglages → Confidentialité des clients). Tout est dans `build/CONVERSION.md`.

@@ -24,7 +24,7 @@
     "heading_letter_spacing": 0.0,
     "type_body_font": "sans_serif_n4",
     "body_scale": 100,
-    "enable_load_animations": false,
+    "enable_load_animations": true,
     "repeat_section_animations": false,
     "badge_position": "top left",
     "badge_corner_radius": 20,
@@ -377,7 +377,13 @@
     "brand_image": "shopify://shop_images/somnila-mark-dawn.png",
     "display_continue_shopping": true,
     "continue_shopping_url": "/collections/shop-all",
-    "swatches_predefined_colors_list": "<p>Night = #1E2A3A</p><p>Cloud = #F7F9FC</p><p>Stone = #C4C2BD</p><p>Sky = #A9C8E8</p><p>Blush = #E9C6C6</p><p>Blue = #4A78B8</p><p>Red = #B4463C</p><p>Dark grey = #5A5F66</p><p>Azure = #8FB8E8</p><p>Ice = #DCE8F2</p><p>Mint = #BFE0CF</p><p>Apricot = #F3C7A2</p><p>Sand = #D9C6A8</p><p>Green = #7FA07F</p><p>Yellow = #E9D77A</p><p>Black = #141414</p><p>Cream = #F3EEE2</p><p>Lime = #C9D97A</p><p>Sage = #A8BCA9</p><p>Slate = #6B7D90</p><p>Salmon = #EF9E8F</p><p>Violet = #8E7CC3</p><p>Heather grey = #9A9CA3</p><p>Light grey = #D2D4D8</p><p>Butter = #F2E3A2</p>"
+    "swatches_predefined_colors_list": "<p>Night = #1E2A3A</p><p>Cloud = #F7F9FC</p><p>Stone = #C4C2BD</p><p>Sky = #A9C8E8</p><p>Blush = #E9C6C6</p><p>Blue = #4A78B8</p><p>Red = #B4463C</p><p>Dark grey = #5A5F66</p><p>Azure = #8FB8E8</p><p>Ice = #DCE8F2</p><p>Mint = #BFE0CF</p><p>Apricot = #F3C7A2</p><p>Sand = #D9C6A8</p><p>Green = #7FA07F</p><p>Yellow = #E9D77A</p><p>Black = #141414</p><p>Cream = #F3EEE2</p><p>Lime = #C9D97A</p><p>Sage = #A8BCA9</p><p>Slate = #6B7D90</p><p>Salmon = #EF9E8F</p><p>Violet = #8E7CC3</p><p>Heather grey = #9A9CA3</p><p>Light grey = #D2D4D8</p><p>Butter = #F2E3A2</p>",
+    "animation_duration": 700,
+    "animation_init_delay": 90,
+    "animation_children_delay": 120,
+    "animation_start_opacity": 0,
+    "animation_start_x": 0,
+    "animation_start_y": 5
   },
   "presets": {
     "Default": {
