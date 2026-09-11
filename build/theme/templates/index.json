@@ -495,7 +495,7 @@
         "view_all_style": "link",
         "cards_color_scheme": "background-1",
         "image_ratio": "square",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "badges": "disabled",
         "show_vendor": false,
         "show_rating": false,

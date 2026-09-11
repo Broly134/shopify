@@ -83,3 +83,13 @@ Tout est natif Shrine ou CSS/JS dans la section `somnila-styles` ; aucune app, a
 **Mécanique** : Shrine ajoute `animate--shown` à une section quand elle entre dans l'écran ; un observateur de 10 lignes ajoute en parallèle `somnila-in`, dont dépendent les coches et les lignes d'horizon, pour qu'elles fonctionnent même si tu désactives un jour les animations du thème. Sans JavaScript, tout est visible d'emblée.
 
 **Ce que je n'ai pas fait** : compte à rebours, compteur de visiteurs, notifications « X vient d'acheter » (règle 1 : rien d'inventé), confettis ou curseurs personnalisés (ça sent l'app). Si tu veux plus de mouvement, la prochaine marche est une vidéo produit dans le hero.
+
+### Passe 2 (« mets des animations sur tout : boutons, articles, etc. »)
+
+- **Boutons** : reflet clair qui traverse le bouton plein au survol ; enfoncement de 3 % au clic ; **pulsation Dawn** toutes les 4 s sur les boutons d'achat (fiche produit, barre collante) et sur *Shop Neck 01* du hero.
+- **Cartes produit** (sets, collection, « Goes with it ») : élévation et ombre, zoom de l'image, **seconde photo au survol** (réglage natif activé sur l'accueil et la fiche produit), soulignement du titre qui se déploie, arrivée en cascade des cartes d'un même rang.
+- **Fiche produit** : image principale en fondu puis flottement lent ; puces de preuve qui « poppent » l'une après l'autre ; icônes de réassurance qui flottent ; pastilles de couleur qui se soulèvent au survol ; vignettes de la galerie qui se soulèvent avec zoom ; cartes upsell (Mask 01, Quiet 01) qui se soulèvent, image zoomée, case à cocher qui grossit ; lignes du comparatif surlignées Mist au survol ; onglets dont le titre passe en Slate au survol et dont l'icône tourne à l'ouverture.
+- **Articles du blog** (dès qu'ils seront publiés) : mêmes élévation, zoom et soulignement que les cartes produit.
+- **Partout** : icônes d'en-tête (recherche, compte, panier) qui se soulèvent ; logo qui grossit de 3 % ; liens du pied de page soulignés au survol ; flèche du bouton newsletter qui glisse.
+
+Vérifié par sonde DOM : pulsation, reflet, élévations, zoom, seconde image, soulignement, flottements, fondu de l'image produit, zéro erreur JavaScript.
