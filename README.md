@@ -1,3 +1,5 @@
+> **Projet courant : SOMNILA** — voir `build/HANDOFF.md` et les rapports `build/PHASE*.md`. Le contenu ci-dessous décrit PORTANCE, l'étape précédente.
+
 # PORTANCE — boutique sommeil
 
 Marque de sommeil : oreillers ergonomiques, taies techniques, accessoires de respiration

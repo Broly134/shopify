@@ -1,5 +1,9 @@
 # Ce que tu dois faire toi-même
 
+> **Obsolète depuis Somnila (septembre 2026)** : la liste à jour est dans
+> `build/HANDOFF.md`. Ce fichier est conservé pour l'historique PORTANCE.
+
+
 ---
 
 ## Tout de suite

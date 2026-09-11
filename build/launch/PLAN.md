@@ -12,8 +12,9 @@ from the brief: native Shopify first, no paid app without your approval.
 - [ ] Shopify Payments activated (and PayPal); test order with a real card,
       then refunded.
 - [ ] Domain `somnila.com` connected; `liyan.shop` redirected.
-- [ ] Store name "Somnila" (done), sender email, and the legal address in
-      Settings → General.
+- [ ] Store name "Somnila" (done), sender email support@somnila.com (Settings →
+      Notifications → Sender email, and Settings → General → Store contact
+      email), and the legal address.
 - [ ] Policies pasted from `build/pages/policies/`, bracketed fields
       filled (refund, shipping, terms, privacy).
 - [ ] Checkout branding: logo, Cloud background, Night text and buttons.
@@ -91,7 +92,7 @@ Do not read anything before 30 orders; the numbers lie in small samples.
 
 ## 4. Customer service, five replies
 
-Reply within one business day, from the brand address, in the same voice.
+Reply within one business day, from support@somnila.com, in the same voice.
 
 1. **Where is my order?** *It ships in 6 to 10 days from the order, tracked.
    Your tracking link is in the shipping email; if it hasn't arrived after

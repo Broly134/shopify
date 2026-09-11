@@ -2,6 +2,11 @@
 
 À lire en premier si tu arrives sur ce projet sans contexte.
 
+> **Septembre 2026 — le projet courant est SOMNILA**, marque de sommeil en
+> anglais construite dans `build/` sur cette même boutique. Lis
+> `build/HANDOFF.md` puis `build/PHASE0.md` → `build/PHASE7.md`. Tout ce qui
+> suit décrit l'étape précédente, PORTANCE, conservée en historique.
+
 ## En une phrase
 
 Boutique Shopify **PORTANCE** — marque de sommeil : oreillers ergonomiques, taies
@@ -21,7 +26,8 @@ La boutique a servi successivement à cinq projets. Les quatre premiers sont aba
 4. **LIYAN sommeil** — même gamme qu'aujourd'hui sous le nom LIYAN, palette crème/sauge.
    Remplacé par PORTANCE à la demande du client. Aucune archive : le contenu a été réécrit
    sur place, l'historique est dans git.
-5. **PORTANCE** — le projet en cours. C'est le seul qui compte.
+5. **PORTANCE** — sommeil, en français. Remplacé par Somnila (étape 6).
+6. **SOMNILA** — sommeil, boutique 100 % anglais, marchés US/CA/UK/EU/AU. **Le projet en cours**, dans `build/`.
 
 Le domaine `liyan.shop` est **hérité de l'étape 3** et ne correspond plus au nom.
 `portance.shop` était libre au moment du changement.

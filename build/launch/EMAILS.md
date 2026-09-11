@@ -1,7 +1,7 @@
 # Somnila — launch email kit
 
-Customer-facing copy, in English. Sender name: **Somnila**. Reply-to: the
-brand address once it exists (see HANDOFF). Founder voice in the first
+Customer-facing copy, in English. Sender name: **Somnila**. Sender and reply-to:
+**support@somnila.com**. Founder voice in the first
 person, "we" elsewhere. No exclamation marks, no emojis, no medical claims,
 no fake urgency. Every number below is a real product fact (prices in EUR,
 converted at checkout).

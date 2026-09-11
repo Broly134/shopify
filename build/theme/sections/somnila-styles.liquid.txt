@@ -1,5 +1,5 @@
 <style>
-#shopify-section-{{ section.id }}{display:none!important}
+#shopify-section-{{ section.id }}{height:0;overflow:hidden;padding:0!important;margin:0!important}
 @font-face{font-family:'Somnila Serif';src:url('https://cdn.shopify.com/s/files/1/0778/2629/3917/files/somnila-serif-fraunces-soft-var.woff2?v=1789072486') format('woff2');font-weight:300 700;font-style:normal;font-display:swap}
 @font-face{font-family:'Somnila Sans';src:url('https://cdn.shopify.com/s/files/1/0778/2629/3917/files/somnila-sans-manrope-var.woff2?v=1789072486') format('woff2');font-weight:200 800;font-style:normal;font-display:swap}
 :root{--font-heading-family:'Somnila Serif',Georgia,'Times New Roman',serif;--font-heading-style:normal;--font-heading-weight:400;--font-body-family:'Somnila Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--font-body-style:normal;--font-body-weight:400;--font-body-weight-bold:600;--color-shadow:30,42,58;--somnila-dawn:#F0B79B;--somnila-mist:#DCE8F2;--somnila-slate:#6B7D90}
@@ -51,3 +51,4 @@ a{text-underline-offset:.2em}
 .icon-with-text .h4{font-family:var(--font-body-family)!important;font-weight:500!important;font-size:1.3rem!important;letter-spacing:0!important;color:rgb(var(--color-foreground))}
 .icon-with-text--horizontal .icon-with-text__item{gap:.6rem}
 </style>
+{%- if template.name == 'index' -%}<h1 class="visually-hidden">Somnila memory-foam pillows shaped around the way you actually lie</h1>{%- endif -%}
