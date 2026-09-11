@@ -217,3 +217,56 @@ Nouveau `assets/somnila-ux.css` (couche accessibilité, chargée après la couch
 de marque), `assets/somnila-brand.js` (nommage et niveaux de titres),
 `templates/product.json` et `templates/collection.json` (section `crumbs`),
 `sections/header-group.json` (chargement de la couche UX).
+
+## 8. Passe UX 2 — panier, achat, états rarement vus
+
+Date : 11 septembre 2026. Deuxième tour, sur ce que je n'avais pas ouvert :
+le panier avec des articles dedans, le tiroir panier, le tiroir menu, la
+recherche vide, la 404, et les poids réels de la page.
+
+### Corrigé
+
+1. **Contrôles de quantité.** Sur le panier mobile, le bloc faisait 97 × 27 px
+   avec des boutons de 25 × 25 : impossible à viser au pouce. Il fait maintenant
+   133 × 53 px avec des boutons de 43 × 51. Même traitement dans le tiroir et
+   sur la fiche produit.
+2. **Sélecteur de quantité sur la fiche produit.** Il n'y en avait pas : pour
+   acheter deux oreillers il fallait passer par le panier. Il est posé à gauche
+   du bouton d'ajout, à la même hauteur.
+3. **Livraison et taxes au panier.** Le panier affichait un sous-total et un
+   bouton, sans dire ce qui restait à calculer. Une ligne sobre sous le bouton :
+   « Free shipping on every pillow and every set. Accessories bought on their
+   own are charged shipping at checkout. Taxes are calculated at checkout. »
+
+### Vérifié et laissé tel quel
+
+- **Recherche sans résultat** : « No results found for "…". Check the spelling
+  or use a different word or phrase. » Correct.
+- **404** : « Nothing here. The pillows are this way. » avec un bouton vers les
+  oreillers. Correct.
+- **Tiroir menu** : Shop, Neck 01, Our story, Help, Log in, lignes de 44 px.
+- **Tiroir panier** : article, quantité, prix, sous-total, et les accessoires
+  recommandés déjà branchés sur la collection Accessories.
+- **Bouton de suppression du panier** : il porte bien un intitulé
+  (« Remove Neck 01 — Memory-foam pillow - Night »). Ma première mesure disait
+  le contraire : elle regardait l'élément conteneur, pas le bouton.
+
+### Mesuré, donc pas touché
+
+Le poids des images de l'accueil est de **215 ko** au total, la plus lourde
+faisant 23 ko. J'ai un moment soupçonné le logo, servi en 1440 px pour un
+affichage à 160 px : en octets il pèse moins de 11 ko, le jeu n'en valait pas la
+chandelle. Les 4,6 Mo de la page sont à 90 % des scripts Shopify et du thème
+(`hydrate.js` 803 ko, `checkout-policy` 452 ko, `portable-wallets` 377 ko,
+`base.css` 336 ko du thème Shrine). Réduire cela voudrait dire retirer les
+boutons de paiement express ou modifier le thème : ni l'un ni l'autre ne se
+décide sans toi.
+
+### Mesures avant / après
+
+| Point | Avant | Après |
+| --- | --- | --- |
+| Bloc quantité au panier mobile | 97 × 27 px | 133 × 53 px |
+| Boutons − et + | 25 × 25 px | 43 × 51 px |
+| Quantité sur la fiche produit | absente | présente, à côté du bouton d'ajout |
+| Mention livraison et taxes au panier | absente | sous le bouton de paiement |

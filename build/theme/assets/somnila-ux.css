@@ -26,3 +26,10 @@
 .somnila-crumbs [aria-current]{color:rgb(var(--color-foreground))}
 @media (pointer:coarse){.somnila-crumbs a{min-height:3.6rem;display:inline-flex;align-items:center}}
 @media screen and (max-width:749px){.somnila-crumbs{font-size:1.2rem}}
+/* contrôles de quantité : le doigt doit pouvoir viser */
+.quantity{min-height:4rem}
+.quantity__input{min-height:4rem;font-size:1.5rem}
+.quantity__button{min-width:3.2rem;min-height:4rem}
+@media (pointer:coarse){.quantity__input{min-height:4.4rem}.quantity__button{min-width:4rem;min-height:4.4rem}}
+/* mention livraison et taxes sous le panier */
+.somnila-cartnote{max-width:52rem;margin:0 auto;padding:0 0 2.4rem;text-align:center;font-size:1.3rem;line-height:1.6;color:var(--somnila-slate-text)}

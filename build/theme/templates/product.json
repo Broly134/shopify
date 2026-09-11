@@ -245,6 +245,16 @@
           "settings": {
             "custom_liquid": "{%- if product.metafields.somnila.tagline != blank -%}<p class=\"somnila-tagline\">{{ product.metafields.somnila.tagline }}</p>{%- endif -%}"
           }
+        },
+        "qty": {
+          "type": "quantity_selector",
+          "settings": {
+            "full_width_classic": false,
+            "atc_append": "left",
+            "atc_append_heights": "stretch-quantity",
+            "enable_quantity_discounts": false,
+            "style": "normal"
+          }
         }
       },
       "block_order": [
@@ -253,6 +263,7 @@
         "bullets",
         "price",
         "picker",
+        "qty",
         "buy",
         "pay",
         "ship",

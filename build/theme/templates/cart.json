@@ -88,11 +88,22 @@
         "padding_top": 24,
         "padding_bottom": 56
       }
+    },
+    "note": {
+      "type": "custom-liquid",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "custom_liquid": "<p class=\"somnila-cartnote page-width\">Free shipping on every pillow and every set. Accessories bought on their own are charged shipping at checkout. Taxes are calculated at checkout.</p>",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "items",
     "footer",
+    "note",
     "trust"
   ]
 }
