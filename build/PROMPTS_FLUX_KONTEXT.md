@@ -210,3 +210,36 @@ Même prompt, même seed, `prompt_upsampling: false`, `aspect_ratio` selon le pl
 `output_format: "png"`, `safety_tolerance` par défaut. Une requête par ligne du
 CSV ; garder le `seed` de la ligne. Kontext [pro] accepte une image de
 référence ; pour les packs à deux références, m'envoyer les P1 et je compose.
+
+## 9. Plan à 40 images (ton budget), dans l'ordre
+
+Les formats 4:5 et 16:9 ne sont **pas** générés : le fond est un dégradé, je
+l'étends moi-même à partir du 1:1 (packshots) ; pour les scènes de chambre, le
+recadrage 4:5 se fait dans l'image. Donc un tirage retenu par ligne, en 1:1 sauf
+Throw 01 en 4:5. 37 générations utiles + 3 de réserve pour regénérer un raté.
+
+| # | Produit | Photo du zip | Plan |
+|---|---|---|---|
+| 1–4 | Neck 01 Cloud, Night, Sky, Stone | `09-oreiller-cervical/*` | P1 |
+| 5–6 | Neck 01 Cloud, Night | idem | P3 chambre à l'aube |
+| 7 | Neck 01 Cloud | idem | P4 détail matière |
+| 8–12 | Contour 01 Night, Cloud, Stone, Blue, Blush | `12-oreiller-vague/*_34_*` | P1 (+ nettoyage badges) |
+| 13 | Contour 01 Cloud | `oreiller-vague_blanc_lifestyle_30.jpg` | P3 (nettoyage décor) |
+| 14–16 | Side 01 Blue, Dark grey, Red | `10-oreiller-lateral/*` | P1 (+ nettoyage cotes) |
+| 17–20 | Body 01 Night, Sky, Blush, Stone | `11-oreiller-corporel/*` | P1 |
+| 21–22 | Lounge 01 Stone and Sand, Sky | `01-oreiller-telephone/*` | P1 |
+| 23 | Lounge 01 Stone and Sand | `…_gris + beige_34-duo_36.jpg` | P3 |
+| 24–29 | Throw 01 Cream, Sand, Sage, Slate, Sky, Stone | `02-couverture/*` | P3 en 4:5 (personne retirée) |
+| 30–32 | Mask 01 Black, Cloud, Blush | `03-masque/*` | P1 (forme retirée) |
+| 33–34 | Quiet 01 Blue, Green | `04-bouchons/*` | P1 (marque tierce retirée) |
+| 35 | For Two (Cloud) | Neck 01 Cloud | P6 |
+| 36 | Family Set (Cloud) | Neck 01 Cloud | P6, trois exemplaires |
+| 37 | Contour for Two (Night) | Contour 01 Night | P6 |
+| 38–40 | réserve | — | regénérer ce qui échoue à la checklist |
+
+Ce qui reste hors budget (et garde la photo fournisseur nettoyée) : Body 01
+bicolores, Lounge 01 Stone / Yellow / Black / Blush, Throw 01 Yellow / Salmon /
+Blush / Lime, Mask 01 Violet / Heather grey, Quiet 01 Butter / Blush, Side 01
+Dark grey vue 2. Si tu obtiens 20 générations de plus, c'est dans cet ordre.
+
+La colonne `priorite` de `build/images/kontext-batch.csv` reprend ce plan.
