@@ -46,9 +46,12 @@ Night, Dawn ; Fraunces Soft, Manrope). Sources et scripts dans
   lifestyle ni d'UGC vidéo : les seules photos « sur lit » sont celles du
   fournisseur pour Contour 01 (posters et peluche dans le décor), gardées en
   fin de galerie faute de mieux.
-- **Throw 01 n'a aucune photo** (ni chez le fournisseur ni dans tes
-  fichiers) : la fiche est en ligne sans image, et l'Evening Set ne montre
-  que Lounge 01.
+- **Throw 01** (la couverture effet fourrure, 200 × 230 cm) : ses 10 photos
+  du zip montrent une mannequin dans un intérieur de stock, donc écartées en
+  Phase 3 (aucun visage). Elles sont maintenant **recadrées sur la
+  couverture seule** (bas de l'image, 1200×900, un peu douces : source
+  700 px) et posées dans la fiche, un détail par coloris. L'Evening Set
+  reçoit le détail Cream en 2e image.
 - **Mask 01** : les photos fournisseur montrent le masque sur une forme
   blanche ; gardées telles quelles, sans détourage.
 - Les fichiers `_v1` d'origine restent dans `build/images/shopify/` ; rien
@@ -56,8 +59,8 @@ Night, Dawn ; Fraunces Soft, Manrope). Sources et scripts dans
 
 ## 3. Ce qu'il me faut de toi
 
-1. **Photos de Throw 01** (10 coloris annoncés), ou la décision de retirer
-   Throw 01 et l'Evening Set du lancement.
+1. Si tu as de meilleures photos de la couverture (à plat, sans personne),
+   elles remplaceront les détails recadrés ; sinon ça tient.
 2. **Crédits de génération** (Higgsfield ou autre) si tu veux des scènes
    lifestyle et des UGC sans visage ; sinon on reste sur ces visuels.
 3. Toujours en attente de la Phase 4 : politiques à coller (champs entre
