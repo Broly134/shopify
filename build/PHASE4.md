@@ -53,7 +53,7 @@ font foi dans le dépôt : `build/theme/`.
   `/pages/faq`, `/pages/contact`. Textes dans `build/pages/`.
 - **Menus Somnila** créés à part (les menus PORTANCE du live restent
   intacts) : `somnila-main`, `somnila-shop`, `somnila-help`, `somnila-legal`.
-- **Collections** : `pillows` (5), `sets` (8), `accessories` (3), `covers`
+- **Collections** : `memory-foam-pillows` (5), `sets` (8), `accessories` (3), `covers`
   (4), `shop-all` (20). Aucune publiée sur un canal.
 - **Livraison** : profil d'expédition **« Somnila »** séparé, 138 variantes,
   6 zones (US, CA, UK, Europe 29 pays, AU, reste du monde), 6–10 jours
@@ -80,6 +80,58 @@ font foi dans le dépôt : `build/theme/`.
   Pour voir l'aperçu : Boutique en ligne → Thèmes → « Somnila — build v1 »
   → Aperçu, ou `https://liyan.shop/?preview_theme_id=157447585949`.
 
+### 1 bis. Passe design du 10 septembre au soir (après ton retour « moche, mal aligné »)
+
+Tout est dans le thème « Somnila — build v1 » et dans `build/theme/`.
+
+- **Hero v2** : coussin détouré plus grand (78 % de la largeur), halo Dawn
+  plus doux, texte à gauche sur 56 rem, titre *Sleep well.* en 5,2–9,6 rem
+  selon l'écran. Version mobile 4:5 dédiée.
+- **Typographie** : titres de section sur une seule échelle (3,8 rem),
+  titre produit 3,6 rem ; tuiles de confiance, cartes produit, accordéons,
+  en-têtes du pied de page et icônes de réassurance en Manrope 500/600 (le
+  serif reste pour les titres) ; en-têtes de colonnes du pied en capitales
+  espacées ; boutons pleine largeur à 5,4 rem.
+- **Alignements** : FAQ centrée et élargie (96 rem), gamme des 5 oreillers
+  sur 5 colonnes fixes sans carrousel, packs sur 4, tuiles sur 4, bouton
+  sticky « Add to cart », section matières image à gauche / texte à droite
+  sans chevauchement.
+- **Image de la section matières** : le packshot fournisseur avait un fond
+  lavande hors charte ; Contour 01 Night est maintenant détouré et posé sur
+  le ciel Cloud → Mist Somnila (`somnila_contour-01_materials_1x1_v1.jpg`,
+  source dans `build/images/site/`).
+- **Fiches produit** : les 4 puces de la description faisaient doublon
+  avec le tableau Dimensions / Materials / Included / Delivery lu dans les
+  metafields ; les 20 descriptions gardent leurs deux paragraphes et
+  perdent les puces (`build/shopify/products.json` mis à jour).
+- **Galerie Contour 01** : l'image « packshot-stone-9 » était en fait un
+  masque de sommeil gris mal nommé chez le fournisseur ; retirée de la
+  galerie (le fichier reste dans le dépôt).
+- **Vérifié** dans le navigateur après chaque envoi : accueil desktop et
+  mobile, collection, Neck 01 desktop et mobile (captures dans
+  `build/preview/`). À savoir : le lien *Aperçu* d'un produit en brouillon
+  (`preview_key`) change à chaque modification du produit, et l'ancien lien
+  continue d'afficher l'ancienne version — toujours reprendre le lien depuis
+  la fiche dans l'admin.
+
+**Ce que l'aperçu montre encore et qui ne dépend pas du thème :**
+
+- les cartes « Example product title », le « Sold out $19.99 » et l'erreur
+  Liquid du produit vedette sur l'accueil, le « 0 products » de la
+  collection : ce sont les **produits en brouillon**, invisibles dans
+  l'aperçu public ; l'accueil sera complet dès qu'ils seront actifs
+  (mot de passe boutique d'abord, voir § 3) ;
+- la bannière « Cookie consent » grise : c'est la bannière native de
+  Shopify (Paramètres → Confidentialité des clients), réglage boutique
+  hors thème, active sur le live ; ses couleurs se règlent au même endroit ;
+- les vignettes de Neck 01 avec « 蓝 » / « 灰 », les packshots Contour 01
+  avec faux badges (« Top Rated Pillow », « Chiropractor approved », « Best
+  pillow 2025 » : promesse médicale et récompenses inventées, contraires aux
+  règles 1 et 2) et le packshot bleu de Side 01 annoté en chinois : photos
+  fournisseur gardées en Phase 3 sur ta consigne ; je recommande de les
+  retirer des galeries (il reste 3 à 5 photos propres par produit). Un
+  « ok » suffit.
+
 ## 2. Décisions prises
 
 - **Aperçu et produits en brouillon.** Les produits restent en brouillon,
@@ -98,22 +150,22 @@ font foi dans le dépôt : `build/theme/`.
 - **Pastilles de couleur** : liste nominative globale (Night, Cloud, Stone,
   Sky, Blush…) avec des teintes approchées pour l'interface ; les noms de
   coloris restent ceux des produits.
-- **Collection `pillows`** : la première tentative de Phase 3 avait bien
-  créé une collection `pillows` vide malgré l'erreur affichée. Les 5
-  oreillers y sont maintenant, et la collection provisoire `somnila-pillows`
-  (créée par moi, vide après transfert) a été supprimée. L'URL finale
-  `/collections/pillows` est donc déjà la bonne.
+- **Collection des oreillers** : la première tentative de Phase 3 avait
+  bien créé une collection `pillows` malgré l'erreur affichée ; la
+  collection provisoire `somnila-pillows` (créée par moi, vide après
+  transfert) a été supprimée, et la collection définitive porte le handle
+  `memory-foam-pillows` (voir collision d'URL ci-dessous).
 - **Traductions héritées retirées.** Le duplicata avait copié les
   traductions PORTANCE du thème (en, de, es, it, nl : 270 clés × 5 langues)
   qui **écrasaient mes textes** dans l'aperçu (barre d'annonce, puces,
   FAQ, pied de page). Je les ai supprimées sur le thème Somnila uniquement ;
   le thème PORTANCE garde les siennes.
 - **Collision d'URL `/collections/pillows`.** En langue anglaise, cette
-  adresse renvoie encore vers la collection PORTANCE « Oreillers » (son
-  handle traduit en anglais est `pillows`) : la section « Five pillows » de
-  l'accueil et le lien du menu affichent Appui / Aplomb au lieu de la gamme
-  Somnila. Ça se règle en une opération que la règle 4 me fait te demander
-  (voir § 3).
+  adresse renvoyait vers la collection PORTANCE « Oreillers » (son handle
+  traduit en anglais est `pillows`). Plutôt que de toucher à PORTANCE, la
+  collection Somnila s'appelle maintenant **`memory-foam-pillows`**
+  (`/collections/memory-foam-pillows`) ; menus, hero, section matières et
+  404 pointent dessus. Rien à faire de ton côté.
 - **Sélecteur de langue masqué** dans le pied (boutique 100 % anglais) ;
   les 5 locales PORTANCE existent toujours au niveau boutique (voir § 3).
 - **Fichiers de contexte de marché** (`*.context.international.json`) : le
@@ -132,15 +184,16 @@ font foi dans le dépôt : `build/theme/`.
    m'interdit sans toi, parce qu'elles touchent le live :
    politiques (Paramètres → Politiques, textes dans `build/pages/policies/`),
    branding du checkout (logo, Night / Cloud, Manrope), retrait des 5
-   langues PORTANCE (de, es, fr, it, nl) pour une boutique 100 % anglais, et
-   suppression du handle anglais `pillows` de la collection PORTANCE
-   « Oreillers » (une traduction, réversible) pour libérer
-   `/collections/pillows`.
+   langues PORTANCE (de, es, fr, it, nl) pour une boutique 100 % anglais.
 3. **Aperçu complet** : si tu veux voir l'accueil avec les produits,
    active le mot de passe de la boutique (Boutique en ligne → Préférences)
    et dis-le-moi : je passe les 20 produits en actif, ils restent invisibles
-   du public.
-4. **Checklist manuelle** (elle ne bouge pas) : Shopify Payments / PayPal,
+   du public. C'est la seule façon de juger l'accueil et la collection tels
+   qu'ils seront.
+4. **« ok » pour retirer des galeries** les photos fournisseur à faux
+   badges (Contour 01), à texte chinois (Neck 01 Night vue 3, Side 01 Blue)
+   et l'emballage des bouchons dans le Sleep Set.
+5. **Checklist manuelle** (elle ne bouge pas) : Shopify Payments / PayPal,
    domaine `somnila.com`, marché principal = États-Unis et langue principale
    = anglais (Paramètres → Marchés / Langues), pixels Meta / GA4 / TikTok,
    adresse d'expéditeur `hello@somnila.com` (ou autre) dans Paramètres →

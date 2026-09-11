@@ -45,4 +45,9 @@ a{text-underline-offset:.2em}
 .footer-block__brand-info .footer-block__heading,.footer-block__brand-info h2{font-family:var(--font-heading-family)!important;font-weight:400!important;font-size:2.2rem;text-transform:none;letter-spacing:-.01em!important}
 .footer__content-bottom{border-top:1px solid rgba(247,249,252,.14)}
 @media screen and (min-width:990px){.section-padding-tight{padding-top:2rem}}
+
+/* passe design 3 : tuiles de confiance et icônes de réassurance en Manrope */
+.icon-bar .multicolumn-card__info h3{font-family:var(--font-body-family)!important;font-weight:600!important;font-size:1.5rem!important;letter-spacing:0!important;font-variation-settings:normal}
+.icon-with-text .h4{font-family:var(--font-body-family)!important;font-weight:500!important;font-size:1.3rem!important;letter-spacing:0!important;color:rgb(var(--color-foreground))}
+.icon-with-text--horizontal .icon-with-text__item{gap:.6rem}
 </style>
