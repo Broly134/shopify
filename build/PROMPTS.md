@@ -184,3 +184,7 @@ Les prompts détaillés arrivent en Phase 5.
 ## 3. Images produit avec Flux.1 Kontext Pro (11 septembre)
 
 Bloc de style, sept plans, lignes de nettoyage par famille de photos, table de lot et checklist : `build/PROMPTS_FLUX_KONTEXT.md` (+ `build/images/kontext-batch.csv`).
+
+## 4. Images produit avec ChatGPT, en boucle sur le zip (11 septembre)
+
+Prompt complet, mode d'emploi et relance : `build/PROMPTS_CHATGPT_IMAGES.md`.
