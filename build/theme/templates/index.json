@@ -196,7 +196,7 @@
             "picker_types": "swatches",
             "custom_labels": "[name] · [selected]",
             "swatches_size": "large",
-            "swatches_custom_colors": "image_alt",
+            "swatches_custom_colors": "predefined",
             "margin_top": 15,
             "margin_bottom": 15
           }

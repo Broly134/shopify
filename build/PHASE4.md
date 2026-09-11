@@ -199,3 +199,52 @@ Tout est dans le thème « Somnila — build v1 » et dans `build/theme/`.
    adresse d'expéditeur `hello@somnila.com` (ou autre) dans Paramètres →
    Notifications, réseaux sociaux (liens à me donner), publication du thème,
    retrait du mot de passe. Détail dans `HANDOFF.md` en Phase 7.
+
+## 4. Suite du 11 septembre — après ton « mdp : … , ok, ok »
+
+**Fait.**
+
+- **Mot de passe boutique** vérifié actif (liyan.shop renvoie vers /password).
+  Les **20 produits sont passés en actif** et publiés sur le canal Boutique en
+  ligne avec les 5 collections : l'accueil, la collection et les fiches se
+  rendent maintenant complets derrière le mot de passe (captures dans
+  `build/preview/`). Le public ne voit rien.
+- **Photos fournisseur nettoyées** (script `build/images/clean-supplier-photos.py`,
+  fichiers `_v2` dans `build/images/shopify/`) : faux badges effacés sur les
+  5 packshots Contour 01 ; caractères « 蓝 » / « 灰 » effacés sur Neck 01 ;
+  étiquettes couleur et cotes 10/60/33 cm effacées sur les 3 packshots
+  Side 01 ; bouchons Quiet 01 recadrés sur l'étui, surimpressions et marque
+  « iMeBoBo » retirées. 21 médias remplacés dans les galeries de Contour 01,
+  Neck 01, Side 01, Quiet 01, Sleep Set, Quiet Night, Contour for Two,
+  Side-Sleeper Set, Family Set, Cover Side, Cover Contour ; ordre conservé.
+  Retirée aussi : la 3e photo de Side 01 (« dark grey, side view »), qui
+  montrait un traversin lisse bleu clair, pas Side 01.
+- **Pastilles de couleur** du produit vedette de l'accueil : elles étaient
+  vides (réglage « image_alt ») ; passées sur la liste nominative, comme la
+  fiche.
+- **Langues** : de, es, it, nl **dépubliées** (réversible, traductions
+  conservées). `fr` reste la langue principale : l'API ne permet pas de la
+  changer, c'est manuel (voir plus bas). `en` reste publié.
+
+**Bloqué côté API, à faire à la main (5 minutes).**
+
+1. **Politiques** : le connecteur n'a pas le droit `write_legal_policies`.
+   Paramètres → Politiques : colle les 4 textes de `build/pages/policies/`
+   (refund, shipping, terms, privacy) et remplace les champs entre crochets :
+   raison sociale, forme juridique, adresse, numéro d'immatriculation,
+   numéro de TVA, pays du siège, email de contact. Seule la politique de
+   confidentialité existait (modèle Shopify en français), les trois autres
+   étaient vides.
+2. **Branding du checkout** : l'API `checkoutBranding` est réservée aux
+   plans Plus. Paramètres → Paiement → Personnaliser : logo
+   `somnila-logo-light.png`, fond `#F7F9FC`, texte `#1E2A3A`, boutons
+   `#1E2A3A` / texte `#F7F9FC`, police Manrope si la bibliothèque la propose,
+   sinon la police système.
+3. **Langue principale** fr → en : Paramètres → Langues → « Modifier la
+   langue par défaut ». Ensuite je peux supprimer `fr` si tu veux.
+
+**Phase 5 démarre** (tu as dit ok). Crédits Higgsfield disponibles : 0,2,
+donc aucune génération d'image possible sans recharge ; je pars sur le
+compositing à partir des photos fournisseur nettoyées (gratuit) : packshots
+sur ciel Somnila, hero définitif, bannières, visuels pubs, en-tête email.
+Les vidéos UGC sans visage attendront une décision sur les crédits.
