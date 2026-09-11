@@ -239,10 +239,17 @@
             ],
             "enable_dynamic_recommendations": false
           }
+        },
+        "tagline": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- if product.metafields.somnila.tagline != blank -%}<p class=\"somnila-tagline\">{{ product.metafields.somnila.tagline }}</p>{%- endif -%}"
+          }
         }
       },
       "block_order": [
         "title",
+        "tagline",
         "bullets",
         "price",
         "picker",
@@ -377,51 +384,6 @@
         "padding_bottom": 56
       }
     },
-    "band": {
-      "type": "rich-text",
-      "blocks": {
-        "h": {
-          "type": "heading",
-          "settings": {
-            "title": "Thirty nights to <b>decide</b>.",
-            "title_highlight_color": "#F0B79B",
-            "heading_size": "h1"
-          }
-        },
-        "t": {
-          "type": "text",
-          "settings": {
-            "text": "<p>You sleep on it at home, on your real nights. If it isn't right, one email with your order number and we refund the pillow. No form, nothing to send back.</p>"
-          }
-        },
-        "b": {
-          "type": "button",
-          "settings": {
-            "button_label": "How the trial works",
-            "button_link": "shopify://pages/returns-warranty",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "h",
-        "t",
-        "b"
-      ],
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "full_width": true,
-        "color_scheme": "inverse",
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
     "faq": {
       "type": "collapsible-content",
       "blocks": {
@@ -512,12 +474,220 @@
         "padding_top": 48,
         "padding_bottom": 56
       }
+    },
+    "compare": {
+      "type": "comparison-table",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "benefit": "Shaped for one way of lying",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "benefit": "Two heights on one pillow",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "benefit": "Memory foam that holds its shape all night",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "benefit": "Removable cover included, machine washable",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "benefit": "Thirty nights to decide, refund by email",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r6": {
+          "type": "row",
+          "settings": {
+            "benefit": "Free shipping, tracked, 6–10 days",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "Somnila or a <b>standard fibre pillow</b>?",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "text": "<p>Not a sales pitch, a checklist. Every line on the left is a fact you can check on the product page.</p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "atc_button_label": "Add to cart",
+        "desktop_alignment": "center",
+        "mobile_alignment": "center",
+        "color_scheme": "background-1",
+        "layout": "table_second",
+        "style": "minimal",
+        "corner_radius": 28,
+        "number_of_competitors": 1,
+        "us_label": "Somnila",
+        "us_label_size": 18,
+        "logo": "shopify://shop_images/somnila-logo-light.png",
+        "logo_width": 90,
+        "mobile_logo_width": 60,
+        "others_label": "Standard fibre pillow",
+        "others_label_size": 16,
+        "checkmark_style": "solid",
+        "checkmark_color": "#1E2A3A",
+        "checkmark_bg_color": "#DCE8F2",
+        "x_style": "regular",
+        "x_color": "#6B7D90",
+        "x_bg_color": "#F7F9FC",
+        "opposite_icon_colors": "original",
+        "highlighted_color_scheme": "background-2",
+        "highlighted_separator_opacity": 0,
+        "highlighted_overlay_opacity": 0,
+        "other_cells_color_scheme": "background-1",
+        "regular_separator_opacity": 10,
+        "regular_overlay_opacity": 0,
+        "minimalistic_border_opacity": 16,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "trial": {
+      "type": "icons-with-content",
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "caption": "How it works",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "title": "Thirty nights to <b>decide</b>.",
+            "title_highlight_color": "#1E2A3A",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A pillow can't be judged in a shop. It can be judged in your bed, with your mattress, over a few weeks.</p>",
+            "text_style": "body"
+          }
+        },
+        "i1": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopping_bag",
+            "filled_icon": false,
+            "title": "Order",
+            "text": "<p>Ships in 6 to 10 days, tracked. The tracking number comes by email the day it leaves.</p>"
+          }
+        },
+        "i2": {
+          "type": "icon",
+          "settings": {
+            "icon": "local_shipping",
+            "filled_icon": false,
+            "title": "Delivered",
+            "text": "<p>Your thirty nights start the day the parcel arrives.</p>"
+          }
+        },
+        "i3": {
+          "type": "icon",
+          "settings": {
+            "icon": "bedtime",
+            "filled_icon": false,
+            "title": "Sleep on it",
+            "text": "<p>Try both heights. Give it a few nights; a new shape takes some getting used to.</p>"
+          }
+        },
+        "i4": {
+          "type": "icon",
+          "settings": {
+            "icon": "mail",
+            "filled_icon": false,
+            "title": "Keep it, or one email",
+            "text": "<p>If it isn't right, email your order number. We refund the pillow. Nothing to send back.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t",
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "color_scheme": "background-1",
+        "icon_size": "m",
+        "icon_position": "next-to-title",
+        "icon_color": "accent-1",
+        "icon_heading_size": "h4",
+        "icon_text_alignment": "left",
+        "icons_desktop_layout": "2-columns",
+        "icons_mobile_layout": "1-column",
+        "desktop_content_alignment": "left",
+        "layout": "image_first",
+        "mobile_layout": "image_first",
+        "hide_content_on_mobile": false,
+        "padding_top": 56,
+        "padding_bottom": 56,
+        "image": "shopify://shop_images/somnila_home_trial-neck_4x5.jpg"
+      }
     }
   },
   "order": [
     "main",
     "why",
-    "band",
+    "compare",
+    "trial",
     "faq",
     "related"
   ]

@@ -50,5 +50,14 @@ a{text-underline-offset:.2em}
 .icon-bar .multicolumn-card__info h3{font-family:var(--font-body-family)!important;font-weight:600!important;font-size:1.5rem!important;letter-spacing:0!important;font-variation-settings:normal}
 .icon-with-text .h4{font-family:var(--font-body-family)!important;font-weight:500!important;font-size:1.3rem!important;letter-spacing:0!important;color:rgb(var(--color-foreground))}
 .icon-with-text--horizontal .icon-with-text__item{gap:.6rem}
+
+/* passe conversion */
+.somnila-tagline{font-family:var(--font-heading-family);font-size:2rem;line-height:1.3;color:var(--somnila-slate);margin:.2rem 0 1.2rem;letter-spacing:-.01em}
+.hero__text p+p{font-family:var(--font-body-family);font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase;color:var(--somnila-slate);margin-top:1.2rem}.hero__text p+p strong{color:rgb(var(--color-foreground));font-weight:600}
+.multicolumn-card .multicolumn-card__info .link{font-weight:600}
+.comparison-table .title,.icons-with-content .title,.rich-text__heading{font-size:calc(var(--font-heading-scale)*3.8rem)}
+.icons-with-content h4,.icons-with-content .h4{font-family:var(--font-body-family)!important;font-weight:600!important;font-size:1.6rem!important;letter-spacing:0!important}
+.rich-text .caption-with-letter-spacing{color:var(--somnila-dawn)}
+#which{scroll-margin-top:12rem}
 </style>
 {%- if template.name == 'index' -%}<h1 class="visually-hidden">Somnila memory-foam pillows shaped around the way you actually lie</h1>{%- endif -%}

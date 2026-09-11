@@ -19,12 +19,12 @@
             "heading_size": "hxl",
             "heading_suffix": "",
             "heading_prefix_size": "h4",
-            "text": "<p>Neck 01 is a memory-foam pillow with two heights, shaped around the way you actually lie. Ships in 6–10 days. Thirty nights to decide.</p>",
+            "text": "<p>Memory-foam pillows shaped around the way you actually lie. Foam that holds, a cover you can wash, thirty nights to decide.</p><p><strong>Free shipping</strong> · <strong>Ships in 6–10 days</strong> · <strong>30-night trial</strong></p>",
             "button_label_1": "Shop Neck 01",
             "button_link_1": "shopify://products/neck-01",
             "button_style_secondary_1": false,
-            "button_label_2": "All pillows",
-            "button_link_2": "shopify://collections/memory-foam-pillows",
+            "button_label_2": "Which pillow is mine?",
+            "button_link_2": "#which",
             "button_style_secondary_2": true,
             "color_scheme": "custom",
             "full_page_width": false,
@@ -348,117 +348,6 @@
         "padding_bottom": 48
       }
     },
-    "materials": {
-      "type": "image-with-text",
-      "blocks": {
-        "c": {
-          "type": "caption",
-          "settings": {
-            "caption": "Materials",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "small"
-          }
-        },
-        "h": {
-          "type": "heading",
-          "settings": {
-            "title": "Memory foam. <b>Cool-touch cover.</b> Nothing else.",
-            "title_highlight_color": "#1E2A3A",
-            "heading_size": "h1"
-          }
-        },
-        "t": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Every Somnila pillow is a memory-foam core with a removable cover. Neck 01 and Contour 01 come with a cooling cover; Body 01 with a breathable cotton one. Dimensions and weight are on every product page, in centimetres and inches.</p>",
-            "text_style": "body"
-          }
-        },
-        "b": {
-          "type": "button",
-          "settings": {
-            "button_label": "See all pillows",
-            "button_link": "shopify://collections/memory-foam-pillows"
-          }
-        }
-      },
-      "block_order": [
-        "c",
-        "h",
-        "t",
-        "b"
-      ],
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "image": "shopify://shop_images/somnila_contour-01_materials_1x1_v1.jpg",
-        "video_autoplay": true,
-        "video_loop": true,
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "section_color_scheme": "background-2",
-        "full_desktop_width": false,
-        "content_layout": "no-overlap",
-        "desktop_media_width": 50,
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_full_media_width": false,
-        "mobile_direction": "normal",
-        "mobile_image_quanlity": "2",
-        "mobile_content_alignment": "left",
-        "mobile_padding_top": 24,
-        "mobile_padding_bottom": 24,
-        "desktop_padding_top": 64,
-        "desktop_padding_bottom": 64
-      }
-    },
-    "range": {
-      "type": "featured-collection",
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "title": "Five pillows, <b>one job each</b>.",
-        "title_highlight_color": "#1E2A3A",
-        "heading_size": "h1",
-        "description": "<p>Named like objects, numbered like versions. Each one has a height and a shape for one way of lying.</p>",
-        "show_description": true,
-        "description_style": "body",
-        "color_scheme": "background-1",
-        "collection": "memory-foam-pillows",
-        "products_to_show": 5,
-        "stretch_cards": false,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "cards_color_scheme": "background-1",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "badges": "disabled",
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "swatches_option_name": "",
-        "swatches_position": "bottom",
-        "type": "slide",
-        "autoplay": false,
-        "desktop_full_page": false,
-        "columns_desktop": 5,
-        "slider_desktop": false,
-        "per_move_desktop": 1,
-        "desktop_spacing": 16,
-        "desktop_side_padding": 0,
-        "desktop_padding_calc": true,
-        "desktop_adaptive_height": false,
-        "desktop_dots_position": "hidden",
-        "desktop_arrows_position": "hidden",
-        "columns_mobile": "2",
-        "slider_mobile": true,
-        "mobile_dots_position": "under",
-        "mobile_arrows_position": "hidden",
-        "padding_top": 48,
-        "padding_bottom": 48
-      }
-    },
     "reviews": {
       "type": "testimonials",
       "disabled": true,
@@ -670,18 +559,537 @@
         "padding_top": 64,
         "padding_bottom": 64
       }
+    },
+    "anchor": {
+      "type": "custom-liquid",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "custom_liquid": "<div id=\"which\"></div>",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "positions": {
+      "type": "multicolumn",
+      "blocks": {
+        "p1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/somnila_home_pos-neck_1x1.jpg",
+            "title": "On your back, sometimes your side",
+            "text": "<p>Neck 01. Two heights on one pillow, 13 cm and 11 cm. Turn it over until your head lies level.</p>",
+            "link_label": "Shop Neck 01",
+            "link": "shopify://products/neck-01"
+          }
+        },
+        "p2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/somnila_home_pos-contour_1x1.jpg",
+            "title": "You like it softer and lower",
+            "text": "<p>Contour 01. A gentle 10 cm wave that follows the neck and shoulders.</p>",
+            "link_label": "Shop Contour 01",
+            "link": "shopify://products/contour-01"
+          }
+        },
+        "p3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/somnila_home_pos-side_1x1.jpg",
+            "title": "On your side, all night",
+            "text": "<p>Side 01. A 10 cm profile that keeps the head level with the shoulders.</p>",
+            "link_label": "Shop Side 01",
+            "link": "shopify://products/side-01"
+          }
+        },
+        "p4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/somnila_home_pos-body_1x1.jpg",
+            "title": "The whole body held",
+            "text": "<p>Body 01. A 120 cm S-shape for the knees, the arm and the back at once.</p>",
+            "link_label": "Shop Body 01",
+            "link": "shopify://products/body-01"
+          }
+        },
+        "p5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/somnila_home_pos-lounge_1x1.jpg",
+            "title": "The hour before sleep",
+            "text": "<p>Lounge 01. A raised back with a ledge for the book or the phone.</p>",
+            "link_label": "Shop Lounge 01",
+            "link": "shopify://products/lounge-01"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "Which pillow is <b>yours</b>?",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "cards_color_scheme": "background-2",
+        "cards_corner_radius": 28,
+        "stretch_cards": true,
+        "stretched_cards_content_alignment": "flex-start",
+        "image_width": "full",
+        "image_ratio": "square",
+        "media_position": "top",
+        "column_alignment": "left",
+        "desktop_heading_size": 18,
+        "mobile_heading_size": 18,
+        "desktop_text_size": 14,
+        "mobile_text_size": 14,
+        "desktop_text_top_margin": 8,
+        "mobile_text_top_margin": 8,
+        "desktop_container_padding_y": 20,
+        "desktop_container_padding_x": 20,
+        "mobile_container_padding_y": 20,
+        "mobile_container_padding_x": 20,
+        "type": "slide",
+        "autoplay": false,
+        "desktop_full_page": false,
+        "columns_desktop": 5,
+        "slider_desktop": false,
+        "per_move_desktop": 1,
+        "desktop_spacing": 16,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "hidden",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "enable_mobile_preview": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "hidden",
+        "padding_top": 56,
+        "padding_bottom": 40
+      }
+    },
+    "problem": {
+      "type": "multicolumn",
+      "blocks": {
+        "q1": {
+          "type": "column",
+          "settings": {
+            "title": "01 · It goes flat.",
+            "text": "<p>Fibre fill and cheap foam flatten in a few months, and your head ends up on the mattress. Memory foam that holds keeps the shape you chose, night after night.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "q2": {
+          "type": "column",
+          "settings": {
+            "title": "02 · It is one height.",
+            "text": "<p>Necks, shoulders and mattresses are all different. One height suits nobody in particular. Two heights on one pillow let you choose in two nights.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "q3": {
+          "type": "column",
+          "settings": {
+            "title": "03 · You can't wash it.",
+            "text": "<p>A pillow without a removable cover stays what it is. Ours unzips, goes in the machine, and a spare is €16.90 so one is always clean.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "When did a flat pillow start feeling <b>normal</b>?",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "cards_color_scheme": "background-1",
+        "cards_corner_radius": 28,
+        "stretch_cards": true,
+        "stretched_cards_content_alignment": "flex-start",
+        "image_width": "full",
+        "image_ratio": "square",
+        "media_position": "top",
+        "column_alignment": "left",
+        "desktop_heading_size": 22,
+        "mobile_heading_size": 20,
+        "desktop_text_size": 15,
+        "mobile_text_size": 14,
+        "desktop_text_top_margin": 10,
+        "mobile_text_top_margin": 10,
+        "desktop_container_padding_y": 32,
+        "desktop_container_padding_x": 32,
+        "mobile_container_padding_y": 24,
+        "mobile_container_padding_x": 24,
+        "type": "slide",
+        "autoplay": false,
+        "desktop_full_page": false,
+        "columns_desktop": 3,
+        "slider_desktop": false,
+        "desktop_spacing": 24,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "hidden",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "hidden",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "compare": {
+      "type": "comparison-table",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "benefit": "Shaped for one way of lying",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "benefit": "Two heights on one pillow",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "benefit": "Memory foam that holds its shape all night",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "benefit": "Removable cover included, machine washable",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "benefit": "Thirty nights to decide, refund by email",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r6": {
+          "type": "row",
+          "settings": {
+            "benefit": "Free shipping, tracked, 6–10 days",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "Somnila or a <b>standard fibre pillow</b>?",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "text": "<p>Not a sales pitch, a checklist. Every line on the left is a fact you can check on the product page.</p>",
+        "button_label": "Shop Neck 01",
+        "link": "shopify://products/neck-01",
+        "button_style_secondary": false,
+        "atc_button_label": "",
+        "desktop_alignment": "center",
+        "mobile_alignment": "center",
+        "color_scheme": "background-1",
+        "layout": "table_second",
+        "style": "minimal",
+        "corner_radius": 28,
+        "number_of_competitors": 1,
+        "us_label": "Somnila",
+        "us_label_size": 18,
+        "logo": "shopify://shop_images/somnila-logo-light.png",
+        "logo_width": 90,
+        "mobile_logo_width": 60,
+        "others_label": "Standard fibre pillow",
+        "others_label_size": 16,
+        "checkmark_style": "solid",
+        "checkmark_color": "#1E2A3A",
+        "checkmark_bg_color": "#DCE8F2",
+        "x_style": "regular",
+        "x_color": "#6B7D90",
+        "x_bg_color": "#F7F9FC",
+        "opposite_icon_colors": "original",
+        "highlighted_color_scheme": "background-2",
+        "highlighted_separator_opacity": 0,
+        "highlighted_overlay_opacity": 0,
+        "other_cells_color_scheme": "background-1",
+        "regular_separator_opacity": 10,
+        "regular_overlay_opacity": 0,
+        "minimalistic_border_opacity": 16,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "trial": {
+      "type": "icons-with-content",
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "caption": "How it works",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "title": "Thirty nights to <b>decide</b>.",
+            "title_highlight_color": "#1E2A3A",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A pillow can't be judged in a shop. It can be judged in your bed, with your mattress, over a few weeks.</p>",
+            "text_style": "body"
+          }
+        },
+        "i1": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopping_bag",
+            "filled_icon": false,
+            "title": "Order",
+            "text": "<p>Ships in 6 to 10 days, tracked. The tracking number comes by email the day it leaves.</p>"
+          }
+        },
+        "i2": {
+          "type": "icon",
+          "settings": {
+            "icon": "local_shipping",
+            "filled_icon": false,
+            "title": "Delivered",
+            "text": "<p>Your thirty nights start the day the parcel arrives.</p>"
+          }
+        },
+        "i3": {
+          "type": "icon",
+          "settings": {
+            "icon": "bedtime",
+            "filled_icon": false,
+            "title": "Sleep on it",
+            "text": "<p>Try both heights. Give it a few nights; a new shape takes some getting used to.</p>"
+          }
+        },
+        "i4": {
+          "type": "icon",
+          "settings": {
+            "icon": "mail",
+            "filled_icon": false,
+            "title": "Keep it, or one email",
+            "text": "<p>If it isn't right, email your order number. We refund the pillow. Nothing to send back.</p>"
+          }
+        },
+        "b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start your thirty nights",
+            "button_link": "shopify://products/neck-01"
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t",
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "b"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "color_scheme": "background-1",
+        "icon_size": "m",
+        "icon_position": "next-to-title",
+        "icon_color": "accent-1",
+        "icon_heading_size": "h4",
+        "icon_text_alignment": "left",
+        "icons_desktop_layout": "2-columns",
+        "icons_mobile_layout": "1-column",
+        "desktop_content_alignment": "left",
+        "layout": "image_first",
+        "mobile_layout": "image_first",
+        "hide_content_on_mobile": false,
+        "padding_top": 56,
+        "padding_bottom": 56,
+        "image": "shopify://shop_images/somnila_home_trial-neck_4x5.jpg"
+      }
+    },
+    "founder": {
+      "type": "rich-text",
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "caption": "From the workshop",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "title": "I kept waking up <b>stiff</b>.",
+            "title_highlight_color": "#F0B79B",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Not every morning. Enough of them. I went looking for a pillow I would actually want to keep, and found three kinds: the blue hospital kind, the overpriced kind, and the kind that goes flat in three months. So I built the one I was looking for.</p><p>What we refused to make: a permanent −50 %, a countdown, a badge from an award that doesn't exist.</p>"
+          }
+        },
+        "b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Our story",
+            "button_link": "shopify://pages/about",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t",
+        "b"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "color_scheme": "inverse",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "title": "Still deciding? <b>Thirty nights.</b>",
+            "title_highlight_color": "#1E2A3A",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sleep on it at home. If it isn't right, one email and we refund the pillow.</p>"
+          }
+        },
+        "b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Neck 01",
+            "button_link": "shopify://products/neck-01",
+            "button_style_secondary": false,
+            "button_label_2": "All pillows",
+            "button_link_2": "shopify://collections/memory-foam-pillows",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "h",
+        "t",
+        "b"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "color_scheme": "background-2",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
     }
   },
   "order": [
     "hero",
     "trust",
+    "anchor",
+    "positions",
     "neck",
     "why",
-    "materials",
-    "range",
+    "problem",
+    "compare",
+    "trial",
+    "founder",
     "reviews",
-    "faq",
     "sets",
+    "faq",
+    "cta",
     "newsletter"
   ]
 }
