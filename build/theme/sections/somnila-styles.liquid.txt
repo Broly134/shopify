@@ -59,5 +59,10 @@ a{text-underline-offset:.2em}
 .icons-with-content h4,.icons-with-content .h4{font-family:var(--font-body-family)!important;font-weight:600!important;font-size:1.6rem!important;letter-spacing:0!important}
 .rich-text .caption-with-letter-spacing{color:var(--somnila-dawn)}
 #which{scroll-margin-top:12rem}
+
+/* passe conversion 2 */
+.rich-text__blocks{max-width:80rem;margin-inline:auto}
+.image-with-text .text-with-icon strong{font-weight:600}
+.image-with-text__heading{margin-top:.4rem}
 </style>
 {%- if template.name == 'index' -%}<h1 class="visually-hidden">Somnila memory-foam pillows shaped around the way you actually lie</h1>{%- endif -%}

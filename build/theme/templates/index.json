@@ -576,7 +576,7 @@
         "p1": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/somnila_home_pos-neck_1x1.jpg",
+            "image": "shopify://shop_images/somnila_home_pos-neck_1x1_91331e7f-4069-4e09-8d14-7b559cacd7f4.jpg",
             "title": "On your back, sometimes your side",
             "text": "<p>Neck 01. Two heights on one pillow, 13 cm and 11 cm. Turn it over until your head lies level.</p>",
             "link_label": "Shop Neck 01",
@@ -586,7 +586,7 @@
         "p2": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/somnila_home_pos-contour_1x1.jpg",
+            "image": "shopify://shop_images/somnila_home_pos-contour_1x1_2528f63d-4efd-4f71-8c56-ff03de59d0a5.jpg",
             "title": "You like it softer and lower",
             "text": "<p>Contour 01. A gentle 10 cm wave that follows the neck and shoulders.</p>",
             "link_label": "Shop Contour 01",
@@ -596,7 +596,7 @@
         "p3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/somnila_home_pos-side_1x1.jpg",
+            "image": "shopify://shop_images/somnila_home_pos-side_1x1_b78caca5-3f0a-4ce6-967e-100bba4b6bce.jpg",
             "title": "On your side, all night",
             "text": "<p>Side 01. A 10 cm profile that keeps the head level with the shoulders.</p>",
             "link_label": "Shop Side 01",
@@ -606,7 +606,7 @@
         "p4": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/somnila_home_pos-body_1x1.jpg",
+            "image": "shopify://shop_images/somnila_home_pos-body_1x1_6ca73ddd-3557-4039-9967-8dc5b5c4508a.jpg",
             "title": "The whole body held",
             "text": "<p>Body 01. A 120 cm S-shape for the knees, the arm and the back at once.</p>",
             "link_label": "Shop Body 01",
@@ -616,7 +616,7 @@
         "p5": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/somnila_home_pos-lounge_1x1.jpg",
+            "image": "shopify://shop_images/somnila_home_pos-lounge_1x1_b318abcf-1d22-4d8d-9905-5064d346e6b8.jpg",
             "title": "The hour before sleep",
             "text": "<p>Lounge 01. A raised back with a ledge for the book or the phone.</p>",
             "link_label": "Shop Lounge 01",
@@ -876,7 +876,7 @@
       }
     },
     "trial": {
-      "type": "icons-with-content",
+      "type": "image-with-text",
       "blocks": {
         "c": {
           "type": "caption",
@@ -897,44 +897,38 @@
         "t": {
           "type": "text",
           "settings": {
-            "text": "<p>A pillow can't be judged in a shop. It can be judged in your bed, with your mattress, over a few weeks.</p>",
+            "text": "<p>A pillow can't be judged in a shop. It can be judged in your bed, with your mattress, over a few weeks. So that is where you try it.</p>",
             "text_style": "body"
           }
         },
-        "i1": {
-          "type": "icon",
+        "s": {
+          "type": "text_with_icon",
           "settings": {
-            "icon": "shopping_bag",
-            "filled_icon": false,
-            "title": "Order",
-            "text": "<p>Ships in 6 to 10 days, tracked. The tracking number comes by email the day it leaves.</p>"
-          }
-        },
-        "i2": {
-          "type": "icon",
-          "settings": {
-            "icon": "local_shipping",
-            "filled_icon": false,
-            "title": "Delivered",
-            "text": "<p>Your thirty nights start the day the parcel arrives.</p>"
-          }
-        },
-        "i3": {
-          "type": "icon",
-          "settings": {
-            "icon": "bedtime",
-            "filled_icon": false,
-            "title": "Sleep on it",
-            "text": "<p>Try both heights. Give it a few nights; a new shape takes some getting used to.</p>"
-          }
-        },
-        "i4": {
-          "type": "icon",
-          "settings": {
-            "icon": "mail",
-            "filled_icon": false,
-            "title": "Keep it, or one email",
-            "text": "<p>If it isn't right, email your order number. We refund the pillow. Nothing to send back.</p>"
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "mobile_alignment": "left",
+            "text_color": "#1E2A3A",
+            "text_1": "<strong>Order.</strong> Ships in 6–10 days, tracked. Your thirty nights start the day it arrives.",
+            "text_2": "<strong>Sleep on it.</strong> Try both heights. Give a new shape a few nights.",
+            "text_3": "<strong>Keep it, or one email.</strong> Send your order number and we refund the pillow. Nothing to send back.",
+            "icon_scale": 120,
+            "icon_color": "#1E2A3A",
+            "icon_1": "local_shipping",
+            "filled_icon_1": false,
+            "icon_2": "bedtime",
+            "filled_icon_2": false,
+            "icon_3": "mail",
+            "filled_icon_3": false,
+            "width": "100%",
+            "direction": "vertical",
+            "column_gap": 2.5,
+            "enable_bg": false,
+            "bg_color": "#F3F3F3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#B7B7B7"
           }
         },
         "b": {
@@ -949,30 +943,32 @@
         "c",
         "h",
         "t",
-        "i1",
-        "i2",
-        "i3",
-        "i4",
+        "s",
         "b"
       ],
       "settings": {
         "display_id": false,
         "visibility": "always-display",
+        "image": "shopify://shop_images/somnila_home_trial-neck_4x5_e3f68d6a-4371-45c0-84c0-022a7eaee5ce.jpg",
+        "video_autoplay": true,
+        "video_loop": true,
+        "height": "adapt",
         "color_scheme": "background-1",
-        "icon_size": "m",
-        "icon_position": "next-to-title",
-        "icon_color": "accent-1",
-        "icon_heading_size": "h4",
-        "icon_text_alignment": "left",
-        "icons_desktop_layout": "2-columns",
-        "icons_mobile_layout": "1-column",
-        "desktop_content_alignment": "left",
+        "section_color_scheme": "background-1",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_media_width": 45,
         "layout": "image_first",
-        "mobile_layout": "image_first",
-        "hide_content_on_mobile": false,
-        "padding_top": 56,
-        "padding_bottom": 56,
-        "image": "shopify://shop_images/somnila_home_trial-neck_4x5.jpg"
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_full_media_width": false,
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "mobile_padding_top": 24,
+        "mobile_padding_bottom": 24,
+        "desktop_padding_top": 56,
+        "desktop_padding_bottom": 56
       }
     },
     "founder": {
