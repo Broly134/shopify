@@ -24,6 +24,7 @@ jeton de licence du thème Shrine : ne pas le modifier.
 9. PARTIE 9 — THÈME (fichiers envoyés au thème Somnila — build v1)
 10. PARTIE 10 — SCRIPTS
 11. PARTIE 11 — INVENTAIRE DES IMAGES
+12. PARTIE 12 — PASSE CONVERSION ET ANIMATIONS
 
 
 
@@ -13083,3 +13084,2564 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 - `build/images/source/12-oreiller-vague/oreiller-vague_gris_34_12.jpg`
 - `build/images/source/12-oreiller-vague/oreiller-vague_rose-blanc_34_10.jpg`
 - `build/images/source/12-oreiller-vague/oreiller-vague_rose_lifestyle_15.jpg`
+
+# ══════ PARTIE 12 — PASSE CONVERSION ET ANIMATIONS (11 septembre, après-midi) ══════
+Ajout postérieur à la génération du dossier. Les quatre fichiers de thème ci-dessous remplacent leurs versions de la PARTIE 9.
+
+# Passe conversion — accueil et fiche produit (11 septembre)
+
+Demande : « améliore le design avec ma DA et mon personal branding, le site ne va pas convertir, inspire-toi de Derila et Pilloway, sans agents ».
+Thème modifié : **Somnila — build v1** (157447585949), toujours non publié. Rien n'a été publié, supprimé ni envoyé.
+
+## 1. Ce qui a changé
+
+### Accueil (15 sections, dans l'ordre)
+
+1. **Hero** — « Sleep well. », une phrase de promesse, puis une ligne de preuves en capitales (Free shipping · Ships in 6–10 days · 30-night trial). Deux boutons : *Shop Neck 01* (plein) et *Which pillow is mine?* (contour, renvoie à l'ancre `#which`).
+2. **Barre de confiance** — quatre tuiles (livraison offerte, 6–10 jours suivis, essai 30 nuits, housse incluse).
+3. **Which pillow is yours?** — cinq cartes, une par façon de dormir, avec le packshot ciel de chaque oreiller et un lien *Shop …*. C'est le bloc « positions » de Derila, sans dessin de silhouette.
+4. **Neck 01 en produit vedette** — image, titre, trois puces, prix, couleurs, *Add to cart*, Shop Pay, trois icônes de réassurance. On peut acheter sans quitter l'accueil.
+5. **Why it holds.** — trois cartes (deux hauteurs, mousse qui tient, housse lavable).
+6. **When did a flat pillow start feeling normal?** — le bloc « THE PROBLEM 01 / 02 / 03 » de Pilloway : il s'affaisse, il n'a qu'une hauteur, il ne se lave pas. Chaque problème se termine par la réponse Somnila.
+7. **Somnila or a standard fibre pillow?** — tableau comparatif à six lignes, toutes vérifiables sur la fiche produit (pas de « 97 % satisfaits »). Logo Somnila en tête de colonne, bouton *Shop Neck 01*.
+8. **Thirty nights to decide.** — image Neck 01 (4:5) à gauche, trois étapes à droite (Order · Sleep on it · Keep it, or one email), bouton *Start your thirty nights*.
+9. **Bande fondateur** — fond Night, caption Dawn « From the workshop », titre « I kept waking up stiff. », le texte du brand book et « what we refused to make ». Bouton *Our story*. Aucun visage.
+10. **Avis** — section toujours **désactivée** (aucun avis réel).
+11. **Sets, priced honestly.** — quatre sets de la collection.
+12. **FAQ** — cinq questions.
+13. **Still deciding? Thirty nights.** — dernier appel, deux boutons (*Shop Neck 01*, *All pillows*).
+14. **Newsletter** — « Notes from the workshop ».
+15. Pied de page inchangé.
+
+Sections retirées : « range » et « materials » (elles répétaient les cartes et la fiche produit).
+
+### Fiche produit (gabarit `product`, les 5 oreillers)
+
+Colonne d'achat, de haut en bas : titre → **tagline** (métachamp `somnila.tagline`, ex. « Two heights on one pillow. Turn it over until your head lies level. ») → trois puces de preuve → prix → couleurs → *Add to cart* + Shop Pay → badges de paiement → date de livraison estimée → trois icônes de réassurance → **upsell Mask 01 / Quiet 01** (déplacé **sous** le bouton d'achat : avant, sur mobile, il repoussait le bouton de 250 px) → description → dimensions, matières, contenu → trois onglets (essai, livraison, entretien). Barre d'achat collante à l'écran.
+
+Sous la colonne : *What you are buying* (trois cartes) → tableau comparatif avec bouton *Add to cart* → *Thirty nights to decide* avec *Add to cart* → FAQ → *Goes with it*.
+
+### Images
+
+Six visuels d'accueil dans `build/images/site/home/`, tous composés à partir des photos fournisseur détourées sur le ciel Cloud → Mist : Neck (cloud), Contour (night), Side (blue), **Body 01 (night, nouveau détourage par saturation + GrabCut)**, Lounge (stone-and-sand), Neck 4:5 pour la section essai. Le packshot ciel de Body 01 est aussi devenu la **première image de sa galerie** (les sept photos sur lit restent derrière).
+
+### CSS (section `somnila-styles`, blocs « passe conversion » et « passe conversion 2 »)
+
+Tagline en serif Slate sous le titre ; ligne de preuves du hero en capitales espacées ; liens des cartes en 600 ; titres des sections comparatif, essai et rich-text à la même échelle que les autres ; caption Dawn sur fond Night ; texte de la bande fondateur limité à 80 rem ; ancre `#which` avec marge de défilement sous l'en-tête collant.
+
+## 2. Décisions
+
+- **Aucun levier trompeur** : pas de compte à rebours, pas de −50 % permanent, pas d'avis inventé, pas de « recommandé par des médecins », pas de compteur de visiteurs. Ce que Derila et Pilloway font avec ces leviers, on le fait avec quatre faits répétés partout : livraison offerte, 6–10 jours suivis, essai 30 nuits, housse lavable.
+- **Numérotation 01 / 02 / 03** des problèmes : reprise de Pilloway. Ce n'est pas une séquence, c'est un repère de lecture. Facile à retirer si tu préfères.
+- **Comparatif contre « Standard fibre pillow »** : un générique, jamais une marque nommée.
+- **« Which pillow is mine? » renvoie à une ancre**, pas à un quiz. Un vrai quiz demande une app payante ou du développement ; à décider plus tard.
+- **Noms de fichiers Shopify** : Shopify a ajouté un suffixe UUID aux six images (`somnila_home_pos-neck_1x1_91331e7f-….jpg`, etc.) et refuse de les renommer. Les gabarits pointent vers les noms réels ; rien à faire de ton côté.
+- **Section essai** : Shrine n'a pas de colonne image dans « Icons with content » (l'image y est un bloc dans la colonne de texte). J'ai utilisé « Image with text » avec un bloc « texte avec icônes » ; même rendu que Derila, mais natif.
+
+## 3. Ce qu'il te faut faire ou décider
+
+1. **Bandeau cookies** — dans l'aperçu, Shopify affiche « Cookie consent » à tous les visiteurs et il masque le hero. Aux États-Unis il n'est pas obligatoire. Réglages → Confidentialité des clients → Bannière de cookies : limiter aux régions qui l'exigent (UE, Royaume-Uni, Canada). Manuel, je n'y ai pas accès.
+2. **Avis** — la section est prête et désactivée. Dès dix avis réels (app d'avis gratuite type Judge.me), on l'active. Pas avant.
+3. **Vidéo** — Derila et Pilloway ouvrent sur une vidéo. Si tu as (ou fais tourner) 10 à 20 secondes de la main qui presse la mousse et la voit remonter, le hero et la section essai peuvent l'accueillir. Envoie le fichier ; sans vidéo, l'image reste.
+4. **Le reste de la liste HANDOFF.md** est inchangé (renommer la boutique « Somnila », coller les politiques, retirer PORTANCE, publier le thème, retirer le mot de passe).
+
+## 4. Comment vérifier
+
+Avec le mot de passe de la boutique, puis `?preview_theme_id=157447585949` sur : `/`, `/products/neck-01`, `/products/body-01`. Captures dans `build/preview/` (`accueil-desktop.jpg`, `accueil-mobile.jpg`, `neck-01-desktop.jpg`, `neck-01-mobile.jpg`, `contour-01-desktop.jpg`, `body-01-desktop.jpg`).
+
+Fichiers du dépôt : `build/theme/templates/index.json`, `build/theme/templates/product.json`, `build/theme/sections/header-group.json` (et sa copie lisible `somnila-styles.liquid.txt`), `build/images/site/home/`, `build/images/site/packshots/somnila_body-01_packshot-night_v1_sky_*.jpg`.
+
+## 5. Animations (ajout du 11 septembre, sur ta demande « mets plein d'animations »)
+
+Tout est natif Shrine ou CSS/JS dans la section `somnila-styles` ; aucune app, aucun crédit. Lentes, calmes, sur les couleurs de la marque, et coupées d'un coup pour les visiteurs qui ont réglé « réduire les animations ».
+
+**Réglages du thème** (`config/settings_data.json`) : animations de chargement activées (`enable_load_animations`), 700 ms, départ 5 % plus bas, décalage de 120 ms entre les enfants d'une section. Chaque section apparaît en fondu remonté quand elle entre dans l'écran ; les blocs enfants (tableau, cartes) suivent en cascade.
+
+**Bandeau défilant** (« Horizontal Ticker », natif) sous le hero de l'accueil et sous la colonne d'achat de la fiche produit : fond Night, capitales espacées, un point Dawn entre les cinq preuves, 75 s par tour, pause au survol.
+
+**Couche CSS de marque** (bloc « passe animations ») :
+- hero : titre, texte puis boutons montent en trois temps (0,15 / 0,35 / 0,55 s) ; l'image dérive très lentement (zoom 5 % sur 24 s, aller-retour) ;
+- oreillers sur ciel (produit vedette, section essai) : flottement de 7 px sur 8 s ;
+- icônes de la barre de confiance : même flottement, décalé d'une tuile à l'autre ;
+- cartes (positions, sets) : élévation de 6 px, ombre Night douce et zoom 5 % de l'image au survol ;
+- boutons : légère élévation et ombre au survol ; liens du menu : soulignement qui se déploie ;
+- tableau comparatif : les coches apparaissent en « pop » l'une après l'autre quand le tableau entre dans l'écran ;
+- titres de section : une ligne d'horizon Dawn se déploie sous le titre à l'entrée dans l'écran ;
+- bande fondateur : halo Dawn qui respire lentement derrière le titre ;
+- FAQ : le contenu d'une question s'ouvre en fondu remonté ; champ e-mail : anneau Dawn au focus.
+
+**Mécanique** : Shrine ajoute `animate--shown` à une section quand elle entre dans l'écran ; un observateur de 10 lignes ajoute en parallèle `somnila-in`, dont dépendent les coches et les lignes d'horizon, pour qu'elles fonctionnent même si tu désactives un jour les animations du thème. Sans JavaScript, tout est visible d'emblée.
+
+**Ce que je n'ai pas fait** : compte à rebours, compteur de visiteurs, notifications « X vient d'acheter » (règle 1 : rien d'inventé), confettis ou curseurs personnalisés (ça sent l'app). Si tu veux plus de mouvement, la prochaine marche est une vidéo produit dans le hero.
+
+
+
+## Fichier : templates/index.json
+
+```
+{
+  "sections": {
+    "hero": {
+      "type": "slideshow-hero",
+      "blocks": {
+        "s1": {
+          "type": "slide",
+          "settings": {
+            "desktop_bg_image": "shopify://shop_images/somnila_neck-01_hero_16x9_v2.jpg",
+            "desktop_overlay_color": "#000000",
+            "desktop_overlay_opacity": 0,
+            "mobile_bg_image": "shopify://shop_images/somnila_neck-01_hero_4x5_v2.jpg",
+            "mobile_overlay_color": "#000000",
+            "mobile_overlay_opacity": 0,
+            "display_sound_btn": false,
+            "heading_prefix": "",
+            "heading": "Sleep well.",
+            "title_highlight_color": "#1E2A3A",
+            "heading_size": "hxl",
+            "heading_suffix": "",
+            "heading_prefix_size": "h4",
+            "text": "<p>Memory-foam pillows shaped around the way you actually lie. Foam that holds, a cover you can wash, thirty nights to decide.</p><p><strong>Free shipping</strong> · <strong>Ships in 6–10 days</strong> · <strong>30-night trial</strong></p>",
+            "button_label_1": "Shop Neck 01",
+            "button_link_1": "shopify://products/neck-01",
+            "button_style_secondary_1": false,
+            "button_label_2": "Which pillow is mine?",
+            "button_link_2": "#which",
+            "button_style_secondary_2": true,
+            "color_scheme": "custom",
+            "full_page_width": false,
+            "content_max_width": "pixels",
+            "content_pixels_max_width": 560,
+            "content_percentage_max_width": 50,
+            "content_vertical_position": "center",
+            "content_horizontal_position": "flex-start",
+            "content_text_alignment": "left",
+            "mobile_content_vertical_position": "flex-end",
+            "mobile_content_text_alignment": "left",
+            "custom_colors_text": "#1E2A3A",
+            "custom_colors_solid_button_background": "#1E2A3A",
+            "custom_colors_solid_button_text": "#F7F9FC",
+            "custom_colors_outline_button": "#1E2A3A"
+          }
+        }
+      },
+      "block_order": [
+        "s1"
+      ],
+      "settings": {
+        "visibility": "always-display",
+        "min_desktop_height_type": "pixels",
+        "desktop_pixels_height": 680,
+        "min_mobile_height_type": "pixels",
+        "mobile_pixels_height": 640,
+        "transparent_header": false,
+        "hide_announcement_bars": false,
+        "slider_type": "fade",
+        "drag": false,
+        "autoplay": false,
+        "autoplay_speed": 10,
+        "enable_dots": false,
+        "dots_color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "trust": {
+      "type": "icon-bar",
+      "blocks": {
+        "t1": {
+          "type": "column",
+          "settings": {
+            "icon": "local_shipping",
+            "filled_icon": false,
+            "title": "Free shipping",
+            "text": "<p>On every pillow and every set, to the US, Canada, the UK, Europe and Australia.</p>"
+          }
+        },
+        "t2": {
+          "type": "column",
+          "settings": {
+            "icon": "schedule",
+            "filled_icon": false,
+            "title": "6–10 days, tracked",
+            "text": "<p>Tracking number by email the day it ships.</p>"
+          }
+        },
+        "t3": {
+          "type": "column",
+          "settings": {
+            "icon": "bedtime",
+            "filled_icon": false,
+            "title": "30-night trial",
+            "text": "<p>Sleep on it. If it isn't right, one email and we refund it.</p>"
+          }
+        },
+        "t4": {
+          "type": "column",
+          "settings": {
+            "icon": "local_laundry_service",
+            "filled_icon": false,
+            "title": "Cover included",
+            "text": "<p>Removable and machine washable, on every pillow.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h2",
+        "text": "",
+        "color_scheme": "background-1",
+        "icon_layout": "horizontal",
+        "icon_size": "small",
+        "icon_color": "accent-1",
+        "cards_color_scheme": "background-2",
+        "type": "slide",
+        "autoplay": false,
+        "desktop_full_page": false,
+        "columns_desktop": 4,
+        "slider_desktop": false,
+        "desktop_spacing": 16,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "hidden",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "hidden",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "neck": {
+      "type": "featured-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": "h1",
+            "title_alignment": "left",
+            "uppercase_title": false,
+            "margin_top": 0,
+            "margin_bottom": 9
+          }
+        },
+        "bullets": {
+          "type": "text",
+          "settings": {
+            "text_1": "Two heights on one pillow: 13 cm and 11 cm (5.1 / 4.3 in)",
+            "text_2": "Memory foam that holds its shape through the night",
+            "text_3": "Cool-touch cover included, machine washable",
+            "icon_1": "check_circle",
+            "icon_2": "check_circle",
+            "icon_3": "check_circle",
+            "filled_icon_1": false,
+            "filled_icon_2": false,
+            "filled_icon_3": false,
+            "icon_color": "#1E2A3A",
+            "text_color": "#1E2A3A",
+            "icon_scale": 110,
+            "alignment": "left",
+            "direction": "vertical",
+            "width": "100%",
+            "column_gap": 2.5,
+            "desktop_text_size": 15,
+            "mobile_text_size": 14,
+            "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "layout": "price_first",
+            "price_color": "text",
+            "compare_price_color": "text",
+            "displayed_badge": "none",
+            "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_types": "swatches",
+            "custom_labels": "[name] · [selected]",
+            "swatches_size": "large",
+            "swatches_custom_colors": "predefined",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "buy": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "skip_cart": false,
+            "uppercase_text": false,
+            "icon_scale": 120,
+            "icon_spacing": 10,
+            "display_price": false,
+            "enable_custom_color": false,
+            "margin_top": 18,
+            "margin_bottom": 12
+          }
+        },
+        "reassure": {
+          "type": "icon_with_text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_color": "accent-1",
+            "desktop_icon_size": 28,
+            "desktop_spacing": 10,
+            "desktop_text_size": 14,
+            "mobile_icon_size": 24,
+            "mobile_spacing": 8,
+            "mobile_text_size": 12,
+            "icon_1": "bedtime",
+            "icon_1_fill": false,
+            "heading_1": "30-night trial",
+            "icon_2": "local_shipping",
+            "icon_2_fill": false,
+            "heading_2": "Free shipping",
+            "icon_3": "local_laundry_service",
+            "icon_3_fill": false,
+            "heading_3": "Washable cover",
+            "margin_top": 12,
+            "margin_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "bullets",
+        "price",
+        "picker",
+        "buy",
+        "reassure"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "product": "neck-01",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "mobile_media_corner_radius": 28,
+        "full_media_width": false,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "why": {
+      "type": "multicolumn",
+      "blocks": {
+        "c1": {
+          "type": "column",
+          "settings": {
+            "title": "Two heights, one pillow",
+            "text": "<p>13 cm on one side, 11 cm on the other. Turn it over until your head lies level with your shoulders. Most people know after two nights.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "title": "Foam that holds",
+            "text": "<p>Memory foam takes the shape of your neck and keeps it, instead of flattening under your head by three in the morning.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c3": {
+          "type": "column",
+          "settings": {
+            "title": "A cover you can wash",
+            "text": "<p>The cool-touch cover comes with the pillow. Unzip it, machine wash it, put it back. A spare is €16.90.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "Why it <b>holds</b>.",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "cards_color_scheme": "background-2",
+        "cards_corner_radius": 28,
+        "stretch_cards": true,
+        "stretched_cards_content_alignment": "flex-start",
+        "image_width": "full",
+        "image_ratio": "square",
+        "media_position": "top",
+        "column_alignment": "left",
+        "desktop_heading_size": 22,
+        "mobile_heading_size": 20,
+        "desktop_text_size": 15,
+        "mobile_text_size": 14,
+        "desktop_text_top_margin": 10,
+        "mobile_text_top_margin": 10,
+        "desktop_container_padding_y": 32,
+        "desktop_container_padding_x": 32,
+        "mobile_container_padding_y": 24,
+        "mobile_container_padding_x": 24,
+        "type": "slide",
+        "autoplay": false,
+        "desktop_full_page": false,
+        "columns_desktop": 3,
+        "slider_desktop": false,
+        "desktop_spacing": 24,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "hidden",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "hidden",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "reviews": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "a1": {
+          "type": "column",
+          "settings": {
+            "title": "[REPLACE WITH A REAL REVIEW]",
+            "author": "—",
+            "text": "<p>Section disabled on purpose. Publish it only with real, verifiable reviews collected after purchase. An invented testimonial is a deceptive commercial practice.</p>"
+          }
+        },
+        "a2": {
+          "type": "column",
+          "settings": {
+            "title": "[REPLACE WITH A REAL REVIEW]",
+            "author": "—",
+            "text": "<p>Connect a verified-reviews app (Judge.me free plan is enough to start), then replace these three blocks.</p>"
+          }
+        },
+        "a3": {
+          "type": "column",
+          "settings": {
+            "title": "[REPLACE WITH A REAL REVIEW]",
+            "author": "—",
+            "text": "<p>Enable the section once about ten authentic reviews exist.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "a1",
+        "a2",
+        "a3"
+      ],
+      "settings": {
+        "title": "What people say after <b>thirty nights</b>.",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "color_scheme": "background-2",
+        "column_alignment": "left",
+        "show_stars": false,
+        "show_quotes": true,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "f1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does delivery take?",
+            "icon": "schedule",
+            "filled_icon": false,
+            "row_content": "<p>6 to 10 days, tracked, to the United States, Canada, the United Kingdom, Europe and Australia. You get the tracking number by email the day it ships.</p>",
+            "page": ""
+          }
+        },
+        "f2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is shipping free?",
+            "icon": "local_shipping",
+            "filled_icon": false,
+            "row_content": "<p>On every pillow and every set, yes. Only accessories bought on their own (mask, earplugs, covers, throw) pay shipping.</p>",
+            "page": ""
+          }
+        },
+        "f3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does the 30-night trial work?",
+            "icon": "bedtime",
+            "filled_icon": false,
+            "row_content": "<p>Sleep on the pillow for up to 30 nights from delivery. If it isn't right, send us an email with your order number and we refund the price of the pillow. You don't need to send it back.</p>",
+            "page": ""
+          }
+        },
+        "f4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Which height should I choose?",
+            "icon": "straighten",
+            "filled_icon": false,
+            "row_content": "<p>Neck 01 has both: 13 cm on one side, 11 cm on the other. Start with the higher side; if your head tilts up, turn the pillow over.</p>",
+            "page": ""
+          }
+        },
+        "f5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I wash the cover?",
+            "icon": "local_laundry_service",
+            "filled_icon": false,
+            "row_content": "<p>Yes. Unzip it and machine wash it cold on a gentle cycle, then dry it flat. The foam itself takes a damp cloth, never the machine.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "caption": "FAQ",
+        "title": "Before you <b>order</b>.",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "row_heading_size": "medium",
+        "collapse_icon": "plus",
+        "display_top_border": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "sets": {
+      "type": "featured-collection",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "Sets, <b>priced honestly</b>.",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "description": "<p>Two or three pieces together cost less than apart. The saving is on the price tag, not in a fake strike-through.</p>",
+        "show_description": true,
+        "description_style": "body",
+        "color_scheme": "background-2",
+        "collection": "sets",
+        "products_to_show": 4,
+        "stretch_cards": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "cards_color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "badges": "disabled",
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "swatches_option_name": "",
+        "swatches_position": "bottom",
+        "type": "slide",
+        "autoplay": false,
+        "desktop_full_page": false,
+        "columns_desktop": 4,
+        "slider_desktop": false,
+        "desktop_spacing": 24,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "hidden",
+        "columns_mobile": "2",
+        "slider_mobile": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "hidden",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "title": "Notes from the workshop",
+            "title_highlight_color": "#1E2A3A",
+            "heading_size": "h1"
+          }
+        },
+        "p": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>One email a month at most: what we are making, what we refused to make. No countdowns, no fake sales.</p>"
+          }
+        },
+        "f": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "h",
+        "p",
+        "f"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "button_type": "arrow",
+        "button_label": "Sign up",
+        "button_style_secondary": false,
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "anchor": {
+      "type": "custom-liquid",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "custom_liquid": "<div id=\"which\"></div>",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "positions": {
+      "type": "multicolumn",
+      "blocks": {
+        "p1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/somnila_home_pos-neck_1x1_91331e7f-4069-4e09-8d14-7b559cacd7f4.jpg",
+            "title": "On your back, sometimes your side",
+            "text": "<p>Neck 01. Two heights on one pillow, 13 cm and 11 cm. Turn it over until your head lies level.</p>",
+            "link_label": "Shop Neck 01",
+            "link": "shopify://products/neck-01"
+          }
+        },
+        "p2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/somnila_home_pos-contour_1x1_2528f63d-4efd-4f71-8c56-ff03de59d0a5.jpg",
+            "title": "You like it softer and lower",
+            "text": "<p>Contour 01. A gentle 10 cm wave that follows the neck and shoulders.</p>",
+            "link_label": "Shop Contour 01",
+            "link": "shopify://products/contour-01"
+          }
+        },
+        "p3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/somnila_home_pos-side_1x1_b78caca5-3f0a-4ce6-967e-100bba4b6bce.jpg",
+            "title": "On your side, all night",
+            "text": "<p>Side 01. A 10 cm profile that keeps the head level with the shoulders.</p>",
+            "link_label": "Shop Side 01",
+            "link": "shopify://products/side-01"
+          }
+        },
+        "p4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/somnila_home_pos-body_sky_1x1_55c6fb0a-1072-4108-9424-aec1f04dff3a.jpg",
+            "title": "The whole body held",
+            "text": "<p>Body 01. A 120 cm S-shape for the knees, the arm and the back at once.</p>",
+            "link_label": "Shop Body 01",
+            "link": "shopify://products/body-01"
+          }
+        },
+        "p5": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/somnila_home_pos-lounge_1x1_b318abcf-1d22-4d8d-9905-5064d346e6b8.jpg",
+            "title": "The hour before sleep",
+            "text": "<p>Lounge 01. A raised back with a ledge for the book or the phone.</p>",
+            "link_label": "Shop Lounge 01",
+            "link": "shopify://products/lounge-01"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "Which pillow is <b>yours</b>?",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "cards_color_scheme": "background-2",
+        "cards_corner_radius": 28,
+        "stretch_cards": true,
+        "stretched_cards_content_alignment": "flex-start",
+        "image_width": "full",
+        "image_ratio": "square",
+        "media_position": "top",
+        "column_alignment": "left",
+        "desktop_heading_size": 18,
+        "mobile_heading_size": 18,
+        "desktop_text_size": 14,
+        "mobile_text_size": 14,
+        "desktop_text_top_margin": 8,
+        "mobile_text_top_margin": 8,
+        "desktop_container_padding_y": 20,
+        "desktop_container_padding_x": 20,
+        "mobile_container_padding_y": 20,
+        "mobile_container_padding_x": 20,
+        "type": "slide",
+        "autoplay": false,
+        "desktop_full_page": false,
+        "columns_desktop": 5,
+        "slider_desktop": false,
+        "per_move_desktop": 1,
+        "desktop_spacing": 16,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "hidden",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "enable_mobile_preview": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "hidden",
+        "padding_top": 56,
+        "padding_bottom": 40
+      }
+    },
+    "problem": {
+      "type": "multicolumn",
+      "blocks": {
+        "q1": {
+          "type": "column",
+          "settings": {
+            "title": "01 · It goes flat.",
+            "text": "<p>Fibre fill and cheap foam flatten in a few months, and your head ends up on the mattress. Memory foam that holds keeps the shape you chose, night after night.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "q2": {
+          "type": "column",
+          "settings": {
+            "title": "02 · It is one height.",
+            "text": "<p>Necks, shoulders and mattresses are all different. One height suits nobody in particular. Two heights on one pillow let you choose in two nights.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "q3": {
+          "type": "column",
+          "settings": {
+            "title": "03 · You can't wash it.",
+            "text": "<p>A pillow without a removable cover stays what it is. Ours unzips, goes in the machine, and a spare is €16.90 so one is always clean.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "When did a flat pillow start feeling <b>normal</b>?",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "cards_color_scheme": "background-1",
+        "cards_corner_radius": 28,
+        "stretch_cards": true,
+        "stretched_cards_content_alignment": "flex-start",
+        "image_width": "full",
+        "image_ratio": "square",
+        "media_position": "top",
+        "column_alignment": "left",
+        "desktop_heading_size": 22,
+        "mobile_heading_size": 20,
+        "desktop_text_size": 15,
+        "mobile_text_size": 14,
+        "desktop_text_top_margin": 10,
+        "mobile_text_top_margin": 10,
+        "desktop_container_padding_y": 32,
+        "desktop_container_padding_x": 32,
+        "mobile_container_padding_y": 24,
+        "mobile_container_padding_x": 24,
+        "type": "slide",
+        "autoplay": false,
+        "desktop_full_page": false,
+        "columns_desktop": 3,
+        "slider_desktop": false,
+        "desktop_spacing": 24,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "hidden",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "hidden",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "compare": {
+      "type": "comparison-table",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "benefit": "Shaped for one way of lying",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "benefit": "Two heights on one pillow",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "benefit": "Memory foam that holds its shape all night",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "benefit": "Removable cover included, machine washable",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "benefit": "Thirty nights to decide, refund by email",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r6": {
+          "type": "row",
+          "settings": {
+            "benefit": "Free shipping, tracked, 6–10 days",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "Somnila or a <b>standard fibre pillow</b>?",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "text": "<p>Not a sales pitch, a checklist. Every line on the left is a fact you can check on the product page.</p>",
+        "button_label": "Shop Neck 01",
+        "link": "shopify://products/neck-01",
+        "button_style_secondary": false,
+        "atc_button_label": "",
+        "desktop_alignment": "center",
+        "mobile_alignment": "center",
+        "color_scheme": "background-1",
+        "layout": "table_second",
+        "style": "minimal",
+        "corner_radius": 28,
+        "number_of_competitors": 1,
+        "us_label": "Somnila",
+        "us_label_size": 18,
+        "logo": "shopify://shop_images/somnila-logo-light.png",
+        "logo_width": 90,
+        "mobile_logo_width": 60,
+        "others_label": "Standard fibre pillow",
+        "others_label_size": 16,
+        "checkmark_style": "solid",
+        "checkmark_color": "#1E2A3A",
+        "checkmark_bg_color": "#DCE8F2",
+        "x_style": "regular",
+        "x_color": "#6B7D90",
+        "x_bg_color": "#F7F9FC",
+        "opposite_icon_colors": "original",
+        "highlighted_color_scheme": "background-2",
+        "highlighted_separator_opacity": 0,
+        "highlighted_overlay_opacity": 0,
+        "other_cells_color_scheme": "background-1",
+        "regular_separator_opacity": 10,
+        "regular_overlay_opacity": 0,
+        "minimalistic_border_opacity": 16,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "trial": {
+      "type": "image-with-text",
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "caption": "How it works",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "title": "Thirty nights to <b>decide</b>.",
+            "title_highlight_color": "#1E2A3A",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A pillow can't be judged in a shop. It can be judged in your bed, with your mattress, over a few weeks. So that is where you try it.</p>",
+            "text_style": "body"
+          }
+        },
+        "s": {
+          "type": "text_with_icon",
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "mobile_alignment": "left",
+            "text_color": "#1E2A3A",
+            "text_1": "<strong>Order.</strong> Ships in 6–10 days, tracked. Your thirty nights start the day it arrives.",
+            "text_2": "<strong>Sleep on it.</strong> Try both heights. Give a new shape a few nights.",
+            "text_3": "<strong>Keep it, or one email.</strong> Send your order number and we refund the pillow. Nothing to send back.",
+            "icon_scale": 120,
+            "icon_color": "#1E2A3A",
+            "icon_1": "local_shipping",
+            "filled_icon_1": false,
+            "icon_2": "bedtime",
+            "filled_icon_2": false,
+            "icon_3": "mail",
+            "filled_icon_3": false,
+            "width": "100%",
+            "direction": "vertical",
+            "column_gap": 2.5,
+            "enable_bg": false,
+            "bg_color": "#F3F3F3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#B7B7B7"
+          }
+        },
+        "b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start your thirty nights",
+            "button_link": "shopify://products/neck-01"
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t",
+        "s",
+        "b"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "image": "shopify://shop_images/somnila_home_trial-neck_4x5_e3f68d6a-4371-45c0-84c0-022a7eaee5ce.jpg",
+        "video_autoplay": true,
+        "video_loop": true,
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_media_width": 45,
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_full_media_width": false,
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "mobile_padding_top": 24,
+        "mobile_padding_bottom": 24,
+        "desktop_padding_top": 56,
+        "desktop_padding_bottom": 56
+      }
+    },
+    "founder": {
+      "type": "rich-text",
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "caption": "From the workshop",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "title": "I kept waking up <b>stiff</b>.",
+            "title_highlight_color": "#F0B79B",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Not every morning. Enough of them. I went looking for a pillow I would actually want to keep, and found three kinds: the blue hospital kind, the overpriced kind, and the kind that goes flat in three months. So I built the one I was looking for.</p><p>What we refused to make: a permanent −50 %, a countdown, a badge from an award that doesn't exist.</p>"
+          }
+        },
+        "b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Our story",
+            "button_link": "shopify://pages/about",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t",
+        "b"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "color_scheme": "inverse",
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "blocks": {
+        "h": {
+          "type": "heading",
+          "settings": {
+            "title": "Still deciding? <b>Thirty nights.</b>",
+            "title_highlight_color": "#1E2A3A",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sleep on it at home. If it isn't right, one email and we refund the pillow.</p>"
+          }
+        },
+        "b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Neck 01",
+            "button_link": "shopify://products/neck-01",
+            "button_style_secondary": false,
+            "button_label_2": "All pillows",
+            "button_link_2": "shopify://collections/memory-foam-pillows",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "h",
+        "t",
+        "b"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "color_scheme": "background-2",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "ticker": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "k1": {
+          "type": "text",
+          "settings": {
+            "title": "Free shipping on every pillow"
+          }
+        },
+        "k2": {
+          "type": "text",
+          "settings": {
+            "title": "30-night trial, refund by email"
+          }
+        },
+        "k3": {
+          "type": "text",
+          "settings": {
+            "title": "Ships in 6–10 days, tracked"
+          }
+        },
+        "k4": {
+          "type": "text",
+          "settings": {
+            "title": "Cover included, machine washable"
+          }
+        },
+        "k5": {
+          "type": "text",
+          "settings": {
+            "title": "Memory foam that holds its shape"
+          }
+        }
+      },
+      "block_order": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5"
+      ],
+      "settings": {
+        "visibility": "always-display",
+        "speed": 2,
+        "direction": "normal",
+        "stop_on_hover": true,
+        "mobile_spacing": 36,
+        "desktop_spacing": 48,
+        "color_scheme": "inverse",
+        "mobile_text_size": 12,
+        "desktop_text_size": 13,
+        "italic_text": false,
+        "uppercase_text": true,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 40,
+        "mobile_reviews_width": 300,
+        "desktop_reviews_width": 400,
+        "hidden_products": "",
+        "enable_specific_display": false,
+        "displayed_products": "",
+        "mobile_padding_top": 12,
+        "mobile_padding_bottom": 12,
+        "desktop_padding_top": 16,
+        "desktop_padding_bottom": 16
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "ticker",
+    "anchor",
+    "positions",
+    "neck",
+    "trust",
+    "why",
+    "problem",
+    "compare",
+    "trial",
+    "founder",
+    "reviews",
+    "sets",
+    "faq",
+    "cta",
+    "newsletter"
+  ]
+}
+```
+
+## Fichier : templates/product.json
+
+```
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": "h1",
+            "title_alignment": "left",
+            "uppercase_title": false,
+            "margin_top": 0,
+            "margin_bottom": 9
+          }
+        },
+        "bullets": {
+          "type": "text",
+          "settings": {
+            "text_1": "Ships in 6–10 days, tracked",
+            "text_2": "30-night trial, refund by email",
+            "text_3": "Removable cover included, machine washable",
+            "icon_1": "check_circle",
+            "icon_2": "check_circle",
+            "icon_3": "check_circle",
+            "filled_icon_1": false,
+            "filled_icon_2": false,
+            "filled_icon_3": false,
+            "icon_color": "#1E2A3A",
+            "text_color": "#1E2A3A",
+            "icon_scale": 110,
+            "alignment": "left",
+            "direction": "vertical",
+            "width": "100%",
+            "column_gap": 2.5,
+            "desktop_text_size": 15,
+            "mobile_text_size": 14,
+            "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "layout": "price_first",
+            "price_color": "text",
+            "compare_price_color": "text",
+            "displayed_badge": "none",
+            "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_types": "swatches",
+            "custom_labels": "[name] · [selected]",
+            "skip_unavailable": false,
+            "swatches_size": "large",
+            "swatches_custom_colors": "predefined",
+            "full_width_dropdowns": false,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "buy": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "skip_cart": false,
+            "uppercase_text": false,
+            "icon_scale": 120,
+            "icon_spacing": 10,
+            "display_price": false,
+            "enable_custom_color": false,
+            "margin_top": 18,
+            "margin_bottom": 12
+          }
+        },
+        "pay": {
+          "type": "payment_badges",
+          "settings": {
+            "enabled_payment_types": "visa, master, american_express, paypal, apple_pay, google_pay, shopify_pay",
+            "margin_top": 6,
+            "margin_bottom": 15
+          }
+        },
+        "ship": {
+          "type": "estimated_shipping",
+          "settings": {
+            "icon": "local_shipping",
+            "filled_icon": false,
+            "icon_size": "small",
+            "icon_alignment": "middle",
+            "message": "<p>Ships in 6–10 days, tracked. Estimated delivery <strong>[start_date]</strong> to <strong>[end_date]</strong>.</p>",
+            "min_shipping_days": 6,
+            "max_shipping_days": 10,
+            "date_format": "day_mm_dd",
+            "days_labels": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+            "months_labels": "January, February, March, April, May, June, July, August, September, October, November, December",
+            "margin_top": 6,
+            "margin_bottom": 12
+          }
+        },
+        "reassure": {
+          "type": "icon_with_text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_color": "accent-1",
+            "desktop_icon_size": 28,
+            "desktop_spacing": 10,
+            "desktop_text_size": 14,
+            "mobile_icon_size": 24,
+            "mobile_spacing": 8,
+            "mobile_text_size": 12,
+            "icon_1": "bedtime",
+            "icon_1_fill": false,
+            "heading_1": "30-night trial",
+            "icon_2": "local_shipping",
+            "icon_2_fill": false,
+            "heading_2": "Free shipping",
+            "icon_3": "local_laundry_service",
+            "icon_3_fill": false,
+            "heading_3": "Washable cover",
+            "margin_top": 12,
+            "margin_bottom": 18
+          }
+        },
+        "div": {
+          "type": "divider",
+          "settings": {
+            "color": "#C5D2DE",
+            "height": 1,
+            "width": 100,
+            "Full_mobile_width": false,
+            "alignment": "center",
+            "border_radius": 0,
+            "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "desc": {
+          "type": "description",
+          "settings": {
+            "margin_top": 12,
+            "margin_bottom": 18
+          }
+        },
+        "specs": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign mf = product.metafields.somnila -%}\n{%- assign v = product.selected_or_first_available_variant -%}\n<div class=\"somnila-specs\">\n{%- if mf.contents != blank -%}<h3>In the box</h3><p>{{ mf.contents.value | newline_to_br }}</p>{%- endif -%}\n{%- if mf.dimensions_cm != blank -%}<h3>Dimensions</h3><table><tr><th>Metric</th><td>{{ mf.dimensions_cm.value }}</td></tr><tr><th>Imperial</th><td>{{ mf.dimensions_in.value }}</td></tr>{%- if v.weight > 0 -%}<tr><th>Weight</th><td>{{ v.weight | divided_by: 1000.0 | round: 2 }} kg ({{ v.weight | times: 0.00220462 | round: 1 }} lb)</td></tr>{%- endif -%}</table>{%- endif -%}\n{%- if mf.materials != blank -%}<h3>Materials</h3><p>{{ mf.materials.value | newline_to_br }}</p>{%- endif -%}\n{%- if mf.includes != blank -%}<h3>Included</h3><p>{{ mf.includes.value }}</p>{%- endif -%}\n{%- if mf.delivery != blank -%}<h3>Delivery</h3><p>Ships in {{ mf.delivery.value }}, tracked.</p>{%- endif -%}\n</div>"
+          }
+        },
+        "t1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "30-night trial & returns",
+            "heading_size": "medium",
+            "icon": "bedtime",
+            "filled_icon": false,
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>Sleep on it for up to 30 nights from delivery. If it isn't right, email us with your order number and we refund the price of the pillow. You don't need to send it back. This commercial guarantee comes on top of your statutory rights.</p>",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "t2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "heading_size": "medium",
+            "icon": "local_shipping",
+            "filled_icon": false,
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>Every order ships tracked and arrives in 6 to 10 days in the United States, Canada, the United Kingdom, Europe and Australia. Free shipping on every pillow and every set; accessories on their own pay €4.90 to €9.90 depending on the zone. Details on the <a href=\"/pages/shipping-delivery\">shipping page</a>.</p>",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "t3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care",
+            "heading_size": "medium",
+            "icon": "local_laundry_service",
+            "filled_icon": false,
+            "collapse_icon": "plus",
+            "display_top_border": true,
+            "open": false,
+            "content": "<p>Covers: unzip, machine wash cold on a gentle cycle, dry flat. Foam: a damp cloth, never the machine, never the dryer. New foam can have a light smell for a few hours; air the pillow uncovered before the first night.</p>",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "sticky": {
+          "type": "sticky_atc",
+          "settings": {
+            "function": "add_to_cart",
+            "display_when": "after_scroll",
+            "button_label": "Add to cart",
+            "enable_custom_btn_color": false,
+            "color_scheme": "background-1",
+            "picker_type": "combined",
+            "desktop_show_image": true,
+            "desktop_show_title": true,
+            "desktop_rating_stars": false,
+            "desktop_show_price": true,
+            "desktop_show_sale_badge": false,
+            "desktop_variant_picker": true,
+            "desktop_full_button_width": false,
+            "desktop_show_price_in_button": false,
+            "desktop_transparent_bg": false,
+            "mobile_show_image": false,
+            "mobile_show_title": true,
+            "mobile_rating_stars": false,
+            "mobile_show_price": true,
+            "mobile_show_sale_badge": false,
+            "mobile_variant_picker": false,
+            "mobile_full_button_width": true
+          }
+        },
+        "upsell": {
+          "type": "product_upsell",
+          "settings": {
+            "style": "checkbox_1",
+            "btn_position": "right",
+            "toggle_element": "container",
+            "add_btn_label": "<strong>Add</strong>",
+            "stacking": "column",
+            "accent_color": "accent-1",
+            "color_scheme": "background-2",
+            "product_list": [
+              "mask-01",
+              "quiet-01"
+            ],
+            "enable_dynamic_recommendations": false
+          }
+        },
+        "tagline": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- if product.metafields.somnila.tagline != blank -%}<p class=\"somnila-tagline\">{{ product.metafields.somnila.tagline }}</p>{%- endif -%}"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "tagline",
+        "bullets",
+        "price",
+        "picker",
+        "buy",
+        "pay",
+        "ship",
+        "reassure",
+        "upsell",
+        "div",
+        "desc",
+        "specs",
+        "t1",
+        "t2",
+        "t3",
+        "sticky"
+      ],
+      "settings": {
+        "display_id": false,
+        "enable_sticky_info": true,
+        "display_variant_image_first": true,
+        "disable_prepend": true,
+        "hide_variants": false,
+        "variant_image_filtering": "none",
+        "image_zoom": "lightbox",
+        "arrows_color_scheme": "inverse",
+        "transparent_arrows": true,
+        "dots_color_scheme": "inverse",
+        "media_size": "medium",
+        "media_position": "left",
+        "gallery_layout": "thumbnail_slider",
+        "desktop_thumbnails_count": 5,
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "desktop_arrows_position": "hidden",
+        "mobile_media_corner_radius": 28,
+        "mobile_spacing_pixels": 0,
+        "mobile_arrows_position": "hidden",
+        "mobile_pagination": "dots_under",
+        "mobile_thumbnails": "hide",
+        "mobile_thumbnails_count": 5,
+        "mobile_scroll_padding_percentage": 0,
+        "mobile_scroll_padding_pixels": 16,
+        "enable_mobile_outher_spacing": false,
+        "mobile_slides_container_width": 100,
+        "mobile_slides_inner_width": 100,
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 16,
+        "desktop_padding_top": 36,
+        "desktop_padding_bottom": 36
+      }
+    },
+    "why": {
+      "type": "multicolumn",
+      "blocks": {
+        "c1": {
+          "type": "column",
+          "settings": {
+            "title": "Shaped for one position",
+            "text": "<p>Each Somnila pillow is cut for one way of lying, with a height and a contour to match. Not a block, not a bag of fibre.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c2": {
+          "type": "column",
+          "settings": {
+            "title": "Foam that holds",
+            "text": "<p>Memory foam takes the shape of your neck and keeps it through the night instead of flattening.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c3": {
+          "type": "column",
+          "settings": {
+            "title": "A cover you can wash",
+            "text": "<p>Removable and machine washable. It comes with the pillow, and a spare is €16.90.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "What you are <b>buying</b>.",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "cards_color_scheme": "background-1",
+        "cards_corner_radius": 28,
+        "stretch_cards": true,
+        "stretched_cards_content_alignment": "flex-start",
+        "image_width": "full",
+        "image_ratio": "square",
+        "media_position": "top",
+        "column_alignment": "left",
+        "desktop_heading_size": 22,
+        "mobile_heading_size": 20,
+        "desktop_text_size": 15,
+        "mobile_text_size": 14,
+        "desktop_text_top_margin": 10,
+        "mobile_text_top_margin": 10,
+        "desktop_container_padding_y": 32,
+        "desktop_container_padding_x": 32,
+        "mobile_container_padding_y": 24,
+        "mobile_container_padding_x": 24,
+        "type": "slide",
+        "autoplay": false,
+        "desktop_full_page": false,
+        "columns_desktop": 3,
+        "slider_desktop": false,
+        "desktop_spacing": 24,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_dots_position": "hidden",
+        "desktop_arrows_position": "hidden",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "hidden",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "f1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does delivery take?",
+            "icon": "schedule",
+            "filled_icon": false,
+            "row_content": "<p>6 to 10 days, tracked. You get the tracking number by email the day it ships.</p>",
+            "page": ""
+          }
+        },
+        "f2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if it isn't right for me?",
+            "icon": "bedtime",
+            "filled_icon": false,
+            "row_content": "<p>Email us within 30 nights of delivery with your order number. We refund the pillow; you don't need to send it back.</p>",
+            "page": ""
+          }
+        },
+        "f3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the foam smell when new?",
+            "icon": "air",
+            "filled_icon": false,
+            "row_content": "<p>New foam can have a light smell for the first hours. Air the pillow uncovered for half a day before the first night.</p>",
+            "page": ""
+          }
+        },
+        "f4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I wash it?",
+            "icon": "local_laundry_service",
+            "filled_icon": false,
+            "row_content": "<p>The cover goes in the machine, cold, gentle cycle, dried flat. The foam takes a damp cloth only.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "caption": "FAQ",
+        "title": "Before you <b>order</b>.",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "row_heading_size": "medium",
+        "collapse_icon": "plus",
+        "display_top_border": true,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "related": {
+      "type": "related-products",
+      "settings": {
+        "display_id": false,
+        "title": "Goes with it",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "padding_top": 48,
+        "padding_bottom": 56
+      }
+    },
+    "compare": {
+      "type": "comparison-table",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "benefit": "Shaped for one way of lying",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "benefit": "Two heights on one pillow",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "benefit": "Memory foam that holds its shape all night",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "benefit": "Removable cover included, machine washable",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r5": {
+          "type": "row",
+          "settings": {
+            "benefit": "Thirty nights to decide, refund by email",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        },
+        "r6": {
+          "type": "row",
+          "settings": {
+            "benefit": "Free shipping, tracked, 6–10 days",
+            "us": true,
+            "others": false,
+            "others_2": false,
+            "others_3": false
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "Somnila or a <b>standard fibre pillow</b>?",
+        "title_highlight_color": "#1E2A3A",
+        "heading_size": "h1",
+        "text": "<p>Not a sales pitch, a checklist. Every line on the left is a fact you can check on the product page.</p>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "atc_button_label": "Add to cart",
+        "desktop_alignment": "center",
+        "mobile_alignment": "center",
+        "color_scheme": "background-1",
+        "layout": "table_second",
+        "style": "minimal",
+        "corner_radius": 28,
+        "number_of_competitors": 1,
+        "us_label": "Somnila",
+        "us_label_size": 18,
+        "logo": "shopify://shop_images/somnila-logo-light.png",
+        "logo_width": 90,
+        "mobile_logo_width": 60,
+        "others_label": "Standard fibre pillow",
+        "others_label_size": 16,
+        "checkmark_style": "solid",
+        "checkmark_color": "#1E2A3A",
+        "checkmark_bg_color": "#DCE8F2",
+        "x_style": "regular",
+        "x_color": "#6B7D90",
+        "x_bg_color": "#F7F9FC",
+        "opposite_icon_colors": "original",
+        "highlighted_color_scheme": "background-2",
+        "highlighted_separator_opacity": 0,
+        "highlighted_overlay_opacity": 0,
+        "other_cells_color_scheme": "background-1",
+        "regular_separator_opacity": 10,
+        "regular_overlay_opacity": 0,
+        "minimalistic_border_opacity": 16,
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "trial": {
+      "type": "image-with-text",
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "caption": "How it works",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "small"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "title": "Thirty nights to <b>decide</b>.",
+            "title_highlight_color": "#1E2A3A",
+            "heading_size": "h1"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A pillow can't be judged in a shop. It can be judged in your bed, with your mattress, over a few weeks. So that is where you try it.</p>",
+            "text_style": "body"
+          }
+        },
+        "s": {
+          "type": "text_with_icon",
+          "settings": {
+            "mobile_text_size": 14,
+            "desktop_text_size": 16,
+            "alignment": "left",
+            "mobile_alignment": "left",
+            "text_color": "#1E2A3A",
+            "text_1": "<strong>Order.</strong> Ships in 6–10 days, tracked. Your thirty nights start the day it arrives.",
+            "text_2": "<strong>Sleep on it.</strong> Try both heights. Give a new shape a few nights.",
+            "text_3": "<strong>Keep it, or one email.</strong> Send your order number and we refund the pillow. Nothing to send back.",
+            "icon_scale": 120,
+            "icon_color": "#1E2A3A",
+            "icon_1": "local_shipping",
+            "filled_icon_1": false,
+            "icon_2": "bedtime",
+            "filled_icon_2": false,
+            "icon_3": "mail",
+            "filled_icon_3": false,
+            "width": "100%",
+            "direction": "vertical",
+            "column_gap": 2.5,
+            "enable_bg": false,
+            "bg_color": "#F3F3F3",
+            "corner_radius": 40,
+            "padding": 3,
+            "border_size": 0,
+            "border_color": "#B7B7B7"
+          }
+        },
+        "b": {
+          "type": "atc_button",
+          "settings": {
+            "button_label": "Add to cart",
+            "atc_product": "",
+            "atc_skip_cart": false
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t",
+        "s",
+        "b"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "image": "shopify://shop_images/somnila_home_trial-neck_4x5_e3f68d6a-4371-45c0-84c0-022a7eaee5ce.jpg",
+        "video_autoplay": true,
+        "video_loop": true,
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "section_color_scheme": "background-1",
+        "full_desktop_width": false,
+        "content_layout": "no-overlap",
+        "desktop_media_width": 45,
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_full_media_width": false,
+        "mobile_direction": "normal",
+        "mobile_image_quanlity": "2",
+        "mobile_content_alignment": "left",
+        "mobile_padding_top": 24,
+        "mobile_padding_bottom": 24,
+        "desktop_padding_top": 56,
+        "desktop_padding_bottom": 56
+      }
+    },
+    "ticker": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "k1": {
+          "type": "text",
+          "settings": {
+            "title": "Free shipping on every pillow"
+          }
+        },
+        "k2": {
+          "type": "text",
+          "settings": {
+            "title": "30-night trial, refund by email"
+          }
+        },
+        "k3": {
+          "type": "text",
+          "settings": {
+            "title": "Ships in 6–10 days, tracked"
+          }
+        },
+        "k4": {
+          "type": "text",
+          "settings": {
+            "title": "Cover included, machine washable"
+          }
+        },
+        "k5": {
+          "type": "text",
+          "settings": {
+            "title": "Memory foam that holds its shape"
+          }
+        }
+      },
+      "block_order": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5"
+      ],
+      "settings": {
+        "visibility": "always-display",
+        "speed": 2,
+        "direction": "normal",
+        "stop_on_hover": true,
+        "mobile_spacing": 36,
+        "desktop_spacing": 48,
+        "color_scheme": "inverse",
+        "mobile_text_size": 12,
+        "desktop_text_size": 13,
+        "italic_text": false,
+        "uppercase_text": true,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 40,
+        "mobile_reviews_width": 300,
+        "desktop_reviews_width": 400,
+        "hidden_products": "",
+        "enable_specific_display": false,
+        "displayed_products": "",
+        "mobile_padding_top": 12,
+        "mobile_padding_bottom": 12,
+        "desktop_padding_top": 16,
+        "desktop_padding_bottom": 16
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ticker",
+    "why",
+    "compare",
+    "trial",
+    "faq",
+    "related"
+  ]
+}
+```
+
+## Fichier : sections/header-group.json → bloc custom_liquid de la section somnila-styles (CSS + script)
+
+```
+<style>
+#shopify-section-{{ section.id }}{height:0;overflow:hidden;padding:0!important;margin:0!important}
+@font-face{font-family:'Somnila Serif';src:url('https://cdn.shopify.com/s/files/1/0778/2629/3917/files/somnila-serif-fraunces-soft-var.woff2?v=1789072486') format('woff2');font-weight:300 700;font-style:normal;font-display:swap}
+@font-face{font-family:'Somnila Sans';src:url('https://cdn.shopify.com/s/files/1/0778/2629/3917/files/somnila-sans-manrope-var.woff2?v=1789072486') format('woff2');font-weight:200 800;font-style:normal;font-display:swap}
+:root{--font-heading-family:'Somnila Serif',Georgia,'Times New Roman',serif;--font-heading-style:normal;--font-heading-weight:400;--font-body-family:'Somnila Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--font-body-style:normal;--font-body-weight:400;--font-body-weight-bold:600;--color-shadow:30,42,58;--somnila-dawn:#F0B79B;--somnila-mist:#DCE8F2;--somnila-slate:#6B7D90}
+h1,h2,h3,h4,.h0,.h1,.h2,.h3,.h4,.hxl{letter-spacing:-.015em;font-variation-settings:'opsz' 72;font-weight:400}
+.h0,.hxl,h1.h0{font-variation-settings:'opsz' 120}
+body{-webkit-font-smoothing:antialiased}
+strong,b{font-weight:600}
+.button,.shopify-challenge__button,.customer button,button.button{letter-spacing:0;text-transform:none;font-weight:500}
+.button--secondary{background:transparent}
+.caption-with-letter-spacing,.announcement-bar__message,.announcement-bar__message strong{letter-spacing:.08em;text-transform:uppercase;font-size:1.1rem;font-weight:500}
+.announcement-bar__message strong{font-weight:600}
+.somnila-sky{background:linear-gradient(180deg,#F7F9FC 0%,#DCE8F2 100%)}
+.card,.card__inner,.card__media,.media{box-shadow:none}
+.card--card:hover .card__media{transform:none}
+a{text-underline-offset:.2em}
+.price{font-variant-numeric:tabular-nums}
+.product__title h1,.product__title .h1{font-variation-settings:'opsz' 96}
+.somnila-specs h3{font-family:var(--font-body-family);font-size:1.2rem;letter-spacing:.08em;text-transform:uppercase;color:var(--somnila-slate);margin:1.6rem 0 .4rem;font-weight:500}
+.somnila-specs table{border-collapse:collapse;font-variant-numeric:tabular-nums}
+.somnila-specs th{text-align:left;font-weight:500;padding:.2rem 1.6rem .2rem 0;color:var(--somnila-slate)}
+.somnila-specs td{padding:.2rem 0}
+.somnila-horizon{display:block;width:5.6rem;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--somnila-dawn),rgba(240,183,155,0));margin:1.2rem 0 0}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* --- passe design 2 --- */
+.hero__heading.hxl{font-size:clamp(5.2rem,7.2vw,9.6rem);line-height:.98;margin-bottom:1.2rem}
+.hero__text{max-width:52rem}.hero__text p{font-size:1.9rem;line-height:1.55}
+.hero__buttons{margin-top:2.4rem}
+.icon-bar h3,.multicolumn-card__info h3,.card__heading,.card__heading a,.footer-block__heading,.collapsible-content__heading.small,.product__accordion .accordion__title,.cart-drawer__heading{font-family:var(--font-body-family)!important;font-weight:600!important;letter-spacing:0!important;font-variation-settings:normal}
+.icon-bar h3{font-size:1.5rem;margin:0 0 .2rem}
+.multicolumn-card__info h3{font-size:2.1rem;font-family:var(--font-heading-family)!important;font-weight:400!important;letter-spacing:-.01em!important}
+.card__heading{font-size:1.5rem}
+.card-information .price{font-size:1.5rem}
+.collapsible-content-wrapper-narrow{max-width:96rem;margin:0 auto}
+.collapsible-content__header{margin-bottom:2.4rem}
+.accordion__title,.collapsible-content .accordion__title{font-family:var(--font-body-family)!important;font-weight:600;font-size:1.6rem;letter-spacing:0}
+.title-with-highlight b,.title-with-highlight strong{font-weight:600;color:inherit}
+.rich-text__heading,.collapsible-content__heading,.title.h1,.featured-collection .title,.multicolumn .title{font-size:calc(var(--font-heading-scale)*3.8rem)}
+.product__title h1{font-size:3.6rem}
+.product-form__submit,.button.button--full-width{height:5.4rem}
+.product__info-wrapper .product__text.inline-richtext{font-size:1.5rem}
+.footer-block__heading:has(+ ul),.footer-block__heading:has(+ .footer-block__details-content),.footer-block--menu .footer-block__heading,.footer-block__newsletter .footer-block__heading{font-size:1.3rem;letter-spacing:.08em!important;text-transform:uppercase;color:rgba(247,249,252,.72)}
+.footer-block__brand-info .footer-block__heading,.footer-block__brand-info h2{font-family:var(--font-heading-family)!important;font-weight:400!important;font-size:2.2rem;text-transform:none;letter-spacing:-.01em!important}
+.footer__content-bottom{border-top:1px solid rgba(247,249,252,.14)}
+@media screen and (min-width:990px){.section-padding-tight{padding-top:2rem}}
+
+/* passe design 3 : tuiles de confiance et icônes de réassurance en Manrope */
+.icon-bar .multicolumn-card__info h3{font-family:var(--font-body-family)!important;font-weight:600!important;font-size:1.5rem!important;letter-spacing:0!important;font-variation-settings:normal}
+.icon-with-text .h4{font-family:var(--font-body-family)!important;font-weight:500!important;font-size:1.3rem!important;letter-spacing:0!important;color:rgb(var(--color-foreground))}
+.icon-with-text--horizontal .icon-with-text__item{gap:.6rem}
+
+/* passe conversion */
+.somnila-tagline{font-family:var(--font-heading-family);font-size:2rem;line-height:1.3;color:var(--somnila-slate);margin:.2rem 0 1.2rem;letter-spacing:-.01em}
+.hero__text p+p{font-family:var(--font-body-family);font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase;color:var(--somnila-slate);margin-top:1.2rem}.hero__text p+p strong{color:rgb(var(--color-foreground));font-weight:600}
+.multicolumn-card .multicolumn-card__info .link{font-weight:600}
+.comparison-table .title,.icons-with-content .title,.rich-text__heading{font-size:calc(var(--font-heading-scale)*3.8rem)}
+.icons-with-content h4,.icons-with-content .h4{font-family:var(--font-body-family)!important;font-weight:600!important;font-size:1.6rem!important;letter-spacing:0!important}
+.rich-text .caption-with-letter-spacing{color:var(--somnila-dawn)}
+#which{scroll-margin-top:12rem}
+
+/* passe conversion 2 */
+.rich-text__blocks{max-width:80rem;margin-inline:auto}
+.image-with-text .text-with-icon strong{font-weight:600}
+.image-with-text__heading{margin-top:.4rem}
+/* passe animations : lentes, calmes, sur les variables de marque */
+@keyframes somnila-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes somnila-drift{from{transform:scale(1)}to{transform:scale(1.05) translateY(-1%)}}
+@keyframes somnila-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes somnila-pop{0%{transform:scale(.5);opacity:0}70%{transform:scale(1.1);opacity:1}100%{transform:scale(1)}}
+@keyframes somnila-dawn{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.7}50%{transform:translate(-50%,-50%) scale(1.2);opacity:1}}
+.hero-slide__content>*{animation:somnila-rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero-slide__content .hero__heading{animation-delay:.15s}.hero-slide__content .hero__text{animation-delay:.35s}.hero-slide__content .hero__buttons{animation-delay:.55s}
+.hero-slide__background{overflow:hidden}.hero-slide__background img{animation:somnila-drift 24s ease-in-out infinite alternate;transform-origin:58% 50%}
+.horizontal-ticker__item{letter-spacing:.12em;font-weight:500;display:inline-flex;align-items:center}
+.horizontal-ticker__item::after{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--somnila-dawn);margin-left:48px}
+@media screen and (max-width:749px){.horizontal-ticker__item::after{margin-left:36px}}
+.icon-bar-card__icon .material-icon{display:inline-block;animation:somnila-float 5s ease-in-out infinite}
+.icon-bar li:nth-child(2) .icon-bar-card__icon .material-icon{animation-delay:-1.2s}.icon-bar li:nth-child(3) .icon-bar-card__icon .material-icon{animation-delay:-2.4s}.icon-bar li:nth-child(4) .icon-bar-card__icon .material-icon{animation-delay:-3.6s}
+[id$="__neck"] .product__media img,[id$="__trial"] .image-with-text__media img{animation:somnila-float 8s ease-in-out infinite}
+[id$="__trial"] .image-with-text__media img{animation-delay:-3s}
+.multicolumn-card{transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}
+.multicolumn-card:hover{transform:translateY(-6px);box-shadow:0 26px 48px -22px rgba(30,42,58,.28)}
+.multicolumn-card__image-wrapper .media{overflow:hidden}.multicolumn-card__image{transition:transform .9s cubic-bezier(.2,.7,.2,1)}.multicolumn-card:hover .multicolumn-card__image{transform:scale(1.05)}
+.card--card{transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s}.card--card:hover{transform:translateY(-6px);box-shadow:0 26px 48px -22px rgba(30,42,58,.28)}
+.card__media .media{overflow:hidden}.card__media .media img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}.card--card:hover .card__media .media img{transform:scale(1.05)}
+.button{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,background-color .35s,color .35s}
+.button--primary:hover,.product-form__submit:hover{transform:translateY(-2px);box-shadow:0 14px 26px -14px rgba(30,42,58,.5)}
+.button--secondary:hover{transform:translateY(-2px);background:rgba(30,42,58,.06)}
+.somnila-js .animate-section:not(.somnila-in) .comparison-table__icon{transform:scale(.5);opacity:0}
+.animate-section.somnila-in .comparison-table__icon{animation:somnila-pop .6s cubic-bezier(.2,.7,.2,1) both}
+.comparison-table tbody tr:nth-child(1) .comparison-table__icon{animation-delay:.35s}.comparison-table tbody tr:nth-child(2) .comparison-table__icon{animation-delay:.45s}.comparison-table tbody tr:nth-child(3) .comparison-table__icon{animation-delay:.55s}.comparison-table tbody tr:nth-child(4) .comparison-table__icon{animation-delay:.65s}.comparison-table tbody tr:nth-child(5) .comparison-table__icon{animation-delay:.75s}.comparison-table tbody tr:nth-child(6) .comparison-table__icon{animation-delay:.85s}
+.animate-section .title-with-highlight::after{content:'';display:block;width:5.6rem;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--somnila-dawn),rgba(240,183,155,0));margin:1.2rem auto 0;transform-origin:left;transition:transform .9s cubic-bezier(.2,.7,.2,1) .45s}
+.somnila-js .animate-section:not(.somnila-in) .title-with-highlight::after{transform:scaleX(0)}
+.hero-slide__content.animate-item{opacity:1!important;filter:none!important;transform:none!important;transition:none!important}
+.image-with-text__heading.title-with-highlight::after,.desktop-left .title-with-highlight::after,.hero-slide__content .title-with-highlight::after{margin-inline:0}
+.rich-text.color-inverse{position:relative;overflow:hidden;isolation:isolate}
+.rich-text.color-inverse::before{content:'';position:absolute;left:50%;top:50%;width:70vw;max-width:90rem;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(240,183,155,.24),rgba(240,183,155,0));transform:translate(-50%,-50%);animation:somnila-dawn 10s ease-in-out infinite;pointer-events:none;z-index:-1}
+.header__menu-item span{background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .35s cubic-bezier(.2,.7,.2,1);padding-bottom:.1em}
+.header__menu-item:hover span{background-size:100% 1px}
+.field__input:focus,.field__input:focus-visible{box-shadow:0 0 0 4px rgba(240,183,155,.35)}
+details[open] .accordion__content{animation:somnila-rise .45s cubic-bezier(.2,.7,.2,1) both}
+</style>
+<script>(function(){var d=document.documentElement;d.classList.add('somnila-js');function init(){var els=document.querySelectorAll('.animate-section');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('somnila-in')});return}var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('somnila-in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -10% 0px',threshold:0.05});els.forEach(function(e){if(!e.classList.contains('somnila-in'))io.observe(e)})}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init)}else{init()}document.addEventListener('shopify:section:load',init)})();</script>
+{%- if template.name == 'index' -%}<h1 class="visually-hidden">Somnila memory-foam pillows shaped around the way you actually lie</h1>{%- endif -%}
+```
+
+## Fichier : config/settings_data.json
+
+```
+{
+  "current": {
+    "animations_type": "GGkLhoTOiV67l21Pb1r8JxbwGAkXLmer7YrABSJ9+A9EXpMu2rSrjF9lHa0vqrWGeeDHu7qtpr+mgxIPPKrM0ejIby9ZNuJF4dFk6amcBZ0jotWApqjdOhQIhMWQVZ0794EEN3Gp6q+hiFhBjWHj1+pTBR3xtiz1jODSHRCNTCGlXN7Iu8CDFs/VLut3g5H43vDSZMIwAJMurqV3IK5GOHTrH1NdIVG0H3QcA9//zSQlxswDRMsm5bamaw9MygihDMlZQ6QlPFSP2VFmaUrRhvwHgDWkOcFtLkvV1HQqnzdRA3AbzmzffCiXn1Gkd7DwMBp/kXuCvSCHt9TT0ZQbA5CyZBX5SXu5n3utfkf4ZEYF+ckSufFydtJWhrRuDGuKYruLRto9jNPdruIZvchs7Q==",
+    "disable_inspect": false,
+    "country_list_function": "block",
+    "country_list": "",
+    "logo": "shopify://shop_images/somnila-logo-light.png",
+    "logo_width": 160,
+    "mobile_logo_width": 120,
+    "favicon": "shopify://shop_images/somnila-favicon-512.png",
+    "colors_solid_button_labels": "#F7F9FC",
+    "colors_accent_1": "#1E2A3A",
+    "gradient_accent_1": "",
+    "colors_accent_2": "#6B7D90",
+    "gradient_accent_2": "",
+    "colors_text": "#1E2A3A",
+    "colors_outline_button_labels": "#1E2A3A",
+    "colors_background_1": "#F7F9FC",
+    "gradient_background_1": "",
+    "colors_background_2": "#DCE8F2",
+    "gradient_background_2": "",
+    "type_header_font": "sans_serif_n4",
+    "heading_scale": 110,
+    "heading_letter_spacing": 0.0,
+    "type_body_font": "sans_serif_n4",
+    "body_scale": 100,
+    "enable_load_animations": true,
+    "repeat_section_animations": false,
+    "badge_position": "top left",
+    "badge_corner_radius": 20,
+    "sale_badge_color_scheme": "accent-1",
+    "sale_badge_text": "Save [percentage]",
+    "sold_out_badge_color_scheme": "background-1",
+    "accent_icons": "accent-1",
+    "product_cards_badge_push_sides": true,
+    "product_cards_custom_badges_list": "",
+    "page_width": 1400,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 24,
+    "spacing_grid_vertical": 32,
+    "link_btn_hover": "arrow",
+    "action_btn_hover": "center",
+    "buttons_border_thickness": 1,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 40,
+    "buttons_shadow_opacity": 0,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 0,
+    "buttons_shadow_blur": 0,
+    "variant_pills_accent_color": "accent-1",
+    "variant_pills_bold_text": false,
+    "variant_pills_border_thickness": 1,
+    "variant_pills_border_opacity": 30,
+    "variant_pills_radius": 40,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "pickers_border_color": "text",
+    "pickers_text_color": "text",
+    "pickers_overlay_color": "accent-1",
+    "pickers_overlay_opacity": 0,
+    "pickers_border_thickness": 1,
+    "pickers_border_opacity": 20,
+    "pickers_radius": 22,
+    "pickers_hover_overlay_opacity": 4,
+    "pickers_hover_border_opacity": 55,
+    "quantity_color_scheme": "background-1",
+    "quantity_border_color": "text",
+    "quantity_text_color": "text",
+    "quantity_overlay_color": "accent-1",
+    "quantity_overlay_opacity": 0,
+    "quantity_border_thickness": 1,
+    "quantity_border_opacity": 20,
+    "quantity_radius": 22,
+    "quantity_hover_overlay_opacity": 4,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 30,
+    "inputs_radius": 22,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_blur": 5,
+    "card_style": "card",
+    "card_image_padding": 0,
+    "card_text_alignment": "left",
+    "card_color_scheme": "background-1",
+    "card_border_thickness": 0,
+    "card_border_opacity": 0,
+    "card_corner_radius": 28,
+    "card_shadow_opacity": 10,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 20,
+    "card_shadow_blur": 40,
+    "collection_card_style": "card",
+    "collection_card_image_padding": 0,
+    "collection_card_text_alignment": "left",
+    "collection_card_color_scheme": "background-2",
+    "collection_card_border_thickness": 0,
+    "collection_card_border_opacity": 0,
+    "collection_card_corner_radius": 28,
+    "collection_card_shadow_opacity": 0,
+    "collection_card_shadow_horizontal_offset": 2,
+    "collection_card_shadow_vertical_offset": 6,
+    "collection_card_shadow_blur": 15,
+    "blog_card_style": "standard",
+    "blog_card_image_padding": 0,
+    "blog_card_text_alignment": "left",
+    "blog_card_color_scheme": "background-1",
+    "blog_card_border_thickness": 0,
+    "blog_card_border_opacity": 10,
+    "blog_card_corner_radius": 28,
+    "blog_card_shadow_opacity": 0,
+    "blog_card_shadow_horizontal_offset": 0,
+    "blog_card_shadow_vertical_offset": 6,
+    "blog_card_shadow_blur": 20,
+    "text_boxes_border_thickness": 0,
+    "text_boxes_border_opacity": 0,
+    "text_boxes_radius": 28,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 12,
+    "text_boxes_shadow_blur": 20,
+    "media_border_thickness": 0,
+    "media_border_opacity": 0,
+    "media_radius": 28,
+    "media_shadow_opacity": 10,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": 20,
+    "media_shadow_blur": 40,
+    "popup_border_thickness": 0,
+    "popup_border_opacity": 0,
+    "popup_corner_radius": 28,
+    "popup_shadow_opacity": 15,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 20,
+    "popup_shadow_blur": 40,
+    "drawer_border_thickness": 0,
+    "drawer_border_opacity": 0,
+    "drawer_shadow_opacity": 15,
+    "drawer_shadow_horizontal_offset": 0,
+    "drawer_shadow_vertical_offset": 0,
+    "drawer_shadow_blur": 40,
+    "brand_headline": "Sleep well.",
+    "brand_description": "<p>Pillows and sleep accessories shaped around the way you actually lie. Foam that holds its shape, covers you can wash, 30 nights to decide.</p>",
+    "brand_image_width": 55,
+    "social_facebook_link": "",
+    "social_instagram_link": "",
+    "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
+    "social_vimeo_link": "",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": true,
+    "currency_code_enabled": false,
+    "scrollbar_style": "default",
+    "scrollbar_thumb_color": "#7FA6BE",
+    "scrollbar_width": 9,
+    "cart_type": "drawer",
+    "cart_icon": "bag_1",
+    "show_vendor": false,
+    "show_cart_note": false,
+    "cart_drawer_collection": "accessories",
+    "fav_collection": "GGkLhoTOiV67l21Pb1r8JxbwGAkXLmer7YrABSJ9+A9EXpMu2rSrjF9lHa0vqrWGeeDHu7qtpr+mgxIPPKrM0ejIby9ZNuJF4dFk6amcBZ0jotWApqjdOhQIhMWQVZ0794EEN3Gp6q+hiFhBjWHj1+pTBR3xtiz1jODSHRCNTCGlXN7Iu8CDFs/VLut3g5H43vDSZMIwAJMurqV3IK5GOHTrH1NdIVG0H3QcA9//zSQlxswDRMsm5bamaw9MygihDMlZQ6QlPFSP2VFmaUrRhvwHgDWkOcFtLkvV1HQqnzdRA3AbzmzffCiXn1Gkd7DwMBp/kXuCvSCHt9TT0ZQbA5CyZBX5SXu5n3utfkf4ZEYF+ckSufFydtJWhrRuDGuKYruLRto9jNPdruIZvchs7Q==",
+    "sections": {
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "promo-popup": {
+        "type": "promo-popup",
+        "settings": {
+          "mode": "disabled",
+          "popup_seconds": 8,
+          "popup_days": 30,
+          "display_timer": false,
+          "timer_duration": 3,
+          "layout": "image_second",
+          "color_scheme": "background-2",
+          "heading_prefix": "",
+          "heading": "Notes from the workshop",
+          "heading_size": "h1",
+          "heading_suffix": "",
+          "text": "<p>One email a month at most.</p>",
+          "button_label": "Sign up",
+          "dismiss_btn_label": "Non merci",
+          "discount_code": "",
+          "success_heading_prefix": "",
+          "success_heading": "MERCI",
+          "success_heading_size": "h1",
+          "success_heading_suffix": "",
+          "success_text": "<p>Vous recevrez le prochain envoi.</p>",
+          "discount_code_label": "",
+          "copy_button_label": "Copier",
+          "copy_message": "",
+          "success_dismiss_btn_label": "Fermer",
+          "success_display_image": true
+        }
+      },
+      "scroll-to-top-btn": {
+        "type": "scroll-to-top-btn",
+        "settings": {
+          "enable_scroll_btn": true,
+          "display_after": 500,
+          "color_scheme": "accent-1",
+          "position": "bottom-right",
+          "offset_x": 20,
+          "offset_y": 20
+        }
+      },
+      "global-music-player": {
+        "type": "global-music-player",
+        "settings": {
+          "enabled": false,
+          "audio_src": "",
+          "volume": 10,
+          "position": "bottom-left",
+          "offset_x": 20,
+          "offset_y": 20,
+          "btn_animation": true,
+          "color_scheme": "accent-1"
+        }
+      },
+      "cart-drawer": {
+        "type": "cart-drawer",
+        "blocks": {
+          "items": {
+            "type": "cart_items",
+            "settings": {
+              "image_size": "20",
+              "image_link": true,
+              "title_size": "1.5",
+              "title_link": true,
+              "displayed_variants": "compact",
+              "prices_position": "right",
+              "displayed_compare_prices": "product",
+              "price_color": "accent-1",
+              "compare_price_color": "text",
+              "display_single_item_prices": true,
+              "enable_savings": true,
+              "savings_text": "<strong>(you save [amount])</strong>",
+              "savings_color": "text",
+              "quantity_font_size": 14,
+              "quantity_container_padding": 0,
+              "quantity_corner_radius": 22,
+              "quantity_border_width": 1,
+              "quantity_border_color": "#C5D2DE",
+              "quantity_container_color_scheme": "background-2",
+              "quantity_input_padding": 0.7,
+              "quantity_separators_opacity": 20,
+              "quantity_padding": 0.4,
+              "quantity_btns_color_scheme": "background-2",
+              "quantity_round_btns": true,
+              "quantity_outline_btns": false,
+              "quantity_btns_icon_size": 70,
+              "margin_top": 18,
+              "margin_bottom": 18
+            }
+          },
+          "discount": {
+            "type": "discount_field",
+            "settings": {
+              "bottom_separator": true,
+              "placeholder": "Discount code",
+              "btn_label": "Apply",
+              "error_msg": "Enter a discount code.",
+              "margin_top": 12,
+              "margin_bottom": 12
+            }
+          },
+          "subtotals": {
+            "type": "subtotals",
+            "settings": {
+              "display_total_savings": true,
+              "savings_left_text": "<strong>You save</strong>",
+              "savings_right_text": "<strong>-[savings]</strong>",
+              "savings_alignment": "spaced",
+              "savings_text_color": "accent-1",
+              "savings_text_size": 15,
+              "savings_position": "above",
+              "savings_spacing": 10,
+              "display_subtotal": true,
+              "subtotal_left_text": "<strong>Subtotal</strong>",
+              "subtotal_right_text": "<strong>[subtotal]</strong>",
+              "subtotal_alignment": "spaced",
+              "subtotal_text_color": "text",
+              "subtotal_text_size": 20,
+              "display_discounts": true,
+              "discounts_label": "<strong>Discounts</strong>",
+              "discounts_alignment": "flex-start",
+              "margin_top": 12,
+              "margin_bottom": 12
+            }
+          },
+          "checkout": {
+            "type": "checkout_btn",
+            "settings": {
+              "show_additional_checkout_buttons": true,
+              "display_price": true,
+              "enable_custom_color": false,
+              "icon_scale": 120,
+              "icon_spacing": 10,
+              "margin_top": 12,
+              "margin_bottom": 12
+            }
+          },
+          "badges": {
+            "type": "payment_badges",
+            "settings": {
+              "enabled_payment_types": "visa, master, american_express, paypal, apple_pay, google_pay, shopify_pay",
+              "margin_top": 9,
+              "margin_bottom": 9
+            }
+          }
+        },
+        "block_order": [
+          "items",
+          "discount",
+          "subtotals",
+          "checkout",
+          "badges"
+        ],
+        "settings": {
+          "test_mode": false,
+          "heading_text": "Your bag · [count]",
+          "heading_alignment": "flex-start",
+          "desktop_width": "normal",
+          "mobile_width": "full",
+          "enable_header_bg": false,
+          "header_bg_color": "#DCE8F2",
+          "enable_body_bg": false,
+          "body_bg_color": "#DCE8F2",
+          "enable_footer_bg": true,
+          "footer_bg_color": "#DCE8F2"
+        }
+      }
+    },
+    "content_for_index": [],
+    "secondary_logo": "shopify://shop_images/somnila-logo-dark.png",
+    "custom_header_font_link": "",
+    "custom_header_font_name": "Custom headings font",
+    "custom_header_font_weight": 400,
+    "heading_line_height": 1.2,
+    "custom_body_font_link": "",
+    "custom_body_font_name": "Custom body font",
+    "custom_body_font_weight": 400,
+    "custom_body_bold_font_link": "",
+    "body_line_height": 1.7,
+    "body_letter_spacing": 0.0,
+    "sale_basge_discount_icon": false,
+    "product_card_badge_position": "top left",
+    "product_card_title_limited_lines": "2",
+    "card_button_style": "primary",
+    "swatches_border_radius": 100,
+    "swatches_border_opacity": 10,
+    "swatches_selected_border_opacity": 100,
+    "variant_pills_inactive_overlay_opacity": 0,
+    "variant_pills_text_size": 14,
+    "variant_pills_padding_y": 10,
+    "variant_pills_padding_x": 20,
+    "pickers_color_scheme": "background-1",
+    "pickers_shadow_opacity": 0,
+    "quantity_shadow_opacity": 0,
+    "quantity_hover_border_opacity": 55,
+    "brand_image": "shopify://shop_images/somnila-mark-dawn.png",
+    "display_continue_shopping": true,
+    "continue_shopping_url": "/collections/shop-all",
+    "swatches_predefined_colors_list": "<p>Night = #1E2A3A</p><p>Cloud = #F7F9FC</p><p>Stone = #C4C2BD</p><p>Sky = #A9C8E8</p><p>Blush = #E9C6C6</p><p>Blue = #4A78B8</p><p>Red = #B4463C</p><p>Dark grey = #5A5F66</p><p>Azure = #8FB8E8</p><p>Ice = #DCE8F2</p><p>Mint = #BFE0CF</p><p>Apricot = #F3C7A2</p><p>Sand = #D9C6A8</p><p>Green = #7FA07F</p><p>Yellow = #E9D77A</p><p>Black = #141414</p><p>Cream = #F3EEE2</p><p>Lime = #C9D97A</p><p>Sage = #A8BCA9</p><p>Slate = #6B7D90</p><p>Salmon = #EF9E8F</p><p>Violet = #8E7CC3</p><p>Heather grey = #9A9CA3</p><p>Light grey = #D2D4D8</p><p>Butter = #F2E3A2</p>",
+    "animation_duration": 700,
+    "animation_init_delay": 90,
+    "animation_children_delay": 120,
+    "animation_start_opacity": 0,
+    "animation_start_x": 0,
+    "animation_start_y": 5
+  },
+  "presets": {
+    "Default": {
+      "logo_width": 70,
+      "colors_accent_1": "#43789A",
+      "colors_text": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#DCE8F0",
+      "type_header_font": "poppins_n7",
+      "type_body_font": "poppins_n4",
+      "page_width": 1400,
+      "cart_type": "drawer",
+      "sections": {
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        }
+      }
+    }
+  },
+  "platform_customizations": {
+    "custom_css": []
+  }
+}
+```
