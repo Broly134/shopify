@@ -753,9 +753,20 @@
         "desktop_padding_top": 16,
         "desktop_padding_bottom": 16
       }
+    },
+    "crumbs": {
+      "type": "custom-liquid",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "custom_liquid": "<nav class=\"somnila-crumbs page-width\" aria-label=\"Breadcrumb\"><ol><li><a href=\"{{ routes.root_url }}\">Home</a></li>{%- assign cb = collection -%}{%- unless cb -%}{%- assign cb = product.collections.first -%}{%- endunless -%}{%- if cb and cb.handle != 'frontpage' -%}<li><a href=\"{{ cb.url }}\">{{ cb.title }}</a></li>{%- endif -%}<li><span aria-current=\"page\">{{ product.title }}</span></li></ol></nav>",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
+    "crumbs",
     "main",
     "ticker",
     "why",

@@ -1,0 +1,28 @@
+/* --- passe UX : lisibilite, cibles tactiles, focus clavier --- */
+/* contraste : un gris de texte qui passe le seuil AA sur Cloud (5.6:1) et sur Mist (4.8:1) */
+:root{--somnila-slate-text:#556676}
+.somnila-specs h3,.somnila-specs th,.somnila-stats__label,.somnila-tagline,.hero__text p+p,.somnila-crumbs li,.somnila-crumbs a{color:var(--somnila-slate-text)}
+.accordion__summary:hover .accordion__title{color:var(--somnila-slate-text)}
+/* focus clavier visible partout */
+:focus-visible{outline:2px solid var(--somnila-dawn);outline-offset:3px;border-radius:4px}
+.button:focus-visible,.product-form__submit:focus-visible,.card__heading a:focus-visible{outline-offset:4px}
+/* cibles tactiles d'au moins 44 px au doigt */
+@media (pointer:coarse){
+.header__heading-link{display:inline-flex;align-items:center;min-height:44px}
+.menu-drawer a,.menu-drawer .link,.menu-drawer .full-unstyled-link,.menu-drawer summary{min-height:44px;display:flex;align-items:center}
+.multicolumn-card__info .link,.product__view-details,.shopify-payment-button__more-options,.header__menu-item,.list-menu__item,.footer-block__details-content .list-menu__item,.customer__link,.header__icon{min-height:44px;display:inline-flex;align-items:center}
+.header__heading-link{padding-block:.8rem}
+.upsell__checkbox{min-width:2.4rem;min-height:2.4rem}
+}
+.slider-counter__link--dots{display:inline-flex;align-items:center;justify-content:center;min-width:2.4rem;min-height:2.4rem}
+.search-modal__close-button{min-width:4.4rem}
+/* fil d'Ariane */
+.somnila-crumbs{padding:1.6rem 0 .4rem;font-size:1.3rem}
+.somnila-crumbs ol{list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:0;padding:0}
+.somnila-crumbs li{display:flex;align-items:center;gap:.6rem}
+.somnila-crumbs li+li::before{content:'/';opacity:.5}
+.somnila-crumbs a{text-decoration:none}
+.somnila-crumbs a:hover{text-decoration:underline;text-underline-offset:.2em}
+.somnila-crumbs [aria-current]{color:rgb(var(--color-foreground))}
+@media (pointer:coarse){.somnila-crumbs a{min-height:3.6rem;display:inline-flex;align-items:center}}
+@media screen and (max-width:749px){.somnila-crumbs{font-size:1.2rem}}

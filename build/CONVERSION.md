@@ -149,3 +149,71 @@ coupe toujours tout.
 `sections/footer-group.json` (bouton retour en haut), `templates/index.json`
 (bande de chiffres, carrousel de packs), `templates/collection.json` et
 `templates/product.json` (ajout rapide). Thème 157447585949, toujours non publié.
+
+## 7. Passe UX et accessibilité
+
+Date : 11 septembre 2026. Audit mené au navigateur sur l'accueil, une fiche
+produit, une collection et le panier, en bureau et en tactile (390 px, `pointer:
+coarse`). Ce qui suit a été mesuré, corrigé, puis remesuré.
+
+### Corrigé
+
+1. **Contraste du gris de texte.** Slate #6B7D90 donnait 4,01:1 sur Cloud et
+   3,40:1 sur Mist — sous le seuil AA de 4,5:1 pour du texte courant. Un second
+   gris, `--somnila-slate-text` #556676, prend le relais partout où Slate servait
+   à écrire (légendes des chiffres, spécifications, accroche produit, ligne de
+   preuve du hero, fil d'Ariane) : 5,61:1 sur Cloud, 4,75:1 sur Mist. Slate reste
+   pour les filets et les bordures, où le seuil ne s'applique pas.
+2. **Focus clavier visible.** Un anneau Dawn de 2 px avec 3 px de dégagement sur
+   tout élément focalisé. Avant, on ne voyait la position du clavier que dans les
+   champs de formulaire.
+3. **Cibles tactiles.** Au doigt, les liens de carte (« Shop Neck 01 »), les
+   entrées de menu, le logo, les liens du tiroir mobile, le pied de page et le
+   fil d'Ariane font au moins 44 px de haut. Les pastilles du carrousel produit
+   passent de 2 × 1 px à 24 × 24 px, le minimum WCAG 2.2.
+4. **Intitulés manquants.** Le champ code promo, les listes déroulantes de
+   coloris des ventes additionnelles et celle de la barre d'achat collante
+   n'avaient aucun nom pour un lecteur d'écran ; les cases à cocher des ventes
+   additionnelles non plus. Ils sont nommés au chargement par
+   `somnila-brand.js`. Il reste zéro champ sans intitulé sur les quatre pages.
+5. **Un seul titre de niveau 1 par page.** L'accueil en avait trois (le mien,
+   celui du logo, celui du produit mis en avant). Les surnuméraires reçoivent
+   `aria-level="2"` : la structure devient lisible pour un lecteur d'écran sans
+   toucher au balisage du thème.
+6. **Fil d'Ariane** sur les fiches produit (Accueil / collection / produit) et
+   les collections. Orientation, retour en arrière, et un signal de structure
+   pour les moteurs.
+7. **Titres de page en double.** Les balises `title` affichaient
+   « Neck 01 memory-foam pillow | Somnila – SOMNILA » : notre suffixe plus celui
+   du thème. Le « | Somnila » a été retiré des titres SEO de 20 produits et
+   2 collections. On lit maintenant « Neck 01 memory-foam pillow – SOMNILA ».
+
+### Mesures avant / après
+
+| Point | Avant | Après |
+| --- | --- | --- |
+| Champs sans intitulé (fiche produit) | 4 | 0 |
+| Cibles tactiles sous 40 px (fiche produit) | 16 | 9, dont 6 dans la bannière cookies de Shopify |
+| Titres de niveau 1 sur l'accueil | 3 | 1 |
+| Contraste du gris de texte sur Cloud | 4,01:1 | 5,61:1 |
+| Fil d'Ariane | absent | produit et collection |
+
+### Ce qui reste à toi
+
+- **Le titre de l'accueil affiche encore « PORTANCE — The art of sleep ».** Il ne
+  vient pas du thème mais des préférences de la boutique, que l'API ne me laisse
+  pas écrire. Admin → Boutique en ligne → Préférences → Titre et méta-description
+  de la page d'accueil. Propositions : titre « Somnila — memory-foam pillows
+  shaped around how you sleep », description « Pillows shaped for the way you
+  actually lie. Foam that holds, a washable cover, 30 nights to decide. Free
+  shipping, 6–10 days. »
+- La bannière de consentement aux cookies est celle de Shopify : ses trois
+  boutons font 34 à 36 px de haut et son lien « Privacy Policy » 21 px. Ni son
+  balisage ni ses styles ne me sont accessibles.
+
+### Fichiers
+
+Nouveau `assets/somnila-ux.css` (couche accessibilité, chargée après la couche
+de marque), `assets/somnila-brand.js` (nommage et niveaux de titres),
+`templates/product.json` et `templates/collection.json` (section `crumbs`),
+`sections/header-group.json` (chargement de la couche UX).
