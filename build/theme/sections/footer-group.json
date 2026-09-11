@@ -74,9 +74,25 @@
         "padding_top": 56,
         "padding_bottom": 32
       }
+    },
+    "backtotop": {
+      "type": "ss-back-to-top-button",
+      "settings": {
+        "hide_on_mobile": false,
+        "show_when_precent_of_page": 65,
+        "pos": "right",
+        "bg_color": "#F7F9FC",
+        "border_color": "#DCE8F2",
+        "arrow_color": "#1E2A3A",
+        "button_size": 50,
+        "arrow_size": 26,
+        "horizontal_dst_to_edge": 20,
+        "vertical_dst_to_edge": 20
+      }
     }
   },
   "order": [
-    "footer"
+    "footer",
+    "backtotop"
   ]
 }

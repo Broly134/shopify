@@ -93,3 +93,59 @@ Tout est natif Shrine ou CSS/JS dans la section `somnila-styles` ; aucune app, a
 - **Partout** : icônes d'en-tête (recherche, compte, panier) qui se soulèvent ; logo qui grossit de 3 % ; liens du pied de page soulignés au survol ; flèche du bouton newsletter qui glisse.
 
 Vérifié par sonde DOM : pulsation, reflet, élévations, zoom, seconde image, soulignement, flottements, fondu de l'image produit, zéro erreur JavaScript.
+
+## 6. Passe design 4 — repères pris chez Derila, Pilloway et Soya Paris
+
+Date : 11 septembre 2026. Le CSS et le JS de marque ne vivent plus dans le
+réglage `custom_liquid` de l'en-tête : ils sont dans deux fichiers du thème,
+`assets/somnila-brand.css` (22 ko) et `assets/somnila-brand.js` (2,8 ko), appelés
+par la section `somnila-styles`. Les sources de référence sont dans
+`build/theme/assets/`. Une retouche de style ne demande donc plus de réécrire
+tout le groupe d'en-tête.
+
+### Ce que j'ai repris chez eux
+
+| Repère | Chez eux | Chez nous |
+| --- | --- | --- |
+| Carrousel de best-sellers avec flèches | Soya | Les 8 packs en carrousel, flèches sur les côtés, cartes de hauteur égale |
+| Ajout rapide au survol de la carte | Soya | Bouton « Add » qui apparaît au survol, sur les packs, la collection et « Goes with it » |
+| Pastilles de couleur sur les cartes | Soya | Sur les grilles de collection (pas sur les packs : la couleur se choisit sur la fiche) |
+| Seconde image au survol | Soya, Pilloway | Déjà en place, gardé |
+| Bandeau de chiffres | Soya (statistiques clients) | Quatre chiffres **vrais et vérifiables sur le site**, qui s'incrémentent à l'arrivée |
+| En-tête qui se resserre | Pilloway | Moins de hauteur et une ombre douce dès 40 px de défilement |
+| Blocs aux angles arrondis qui se chevauchent | Pilloway | Le bloc « pourquoi si plat », la dalle fondateur et l'appel final |
+| Repère de défilement sous le hero | Derila | Une capsule fine avec un point Dawn qui descend |
+
+### Ce que j'ai refusé de reprendre
+
+Soya affiche « 92 % des clients… » et « recommandé par les ostéopathes ».
+Nous n'avons ni étude ni avis : la bande de chiffres ne dit que ce qu'on peut
+vérifier sur le site — **5** formes, **30** nuits d'essai, **10** jours de
+livraison au plus, et **0** compte à rebours, fausse promo ou minuteur. Derila
+et Pilloway utilisent des barrés permanents et des stocks qui s'épuisent :
+toujours rien de tout ça.
+
+### Animations ajoutées
+
+- Barre de progression de lecture en Dawn, 2 px, en haut de l'écran.
+- Compteur des quatre chiffres, une seconde, courbe d'arrivée douce.
+- Révélation des images par balayage vertical (cartes de position, image essai),
+  en cascade de 0,1 s par carte.
+- Parallaxe douce sur l'image de la section essai.
+- Flèches de carrousel qui grossissent au survol, lignes de FAQ qui se teignent.
+- Bouton « retour en haut » en bas à droite après 65 % de la page.
+
+### Fiabilité
+
+Le mécanisme de révélation ne repose plus seulement sur `IntersectionObserver` :
+le script calcule aussi la position au défilement, au chargement, au
+redimensionnement et à 0,4 s puis 1,5 s après l'affichage. Un bloc ne peut donc
+plus rester invisible si l'observateur ne se déclenche pas. `prefers-reduced-motion`
+coupe toujours tout.
+
+### Fichiers touchés
+
+`assets/somnila-brand.css`, `assets/somnila-brand.js`, `sections/header-group.json`,
+`sections/footer-group.json` (bouton retour en haut), `templates/index.json`
+(bande de chiffres, carrousel de packs), `templates/collection.json` et
+`templates/product.json` (ajout rapide). Thème 157447585949, toujours non publié.
